@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Cambridge B1 Preliminary • Paper 3: Listening | JM ELT Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-canvas-blue: #1e3a8a;
+      --surface-white: #ffffff;
+      --surface-card: #f8fafc;
+      --cambridge-navy: #091e3a;
+      --cambridge-blue: #1d4ed8;
+      --cambridge-blue-vivid: #2563eb;
+      --cambridge-emerald: #059669;
+      --cambridge-gold: #d97706;
+      --text-pure-black: #000000;
+      --text-dark: #0f172a;
+      --text-body: #334155;
+      --text-muted: #64748b;
+      --border-subtle: #cbd5e1;
+      --border-strong: #94a3b8;
+      --success: #059669;
+      --error: #dc2626;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --radius-full: 9999px;
+      --shadow-card: 0 16px 36px -6px rgba(0, 0, 0, 0.28);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+    body {
+      background-color: var(--bg-canvas-blue);
+      background-image:
+        linear-gradient(rgba(15, 45, 95, 0.58), rgba(10, 32, 70, 0.68)),
+        url('https://drive.google.com/thumbnail?id=10e6Pmgk3M3P60FsN2oVAYhExabY2UoW8&sz=w1920');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--text-dark);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-size: 16px;
+    }
+
+    /* INSTITUTIONAL HEADER (MATCHING WRITING DESIGN) */
+    header.exam-header {
+      background: rgba(6, 21, 45, 0.94);
+      backdrop-filter: blur(14px);
+      border-bottom: 3.5px solid #2563eb;
+      padding: 12px 42px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .brand-left-cluster { display: flex; align-items: center; gap: 22px; }
+    .cambridge-badge-frame {
+      background: #ffffff;
+      padding: 8px 18px;
+      border-radius: 12px;
+      border: 2px solid #cbd5e1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    }
+    .cambridge-crest-img { height: 52px; width: auto; object-fit: contain; }
+    .jm-brand-box {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding-left: 20px;
+      border-left: 2.5px solid #3b82f6;
+    }
+    .jm-logo-img { height: 72px; width: auto; object-fit: contain; filter: drop-shadow(0 3px 8px rgba(0,0,0,0.4)); }
+    .jm-titles { display: flex; flex-direction: column; align-items: center; text-align: center; line-height: 1.15; }
+    .jm-title-top { font-family: 'Outfit', sans-serif; font-size: 28px; font-weight: 900; color: #ffffff; letter-spacing: 1.5px; }
+    .jm-title-sub { font-family: 'Outfit', sans-serif; font-size: 14px; font-weight: 800; color: #f59e0b; letter-spacing: 1.2px; text-transform: uppercase; }
+    .jm-title-tagline { font-size: 11px; font-weight: 700; color: #38bdf8; text-transform: uppercase; letter-spacing: 1px; margin-top: 2px; }
+
+    .header-center-cluster { display: flex; align-items: center; gap: 12px; }
+    .timer-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+      border: 2.5px solid #3b82f6;
+      color: #93c5fd;
+      padding: 8px 24px;
+      border-radius: var(--radius-full);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 24px;
+      font-weight: 900;
+      box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+    }
+    .step-pill {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      font-weight: 800;
+      color: #fef08a;
+      background: rgba(245, 158, 11, 0.2);
+      border: 1.5px solid #f59e0b;
+      padding: 7px 14px;
+      border-radius: var(--radius-full);
+    }
+    .header-right-cluster { display: flex; align-items: center; gap: 16px; }
+    .btn-return-menu {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1.5px solid #60a5fa;
+      color: #ffffff;
+      font-family: 'Outfit', sans-serif;
+      font-size: 13.5px;
+      font-weight: 800;
+      padding: 9px 18px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .btn-return-menu:hover { background: #2563eb; border-color: #bfdbfe; transform: translateY(-1px); }
+    .trainer-profile-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: rgba(15, 34, 64, 0.7);
+      border: 2px solid #3b82f6;
+      padding: 6px 18px 6px 12px;
+      border-radius: var(--radius-full);
+    }
+    .trainer-avatar-lg {
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      border: 3px solid #f59e0b;
+      object-fit: cover;
+    }
+    .trainer-meta { text-align: right; }
+    .trainer-name-top { font-family: 'Outfit', sans-serif; font-size: 16px; font-weight: 800; color: #ffffff; line-height: 1.2; }
+    .trainer-desc-sub { font-size: 12px; font-weight: 700; color: #38bdf8; letter-spacing: 0.5px; }
+
+    /* MAIN VIEWPORT */
+    main.listening-viewport {
+      flex: 1;
+      max-width: 1200px;
+      width: 95%;
+      margin: 24px auto 36px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    /* PERSISTENT GOOGLE DRIVE AUDIO BOX */
+    .audio-sticky-box {
+      background: var(--surface-white);
+      border: 3px solid #2563eb;
+      border-radius: var(--radius-lg);
+      padding: 18px 24px;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .audio-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .audio-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 18px;
+      font-weight: 900;
+      color: #0b1a30;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .audio-embed-wrapper {
+      width: 100%;
+      height: 112px;
+      background: #0f172a;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 2px solid #cbd5e1;
+    }
+
+    .audio-embed-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+
+    .audio-toolbar-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .track-switch-bar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .btn-track {
+      background: #f1f5f9;
+      border: 2px solid #cbd5e1;
+      color: #1e293b;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12.5px;
+      font-weight: 800;
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn-track:hover, .btn-track.active-track {
+      background: #1d4ed8;
+      color: #ffffff;
+      border-color: #1d4ed8;
+    }
+
+    .btn-external-drive {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12.5px;
+      font-weight: 800;
+      color: #92400e;
+      background: #fef3c7;
+      border: 1.5px solid #f59e0b;
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* STEP PAGES */
+    .exam-step-page { display: none; }
+    .exam-step-page.active { display: block; }
+
+    .section-card {
+      background: var(--surface-white);
+      border: 2.5px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .part-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2.5px solid #0f172a;
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .part-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 22px;
+      font-weight: 900;
+      color: #0b1a30;
+    }
+
+    .part-marks-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13.5px;
+      font-weight: 800;
+      color: #92400e;
+      background: #fef3c7;
+      border: 1.5px solid #f59e0b;
+      padding: 4px 14px;
+      border-radius: var(--radius-full);
+    }
+
+    .part-instructions {
+      font-size: 16px;
+      color: #334155;
+      margin-bottom: 24px;
+      line-height: 1.55;
+    }
+
+    /* CANDIDATE BOX ON COVER */
+    .student-id-box {
+      background: #eff6ff;
+      border: 2px solid #3b82f6;
+      border-radius: var(--radius-md);
+      padding: 18px 22px;
+      max-width: 580px;
+      margin: 0 auto 22px auto;
+      text-align: left;
+    }
+    .student-id-box label {
+      display: block;
+      font-family: 'Outfit', sans-serif;
+      font-size: 13px;
+      font-weight: 800;
+      color: #1e3a8a;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .student-name-input {
+      width: 100%;
+      padding: 10px 14px;
+      border: 2px solid #cbd5e1;
+      border-radius: 8px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 15.5px;
+      font-weight: 700;
+      color: #0f172a;
+      outline: none;
+    }
+
+    /* QUESTION CARDS */
+    .q-card-isolated {
+      background: #f8fafc;
+      border: 2px solid #cbd5e1;
+      border-radius: var(--radius-md);
+      padding: 22px 24px;
+      margin-bottom: 24px;
+    }
+
+    .q-card-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+
+    .q-num-badge {
+      background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+      color: #ffffff;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 900;
+      font-size: 14px;
+      padding: 5px 12px;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .q-question-text {
+      font-size: 16.5px;
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.45;
+      flex: 1;
+    }
+
+    /* PART 1 IMAGE FRAME & BUTTONS */
+    .p1-image-frame {
+      background: #ffffff;
+      border: 2px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 12px;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .p1-image-frame img {
+      width: 100%;
+      max-height: 295px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+    }
+    .p1-abc-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+    @media (max-width: 640px) {
+      .p1-abc-row { grid-template-columns: 1fr; }
+    }
+    .p1-choice-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #ffffff;
+      border: 2px solid #94a3b8;
+      color: #0f172a;
+      padding: 12px 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 15px;
+      font-weight: 800;
+      transition: all 0.18s ease;
+    }
+    .p1-choice-btn:hover {
+      border-color: #2563eb;
+      background: #eff6ff;
+    }
+    .p1-choice-btn.selected {
+      border-color: #1d4ed8;
+      background: #1d4ed8;
+      color: #ffffff;
+    }
+
+    /* MCQ OPTIONS (PART 2 & PART 4) */
+    .options-group-spaced {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .option-item-label {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #ffffff;
+      border: 2px solid #cbd5e1;
+      padding: 12px 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 15.5px;
+      font-weight: 500;
+      color: #0f172a;
+      transition: all 0.18s ease;
+    }
+    .option-item-label:hover {
+      border-color: #2563eb;
+      background: #eff6ff;
+    }
+    .option-item-label input[type="radio"] {
+      width: 18px;
+      height: 18px;
+      accent-color: #1d4ed8;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    /* PART 3: NOTES NOTEBOOK */
+    .notes-notebook-box {
+      background: #f8fafc;
+      border: 2.5px solid #cbd5e1;
+      border-left: 8px solid #059669;
+      border-radius: var(--radius-md);
+      padding: 26px 30px;
+      margin-bottom: 22px;
+    }
+    .notes-notebook-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 22px;
+      font-weight: 900;
+      color: #064e3b;
+      text-align: center;
+      margin-bottom: 18px;
+      border-bottom: 2px dashed #a7f3d0;
+      padding-bottom: 10px;
+    }
+    .notes-subhead {
+      font-family: 'Outfit', sans-serif;
+      font-size: 15px;
+      font-weight: 900;
+      color: #1d4ed8;
+      margin-top: 16px;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+    .notes-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 11px 0;
+      border-bottom: 1.5px solid #e2e8f0;
+      font-size: 16px;
+      font-weight: 600;
+      color: #0f172a;
+    }
+    .gap-box-white {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #0f172a;
+      color: #ffffff;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 900;
+      font-size: 13.5px;
+      padding: 2px 10px;
+      border-radius: 6px;
+      border: 2px solid #f59e0b;
+      margin-right: 6px;
+    }
+    .notes-input {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 15px;
+      font-weight: 700;
+      background: #ffffff;
+      border: 2px solid #2563eb;
+      color: #0f172a;
+      padding: 8px 12px;
+      border-radius: 8px;
+      outline: none;
+      width: 220px;
+    }
+
+    /* NAVIGATION BAR */
+    .step-nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 18px;
+      border-top: 2px solid #e2e8f0;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .btn-step {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 900;
+      font-size: 16.5px;
+      padding: 14px 30px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      border: 2px solid transparent;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
+    .btn-next {
+      background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+      color: #ffffff;
+      border-color: #bfdbfe;
+      margin-left: auto;
+      box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+    }
+    .btn-next:hover { transform: translateY(-2px); }
+    .btn-prev {
+      background: #f1f5f9;
+      border-color: #cbd5e1;
+      color: #1e293b;
+    }
+    .btn-prev:hover { background: #e2e8f0; }
+    .btn-submit-final {
+      background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+      color: #ffffff;
+      border-color: #6ee7b7;
+      margin-left: auto;
+      box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4);
+    }
+
+    /* STUDENT REVIEW FEEDBACK */
+    .kid-feedback-box {
+      margin-top: 14px;
+      padding: 14px 16px;
+      border-radius: 10px;
+      font-size: 14.5px;
+      line-height: 1.55;
+    }
+    .kid-feedback-box.correct {
+      background: #ecfdf5;
+      border: 1.5px solid #10b981;
+      color: #064e3b;
+    }
+    .kid-feedback-box.incorrect {
+      background: #fef2f2;
+      border: 1.5px solid #ef4444;
+      color: #7f1d1d;
+    }
+    .fb-header {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      font-size: 15px;
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .summary-hero-card {
+      background: var(--surface-white);
+      border: 3px solid #2563eb;
+      border-radius: var(--radius-lg);
+      padding: 32px 26px;
+      text-align: center;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-card);
+    }
+    .summary-score-large {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 44px;
+      font-weight: 900;
+      color: #1d4ed8;
+      margin: 10px 0;
+    }
+    .sync-status-pill {
+      display: inline-block;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 6px 16px;
+      border-radius: var(--radius-full);
+      background: #ecfdf5;
+      border: 1.5px solid #10b981;
+      color: #065f46;
+      margin-top: 8px;
+    }
+
+    /* FOOTER */
+    footer.exam-footer {
+      background: rgba(6, 21, 45, 0.98);
+      border-top: 2.5px solid #1e3a8a;
+      padding: 20px 42px;
+      display: grid;
+      grid-template-columns: 1fr 1.4fr 1fr;
+      align-items: center;
+      font-size: 14px;
+      color: #94a3b8;
+      margin-top: auto;
+    }
+    .footer-left { text-align: left; font-family: 'Outfit', sans-serif; font-weight: 700; color: #cbd5e1; }
+    .footer-center { text-align: center; font-weight: 600; color: #cbd5e1; }
+    .footer-author-highlight { color: #f59e0b; font-weight: 900; }
+    .footer-right {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 12px;
+      color: #38bdf8;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- INSTITUTIONAL HEADER -->
+  <header class="exam-header">
+    <div class="brand-left-cluster">
+      <div class="cambridge-badge-frame">
+        <img src="https://drive.google.com/thumbnail?id=1sd7nJwtvyEzuKaK5YTxKARFjM7dS8TGg&sz=w200" alt="Cambridge English" class="cambridge-crest-img">
+      </div>
+      <div class="jm-brand-box">
+        <img src="https://drive.google.com/thumbnail?id=1EksYLoHp7voak-Ka3Y3txyiGM15DMPTP&sz=w200" alt="JM ELT Solutions" class="jm-logo-img">
+        <div class="jm-titles">
+          <span class="jm-title-top">JM</span>
+          <span class="jm-title-sub">ELT Solutions</span>
+          <span class="jm-title-tagline">Official Exam Simulator</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-center-cluster">
+      <div class="timer-pill"><span>⏱️</span><span id="timerDisplay">40:00</span></div>
+      <span class="step-pill" id="stepPillIndicator">Cover &amp; Audio</span>
+    </div>
+
+    <div class="header-right-cluster">
+      <a href="./index.html" class="btn-return-menu" onclick="stopAllAudio()"><span>🏠</span> Return to Main Menu</a>
+      <div class="trainer-profile-card">
+        <div class="trainer-meta">
+          <div class="trainer-name-top">Dr. Jesús Miguel Lima E.</div>
+          <div class="trainer-desc-sub">Cambridge Specialist &amp; Trainer</div>
+        </div>
+        <img src="https://drive.google.com/thumbnail?id=1yd8aHZpgwj1mJXKaP8zldJIZAwGTiIor&sz=w200" alt="Dr. Jesús Miguel Lima E." class="trainer-avatar-lg">
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="listening-viewport">
+
+    <!-- REPRODUCTOR PERSISTENTE GOOGLE DRIVE (EN EL ORDEN EXACTO) -->
+    <div class="audio-sticky-box" id="persistentAudioBox">
+      <div class="audio-header">
+        <span class="audio-title" id="audioTrackLabel">🎧 Official Listening Audio — Part 1 (Questions 1–7)</span>
+        <span style="font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:800; color:#1d4ed8;">B1 Preliminary • 4 Tracks</span>
+      </div>
+
+      <div class="audio-embed-wrapper">
+        <iframe
+          id="driveAudioFrame"
+          src="https://drive.google.com/file/d/1lgkoG-dVr9RNMDOodjJck9UKl2ZeuEAQ/preview"
+          title="B1 Preliminary Listening Track"
+          allow="autoplay">
+        </iframe>
+      </div>
+
+      <div class="audio-toolbar-row">
+        <div class="track-switch-bar">
+          <span style="font-size:12.5px; color:#475569; font-family:'JetBrains Mono',monospace; font-weight:700;">Track:</span>
+          <button type="button" class="btn-track active-track" id="btnTrack1" onclick="loadDriveTrack(1)">Audio 1 (Part 1)</button>
+          <button type="button" class="btn-track" id="btnTrack2" onclick="loadDriveTrack(2)">Audio 2 (Part 2)</button>
+          <button type="button" class="btn-track" id="btnTrack3" onclick="loadDriveTrack(3)">Audio 3 (Part 3)</button>
+          <button type="button" class="btn-track" id="btnTrack4" onclick="loadDriveTrack(4)">Audio 4 (Part 4)</button>
+        </div>
+        <a id="externalDriveLink" href="https://drive.google.com/file/d/1lgkoG-dVr9RNMDOodjJck9UKl2ZeuEAQ/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-external-drive">
+          ↗ Open Audio in New Tab
+        </a>
+      </div>
+    </div>
+
+    <!-- PAGE 0: PORTADA -->
+    <div class="exam-step-page active" id="page-0">
+      <section class="section-card" style="text-align: center; padding: 38px 28px;">
+        <div style="font-size: 52px; margin-bottom: 10px;">🎧</div>
+        <h2 style="font-family:'Outfit',sans-serif; font-size: 32px; font-weight:900; color: #0b1a30; margin-bottom: 6px;">
+          B1 PRELIMINARY — PAPER 3: LISTENING
+        </h2>
+        <p style="color: #1d4ed8; font-family:'JetBrains Mono',monospace; font-size: 14.5px; font-weight:800; margin-bottom: 22px;">
+          Time: Approximately 30 minutes (+ transfer time) • 4 Parts • 25 Questions
+        </p>
+
+        <div class="student-id-box">
+          <label for="studentFullNameInput">Candidate Full Name (Apellido, Nombre):</label>
+          <input type="text" id="studentFullNameInput" class="student-name-input" placeholder="e.g., Pérez Gómez, Lucía" autocomplete="off">
+        </div>
+
+        <div style="background: #f8fafc; border: 2px solid #cbd5e1; border-radius: 14px; padding: 20px 24px; max-width: 680px; margin: 0 auto 26px auto; text-align: left; line-height: 1.7; font-size: 15.5px; color: #1e293b;">
+          <strong style="color: #0b1a30; display: block; margin-bottom: 6px;">Instructions for Candidates:</strong>
+          • There are four parts to the test (25 marks total).<br>
+          • You will hear each piece <strong>twice</strong>.<br>
+          • Click Play on the audio player above. The track switches automatically when you move between Part 1, Part 2, Part 3, and Part 4.<br>
+          • When you finish Part 4, your complete exam results will be submitted automatically to your instructor.
+        </div>
+
+        <button type="button" class="btn-step btn-next" style="margin: 0 auto;" onclick="startListeningExam()">
+          Start Listening: Part 1 ➔
+        </button>
+      </section>
+    </div>
+
+    <!-- PAGE 1: PART 1 (QUESTIONS 1–7) -->
+    <div class="exam-step-page" id="page-1">
+      <section class="section-card">
+        <div class="part-header">
+          <h3 class="part-title">Part 1 • Questions 1–7</h3>
+          <span class="part-marks-badge">7 Marks</span>
+        </div>
+        <p class="part-instructions">For each question, choose the correct answer (A, B, or C).</p>
+
+        <div id="part1-questions-host"></div>
+
+        <div class="step-nav-bar">
+          <button type="button" class="btn-step btn-prev" onclick="goToPage(0)">⬅ Instructions</button>
+          <button type="button" class="btn-step btn-next" onclick="goToPage(2)">Continue to Part 2 ➔</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- PAGE 2: PART 2 (QUESTIONS 8–13) -->
+    <div class="exam-step-page" id="page-2">
+      <section class="section-card">
+        <div class="part-header">
+          <h3 class="part-title">Part 2 • Questions 8–13</h3>
+          <span class="part-marks-badge">6 Marks</span>
+        </div>
+        <p class="part-instructions">For each question, choose the correct answer.</p>
+
+        <div id="part2-questions-host"></div>
+
+        <div class="step-nav-bar">
+          <button type="button" class="btn-step btn-prev" onclick="goToPage(1)">⬅ Part 1</button>
+          <button type="button" class="btn-step btn-next" onclick="goToPage(3)">Continue to Part 3 ➔</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- PAGE 3: PART 3 (QUESTIONS 14–19) -->
+    <div class="exam-step-page" id="page-3">
+      <section class="section-card">
+        <div class="part-header">
+          <h3 class="part-title">Part 3 • Questions 14–19</h3>
+          <span class="part-marks-badge">6 Marks</span>
+        </div>
+        <p class="part-instructions">
+          For each question, write the correct answer in the gap. <strong>Write one or two words or a number or a date or a time.</strong><br>
+          You will hear a man giving information to people who are starting a one-week singing course.
+        </p>
+
+        <div class="notes-notebook-box">
+          <div class="notes-notebook-title">🎵 One-week singing course</div>
+
+          <div class="notes-subhead">Teachers</div>
+          <div class="notes-row">
+            <span>Jazz:</span>
+            <span style="font-family:'JetBrains Mono',monospace; font-weight:800; color:#475569;">Robert Park</span>
+          </div>
+          <div class="notes-row">
+            <span>Songs from musicals:</span>
+            <div>
+              <span>Susan </span>
+              <span class="gap-box-white">14</span>
+              <input type="text" id="gapL14" class="notes-input" placeholder="Surname..." autocomplete="off">
+            </div>
+          </div>
+
+          <div class="notes-subhead">Concert</div>
+          <div class="notes-row">
+            <span>When:</span>
+            <div>
+              <span>Friday, at </span>
+              <span class="gap-box-white">15</span>
+              <input type="text" id="gapL15" class="notes-input" placeholder="e.g. 8.30" autocomplete="off">
+              <span> p.m.</span>
+            </div>
+          </div>
+          <div class="notes-row">
+            <span>Colour of clothes:</span>
+            <div>
+              <span class="gap-box-white">16</span>
+              <input type="text" id="gapL16" class="notes-input" placeholder="Colour..." autocomplete="off">
+            </div>
+          </div>
+
+          <div class="notes-subhead">Other general information</div>
+          <div class="notes-row">
+            <span>Map of building:</span>
+            <div>
+              <span>available from the </span>
+              <span class="gap-box-white">17</span>
+              <input type="text" id="gapL17" class="notes-input" placeholder="Person / place..." autocomplete="off">
+            </div>
+          </div>
+          <div class="notes-row">
+            <span>Lunch:</span>
+            <div>
+              <span>eat in the </span>
+              <span class="gap-box-white">18</span>
+              <input type="text" id="gapL18" class="notes-input" placeholder="Room / place..." autocomplete="off">
+            </div>
+          </div>
+          <div class="notes-row">
+            <span>Car park:</span>
+            <div>
+              <span>costs £ </span>
+              <span class="gap-box-white">19</span>
+              <input type="text" id="gapL19" class="notes-input" placeholder="Amount..." autocomplete="off">
+              <span> per day</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-nav-bar">
+          <button type="button" class="btn-step btn-prev" onclick="goToPage(2)">⬅ Part 2</button>
+          <button type="button" class="btn-step btn-next" onclick="goToPage(4)">Continue to Part 4 ➔</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- PAGE 4: PART 4 (QUESTIONS 20–25) -->
+    <div class="exam-step-page" id="page-4">
+      <section class="section-card">
+        <div class="part-header">
+          <h3 class="part-title">Part 4 • Questions 20–25</h3>
+          <span class="part-marks-badge">6 Marks</span>
+        </div>
+        <p class="part-instructions">
+          For each question, choose the correct answer.<br>
+          You will hear an interview with a man called Mickey Diaz, who is talking about his work as a hairdresser.
+        </p>
+
+        <div id="part4-questions-host"></div>
+
+        <div class="step-nav-bar">
+          <button type="button" class="btn-step btn-prev" onclick="goToPage(3)">⬅ Part 3</button>
+          <button type="button" class="btn-step btn-submit-final" id="btnFinishListening" onclick="submitListeningExam()">
+            Finish &amp; Submit Complete Exam ✓
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-- PAGE 5: STUDENT QUICK REVIEW (NO EXCEL / NO TEACHER EXECUTIVE REPORT) -->
+    <div class="exam-step-page" id="page-5">
+      <div class="summary-hero-card">
+        <div style="font-size: 52px;" id="finalBadge">🎉</div>
+        <h2 style="font-family:'Outfit',sans-serif; font-size: 28px; font-weight:900; color: #0b1a30; margin-top: 6px;" id="finalTitle">
+          Listening Test Completed!
+        </h2>
+        <p style="color: #475569; font-size: 15px; font-weight:600; margin-top: 4px;" id="candidateSummarySubtitle">
+          Candidate: Student
+        </p>
+
+        <div class="summary-score-large" id="finalListeningPts">-- / 25</div>
+
+        <div id="sheetSyncStatus" class="sync-status-pill">
+          ⏳ Enviando resultados oficiales al registro del docente...
+        </div>
+
+        <div style="margin-top: 22px;">
+          <a href="./index.html" class="btn-step btn-next" style="text-decoration:none; margin:0 auto;">
+            🏠 Return to Curriculum Hub
+          </a>
+        </div>
+      </div>
+
+      <div class="section-card">
+        <h3 style="font-family:'Outfit',sans-serif; font-size: 22px; font-weight:900; color: #0b1a30; margin-bottom: 18px;">
+          🎧 Item-by-Item Answer Review (Questions 1–25)
+        </h3>
+        <div id="full-review-container"></div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- INSTITUTIONAL FOOTER -->
+  <footer class="exam-footer">
+    <div class="footer-left">© 2026 Cambridge Assessment Practice Engine</div>
+    <div class="footer-center">
+      All Rights Reserved • Authored &amp; Developed by <strong class="footer-author-highlight">Dr. Jesús Miguel Lima E.</strong>
+    </div>
+    <div class="footer-right">
+      <img src="https://drive.google.com/thumbnail?id=1sd7nJwtvyEzuKaK5YTxKARFjM7dS8TGg&sz=w100" alt="Cambridge English" style="height:26px; width:auto; background:#fff; padding:2px 6px; border-radius:4px;">
+      <span>JM ELT Solutions</span>
+    </div>
+  </footer>
+
+  <script>
+    const GOOGLE_SHEETS_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbxW1s6rGXHLinIh-WjZOV6Z864UOU6Qj-jLHvUjut5b0pD2k1XleTN70VzuA9Y-vDdX/exec";
+    const PET_STORAGE_KEY = "pet_trainer_b1_v1";
+    const MOCK_ID = 1;
+    let currentPage = 0;
+    let currentLoadedTrack = 1;
+
+    // AUDIOS EN EL ORDEN EXACTO SOLICITADO
+    const DRIVE_TRACKS = {
+      1: {
+        id: "1lgkoG-dVr9RNMDOodjJck9UKl2ZeuEAQ",
+        label: "🎧 Official Listening Audio — Part 1 (Questions 1–7)",
+        viewUrl: "https://drive.google.com/file/d/1lgkoG-dVr9RNMDOodjJck9UKl2ZeuEAQ/view?usp=sharing"
+      },
+      2: {
+        id: "1uW_BSfp3TlrzZojUNOLFefpw-jn39iw8",
+        label: "🎧 Official Listening Audio — Part 2 (Questions 8–13)",
+        viewUrl: "https://drive.google.com/file/d/1uW_BSfp3TlrzZojUNOLFefpw-jn39iw8/view?usp=sharing"
+      },
+      3: {
+        id: "1JmX9MJmEut1l9JwRkPq2QlmVxZDQD4EL",
+        label: "🎧 Official Listening Audio — Part 3 (Questions 14–19)",
+        viewUrl: "https://drive.google.com/file/d/1JmX9MJmEut1l9JwRkPq2QlmVxZDQD4EL/view?usp=sharing"
+      },
+      4: {
+        id: "1Czbheejl7D4LXGL8KCZUmsvQnOvCnbdA",
+        label: "🎧 Official Listening Audio — Part 4 (Questions 20–25)",
+        viewUrl: "https://drive.google.com/file/d/1Czbheejl7D4LXGL8KCZUmsvQnOvCnbdA/view?usp=sharing"
+      }
+    };
+
+    const PART1_DATA = [
+      { id: "lq1", num: 1, text: "Where does the man think he left his wallet?", img: "pet_l_p1_q1", correct: "B" },
+      { id: "lq2", num: 2, text: "What is tomorrow's talk at the Nature Society about?", img: "pet_l_p1_q2", correct: "B" },
+      { id: "lq3", num: 3, text: "What will the woman order for lunch?", img: "pet_l_p1_q3", correct: "A" },
+      { id: "lq4", num: 4, text: "How did the woman find out about the exhibition?", img: "pet_l_p1_q4", correct: "C" },
+      { id: "lq5", num: 5, text: "What is the woman's brother doing?", img: "pet_l_p1_q5", correct: "A" },
+      { id: "lq6", num: 6, text: "How will the woman travel to her meeting?", img: "pet_l_p1_q6", correct: "A" },
+      { id: "lq7", num: 7, text: "Which sport has the man stopped doing?", img: "pet_l_p1_q7", correct: "B" }
+    ];
+
+    const PART2_DATA = [
+      {
+        id: "lq8", num: 8,
+        text: "You will hear two people talking about buying a bicycle. The woman suggests that the man should",
+        options: { A: "try looking online.", B: "go to a different shop.", C: "get advice from an expert." },
+        correct: "C"
+      },
+      {
+        id: "lq9", num: 9,
+        text: "You will hear a man telling his friend about his Welsh language course. What does the man say about it?",
+        options: { A: "The teacher speaks too fast.", B: "The lessons are too long.", C: "The grammar is too difficult." },
+        correct: "A"
+      },
+      {
+        id: "lq10", num: 10,
+        text: "You will hear a woman telling her colleague about her weekend. What did the woman like about it?",
+        options: { A: "visiting a new place in the city", B: "seeing her children enjoying themselves", C: "having a chance to relax" },
+        correct: "C"
+      },
+      {
+        id: "lq11", num: 11,
+        text: "You will hear two friends talking about a new restaurant. They both think the restaurant would be better if",
+        options: { A: "the food was fresher.", B: "the service was faster.", C: "the prices were cheaper." },
+        correct: "A"
+      },
+      {
+        id: "lq12", num: 12,
+        text: "You will hear two old friends talking at a party. How is the man's appearance different from before?",
+        options: { A: "He has grown a beard.", B: "He has started wearing glasses.", C: "He has changed his style of clothes." },
+        correct: "B"
+      },
+      {
+        id: "lq13", num: 13,
+        text: "You will hear two colleagues talking about a meeting. How does the woman feel about it?",
+        options: { A: "annoyed that she will have to attend it", B: "worried that her presentation will be unpopular", C: "surprised that it is still going to take place" },
+        correct: "C"
+      }
+    ];
+
+    const PART3_ANSWERS = {
+      gapL14: ["brokley"],
+      gapL15: ["8.30", "8:30", "20.30", "20:30", "half past eight", "eight thirty"],
+      gapL16: ["blue"],
+      gapL17: ["receptionist", "reception"],
+      gapL18: ["hall"],
+      gapL19: ["3", "three", "3.00", "3,00"]
+    };
+
+    const PART4_DATA = [
+      {
+        id: "lq20", num: 20,
+        text: "Why did Mickey decide to become a hairdresser?",
+        options: { A: "He was offered a job by a friend.", B: "He wanted to do what his family did.", C: "He hoped to meet some famous people." },
+        correct: "A"
+      },
+      {
+        id: "lq21", num: 21,
+        text: "On a typical day at work, Mickey says that he",
+        options: { A: "doesn't take enough time for breaks.", B: "works longer hours than he would like to.", C: "tries to do a range of jobs." },
+        correct: "C"
+      },
+      {
+        id: "lq22", num: 22,
+        text: "The part of the job which Mickey likes most is",
+        options: { A: "creating new haircuts.", B: "hearing about customers' lives.", C: "using his imagination." },
+        correct: "B"
+      },
+      {
+        id: "lq23", num: 23,
+        text: "What part of his job does Mickey dislike?",
+        options: { A: "having to do boring courses", B: "sharing ideas with colleagues", C: "dealing with difficult customers" },
+        correct: "A"
+      },
+      {
+        id: "lq24", num: 24,
+        text: "How does Mickey feel after cutting a customer's hair?",
+        options: { A: "worried that the customer may be annoyed.", B: "proud of what he's achieved.", C: "keen to continue learning." },
+        correct: "C"
+      },
+      {
+        id: "lq25", num: 25,
+        text: "Mickey recommends that people who want to work as hairdressers",
+        options: { A: "shouldn't take the first job they're offered.", B: "shouldn't believe they know everything.", C: "shouldn't expect to earn much at first." },
+        correct: "B"
+      }
+    ];
+
+    const PET_EXPLANATIONS = {
+      lq1: "Official Key: B. El hombre recuerda haber sacado su billetera en la sala de espera de la estación frente al tren, descartando el vagón (A) y el quiosco (C).",
+      lq2: "Official Key: B. La charla de mañana tratará sobre jardines y flora urbana, no sobre animales de la selva (A) ni ríos (C).",
+      lq3: "Official Key: A. Aunque menciona la sopa y el sándwich, finalmente pide la ensalada con pan.",
+      lq4: "Official Key: C. Escuchó el anuncio de la exposición en la radio.",
+      lq5: "Official Key: A. Su hermano trabaja actualmente como guardia de seguridad en una tienda.",
+      lq6: "Official Key: A. Debido a demoras en trenes y taxis, decide conducir su propio coche hacia la reunión.",
+      lq7: "Official Key: B. Dejó de jugar hockey sobre hielo recientemente.",
+      lq8: "Official Key: C ('get advice from an expert'). La mujer sugiere consultar con un especialista antes de comprar.",
+      lq9: "Official Key: A ('The teacher speaks too fast'). El profesor habla demasiado rápido en galés.",
+      lq10: "Official Key: C ('having a chance to relax'). Lo que más disfrutó fue poder descansar.",
+      lq11: "Official Key: A ('the food was fresher'). Ambos coinciden en que la comida debería ser más fresca.",
+      lq12: "Official Key: B ('He has started wearing glasses'). Ahora usa anteojos.",
+      lq13: "Official Key: C ('surprised that it is still going to take place'). Pensaba que la reunión se había cancelado.",
+      gapL14: "Official Key: Brokley (deletreado B-R-O-K-L-E-Y en el audio).",
+      gapL15: "Official Key: 8.30 / half past eight / eight thirty.",
+      gapL16: "Official Key: blue (ropa de color azul para el concierto).",
+      gapL17: "Official Key: receptionist (disponible en recepción).",
+      gapL18: "Official Key: hall (almuerzo en el salón principal).",
+      gapL19: "Official Key: 3 / three (£3 por día).",
+      lq20: "Official Key: A ('He was offered a job by a friend'). Un amigo le ofreció empleo en su salón.",
+      lq21: "Official Key: C ('tries to do a range of jobs'). Realiza diversas tareas en su jornada.",
+      lq22: "Official Key: B ('hearing about customers' lives'). Disfruta escuchar las historias de sus clientes.",
+      lq23: "Official Key: A ('having to do boring courses'). No le agradan los cursos obligatorios aburridos.",
+      lq24: "Official Key: C ('keen to continue learning'). Siente motivación por seguir aprendiendo tras cada corte.",
+      lq25: "Official Key: B ('shouldn't believe they know everything'). Recomienda no creer que ya se sabe todo."
+    };
+
+    const userP1Choices = {};
+
+    function loadDriveTrack(trackNum) {
+      if (!DRIVE_TRACKS[trackNum]) return;
+      if (currentLoadedTrack === trackNum) return;
+
+      currentLoadedTrack = trackNum;
+      const track = DRIVE_TRACKS[trackNum];
+      const iframe = document.getElementById('driveAudioFrame');
+      const label = document.getElementById('audioTrackLabel');
+      const extLink = document.getElementById('externalDriveLink');
+
+      if (iframe) iframe.src = `https://drive.google.com/file/d/${track.id}/preview`;
+      if (label) label.textContent = track.label;
+      if (extLink) extLink.href = track.viewUrl;
+
+      for (let i = 1; i <= 4; i++) {
+        const btn = document.getElementById(`btnTrack${i}`);
+        if (btn) {
+          if (i === trackNum) btn.classList.add('active-track');
+          else btn.classList.remove('active-track');
+        }
+      }
+    }
+
+    function stopAllAudio() {
+      const iframe = document.getElementById('driveAudioFrame');
+      if (iframe) iframe.src = "about:blank";
+    }
+
+    let timerSeconds = 40 * 60;
+    let timerRunning = false;
+    let timerHandle = null;
+
+    function startTimer() {
+      if (timerRunning) return;
+      timerRunning = true;
+      timerHandle = setInterval(() => {
+        if (timerSeconds <= 0) {
+          clearInterval(timerHandle);
+          submitListeningExam();
+          return;
+        }
+        timerSeconds--;
+        const mins = String(Math.floor(timerSeconds / 60)).padStart(2, '0');
+        const secs = String(timerSeconds % 60).padStart(2, '0');
+        const el = document.getElementById('timerDisplay');
+        if (el) el.textContent = `${mins}:${secs}`;
+      }, 1000);
+    }
+
+    function tryNextImageExt(imgEl, baseName, idx = 0) {
+      const exts = ['.png', '.jpg', '.jpeg', '.webp'];
+      if (idx < exts.length) {
+        imgEl.onerror = () => tryNextImageExt(imgEl, baseName, idx + 1);
+        imgEl.src = baseName + exts[idx];
+      } else {
+        imgEl.alt = `Image not found: ${baseName}.png`;
+        imgEl.style.padding = "20px";
+      }
+    }
+
+    function renderAllQuestions() {
+      const p1Host = document.getElementById('part1-questions-host');
+      p1Host.innerHTML = PART1_DATA.map(q => `
+        <div class="q-card-isolated" data-qid="${q.id}">
+          <div class="q-card-header">
+            <span class="q-num-badge">${q.num}</span>
+            <span class="q-question-text">${q.text}</span>
+          </div>
+          <div class="p1-image-frame">
+            <img src="${q.img}.png" alt="Question ${q.num}" onerror="tryNextImageExt(this, '${q.img}', 1)">
+          </div>
+          <div class="p1-abc-row" id="p1_row_${q.id}">
+            <button type="button" class="p1-choice-btn" data-val="A" onclick="selectPart1Option('${q.id}', 'A')">Option A</button>
+            <button type="button" class="p1-choice-btn" data-val="B" onclick="selectPart1Option('${q.id}', 'B')">Option B</button>
+            <button type="button" class="p1-choice-btn" data-val="C" onclick="selectPart1Option('${q.id}', 'C')">Option C</button>
+          </div>
+        </div>
+      `).join('');
+
+      const p2Host = document.getElementById('part2-questions-host');
+      p2Host.innerHTML = PART2_DATA.map(q => `
+        <div class="q-card-isolated" data-qid="${q.id}">
+          <div class="q-card-header">
+            <span class="q-num-badge">${q.num}</span>
+            <span class="q-question-text">${q.text}</span>
+          </div>
+          <div class="options-group-spaced">
+            <label class="option-item-label"><input type="radio" name="${q.id}" value="A"> <strong>A)</strong> ${q.options.A}</label>
+            <label class="option-item-label"><input type="radio" name="${q.id}" value="B"> <strong>B)</strong> ${q.options.B}</label>
+            <label class="option-item-label"><input type="radio" name="${q.id}" value="C"> <strong>C)</strong> ${q.options.C}</label>
+          </div>
+        </div>
+      `).join('');
+
+      const p4Host = document.getElementById('part4-questions-host');
+      p4Host.innerHTML = PART4_DATA.map(q => `
+        <div class="q-card-isolated" data-qid="${q.id}">
+          <div class="q-card-header">
+            <span class="q-num-badge">${q.num}</span>
+            <span class="q-question-text">${q.text}</span>
+          </div>
+          <div class="options-group-spaced">
+            <label class="option-item-label"><input type="radio" name="${q.id}" value="A"> <strong>A)</strong> ${q.options.A}</label>
+            <label class="option-item-label"><input type="radio" name="${q.id}" value="B"> <strong>B)</strong> ${q.options.B}</label>
+            <label class="option-item-label"><input type="radio" name="${q.id}" value="C"> <strong>C)</strong> ${q.options.C}</label>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function selectPart1Option(qid, letter) {
+      userP1Choices[qid] = letter;
+      const row = document.getElementById(`p1_row_${qid}`);
+      if (!row) return;
+      row.querySelectorAll('.p1-choice-btn').forEach(btn => {
+        if (btn.getAttribute('data-val') === letter) {
+          btn.classList.add('selected');
+          btn.textContent = `✓ Option ${letter}`;
+        } else {
+          btn.classList.remove('selected');
+          btn.textContent = `Option ${btn.getAttribute('data-val')}`;
+        }
+      });
+    }
+
+    function getSession() {
+      let raw = localStorage.getItem(PET_STORAGE_KEY);
+      if (!raw) {
+        let initial = { firstName: "", lastName: "", studentName: "", unlockedBlocks: [1], blockScores: {} };
+        localStorage.setItem(PET_STORAGE_KEY, JSON.stringify(initial));
+        return initial;
+      }
+      return JSON.parse(raw);
+    }
+
+    function saveSession(session) {
+      localStorage.setItem(PET_STORAGE_KEY, JSON.stringify(session));
+    }
+
+    function startListeningExam() {
+      const nameInput = document.getElementById('studentFullNameInput');
+      const val = nameInput ? nameInput.value.trim() : "";
+      if (!val) {
+        alert("⚠️ Por favor ingresa tu Nombre y Apellido antes de iniciar el Listening.");
+        return;
+      }
+      let session = getSession();
+      session.studentName = val;
+      saveSession(session);
+
+      startTimer();
+      goToPage(1);
+    }
+
+    function goToPage(pageIndex) {
+      document.querySelectorAll('.exam-step-page').forEach(p => p.classList.remove('active'));
+      const target = document.getElementById(`page-${pageIndex}`);
+      if (target) {
+        target.classList.add('active');
+        currentPage = pageIndex;
+        window.scrollTo({ top: 90, behavior: 'smooth' });
+        updateStepPill(pageIndex);
+
+        if (pageIndex >= 1 && pageIndex <= 4) {
+          loadDriveTrack(pageIndex);
+        }
+      }
+    }
+
+    function updateStepPill(index) {
+      const pill = document.getElementById('stepPillIndicator');
+      const labels = [
+        "Cover & Instructions",
+        "Part 1 (Questions 1–7)",
+        "Part 2 (Questions 8–13)",
+        "Part 3 (Questions 14–19)",
+        "Part 4 (Questions 20–25)",
+        "Exam Completed"
+      ];
+      pill.textContent = labels[index] || `Step ${index}`;
+    }
+
+    function buildSpanishReportsForTeacher(session, lTotal, p1Score, p2Score, p3Score, p4Score) {
+      const block = (session.blockScores && session.blockScores[MOCK_ID]) ? session.blockScores[MOCK_ID] : {};
+      const rScore = block.readingScore !== undefined ? Number(block.readingScore) : 0;
+      const rBreak = block.readingBreakdown || null;
+      const wScore = block.writingScore !== undefined ? Number(block.writingScore) : 0;
+      const wBreak = block.writingBreakdown || null;
+
+      // 1. Reporte Reading en español
+      let readingReport = `Puntaje obtenido: ${rScore}/32 (Mínimo oficial B1: 23/32 — ${rScore >= 23 ? "APROBADO" : "REQUIERE REFUERZO"}). `;
+      if (rBreak) {
+        readingReport += `Desglose por partes: Part 1 Avisos (${rBreak.p1}/5), Part 2 Emparejamiento (${rBreak.p2}/5), Part 3 Lectura extensa (${rBreak.p3}/5), Part 4 Oraciones faltantes (${rBreak.p4}/5), Part 5 Vocabulario Cloze (${rBreak.p5}/6), Part 6 Gramática Open Cloze (${rBreak.p6}/6). `;
+        const weakParts = [];
+        if (rBreak.p1 < 4) weakParts.push("Part 1 (comprensión de avisos y mensajes cortos)");
+        if (rBreak.p2 < 4) weakParts.push("Part 2 (búsqueda de información específica y paráfrasis)");
+        if (rBreak.p3 < 4) weakParts.push("Part 3 (comprensión detallada y actitud del autor)");
+        if (rBreak.p4 < 4) weakParts.push("Part 4 (cohesión y estructura del texto)");
+        if (rBreak.p5 < 4) weakParts.push("Part 5 (colocaciones léxicas y vocabulario)");
+        if (rBreak.p6 < 4) weakParts.push("Part 6 (estructuras gramaticales y conectores)");
+
+        if (weakParts.length > 0) {
+          readingReport += `Áreas con mayor dificultad: ${weakParts.join("; ")}. Sugerencia: Practicar lectura analítica identificando sinónimos entre el texto y las opciones, y reforzar preposiciones dependientes y conectores.`;
+        } else {
+          readingReport += `Fortalezas: Excelente comprensión lectora global y detallada en todas las secciones del examen.`;
+        }
+      } else {
+        readingReport += `Nota: No se detectó desglose detallado de Reading en esta sesión.`;
+      }
+
+      // 2. Reporte Writing en español (extenso con rúbrica)
+      let writingReport = "";
+      if (wBreak && wBreak.spanishReport) {
+        writingReport = wBreak.spanishReport;
+      } else {
+        writingReport = `Puntaje obtenido: ${wScore}/40 (Mínimo oficial B1: 24/40 — ${wScore >= 24 ? "APROBADO" : "REQUIERE REFUERZO"}). ` +
+          `Evaluado según las 4 subescalas oficiales de Cambridge (Content, Communicative Achievement, Organisation y Language).`;
+      }
+
+      // 3. Reporte Listening en español
+      let listeningReport = `Puntaje obtenido: ${lTotal}/25 (Mínimo oficial B1: 18/25 — ${lTotal >= 18 ? "APROBADO" : "REQUIERE REFUERZO"}). ` +
+        `Desglose: Part 1 Imágenes (${p1Score}/7), Part 2 Diálogos cortos (${p2Score}/6), Part 3 Completar notas (${p3Score}/6), Part 4 Entrevista extensa (${p4Score}/6). `;
+      const lWeak = [];
+      if (p1Score < 5) lWeak.push("Part 1 (identificación de datos concretos y distractores visuales)");
+      if (p2Score < 4) lWeak.push("Part 2 (actitud, acuerdo y opinión entre hablantes)");
+      if (p3Score < 4) lWeak.push("Part 3 (captación exacta de deletreo, horas, precios y lugares)");
+      if (p4Score < 4) lWeak.push("Part 4 (comprensión de entrevistas extensas e inferencia)");
+
+      if (lWeak.length > 0) {
+        listeningReport += `Dónde hubo más fallas: ${lWeak.join("; ")}. Sugerencia: Leer las preguntas antes de la primera escucha para anticipar palabras clave y practicar dictados de números y deletreo.`;
+      } else {
+        listeningReport += `Fortalezas: Sólida comprensión auditiva en diálogos cotidianos, monólogos informativos y entrevistas extensas.`;
+      }
+
+      const resumenCorto = `Read: ${rScore}/32 | Writ: ${wScore}/40 | List: ${lTotal}/25`;
+
+      return {
+        rScore,
+        wScore,
+        lScore: lTotal,
+        readingReport,
+        writingReport,
+        listeningReport,
+        writingText1: (wBreak && wBreak.text1) ? wBreak.text1 : "(No registrado)",
+        writingText2: (wBreak && wBreak.text2) ? wBreak.text2 : "(No registrado)",
+        writingP2Type: (wBreak && wBreak.p2Genre) ? wBreak.p2Genre : "Part 2",
+        resumenCorto
+      };
+    }
+
+    async function submitListeningExam() {
+      if (timerHandle) clearInterval(timerHandle);
+      stopAllAudio();
+
+      let p1Score = 0, p2Score = 0, p3Score = 0, p4Score = 0;
+      const questionRecords = [];
+
+      // Part 1
+      PART1_DATA.forEach(q => {
+        const userVal = userP1Choices[q.id] || "";
+        const isCorrect = userVal === q.correct;
+        if (isCorrect) p1Score++;
+        questionRecords.push({
+          num: q.num,
+          prompt: q.text,
+          userAnswer: userVal ? `Option ${userVal}` : "(No answer)",
+          correctAnswer: `Option ${q.correct}`,
+          isCorrect,
+          explanation: PET_EXPLANATIONS[q.id]
+        });
+      });
+
+      // Part 2
+      PART2_DATA.forEach(q => {
+        const checked = document.querySelector(`input[name="${q.id}"]:checked`);
+        const userVal = checked ? checked.value : "";
+        const isCorrect = userVal === q.correct;
+        if (isCorrect) p2Score++;
+        questionRecords.push({
+          num: q.num,
+          prompt: q.text,
+          userAnswer: userVal ? `${userVal}) ${q.options[userVal]}` : "(No answer)",
+          correctAnswer: `${q.correct}) ${q.options[q.correct]}`,
+          isCorrect,
+          explanation: PET_EXPLANATIONS[q.id]
+        });
+      });
+
+      // Part 3
+      const p3Items = [
+        { id: "gapL14", num: 14, label: "Songs from musicals: Susan ______" },
+        { id: "gapL15", num: 15, label: "Concert time: Friday, at ______ p.m." },
+        { id: "gapL16", num: 16, label: "Colour of clothes: ______" },
+        { id: "gapL17", num: 17, label: "Map of building: available from the ______" },
+        { id: "gapL18", num: 18, label: "Lunch: eat in the ______" },
+        { id: "gapL19", num: 19, label: "Car park: costs £ ______ per day" }
+      ];
+      p3Items.forEach(item => {
+        const rawInput = (document.getElementById(item.id)?.value || "").trim();
+        const normalized = rawInput.toLowerCase().replace(/^£/, '').trim();
+        const isCorrect = PART3_ANSWERS[item.id].includes(normalized);
+        if (isCorrect) p3Score++;
+        questionRecords.push({
+          num: item.num,
+          prompt: item.label,
+          userAnswer: rawInput || "(No answer)",
+          correctAnswer: PART3_ANSWERS[item.id][0],
+          isCorrect,
+          explanation: PET_EXPLANATIONS[item.id]
+        });
+      });
+
+      // Part 4
+      PART4_DATA.forEach(q => {
+        const checked = document.querySelector(`input[name="${q.id}"]:checked`);
+        const userVal = checked ? checked.value : "";
+        const isCorrect = userVal === q.correct;
+        if (isCorrect) p4Score++;
+        questionRecords.push({
+          num: q.num,
+          prompt: q.text,
+          userAnswer: userVal ? `${userVal}) ${q.options[userVal]}` : "(No answer)",
+          correctAnswer: `${q.correct}) ${q.options[q.correct]}`,
+          isCorrect,
+          explanation: PET_EXPLANATIONS[q.id]
+        });
+      });
+
+      const listeningTotal = p1Score + p2Score + p3Score + p4Score;
+
+      // Actualizar localStorage
+      let session = getSession();
+      const studentName = session.studentName || (document.getElementById('studentFullNameInput')?.value || "Estudiante").trim();
+      const today = new Date();
+      const formattedDate = `${String(today.getDate()).padStart(2, '0')}/${String(today.getMonth() + 1).padStart(2, '0')}/${today.getFullYear()}`;
+
+      if (!session.blockScores[MOCK_ID]) {
+        session.blockScores[MOCK_ID] = { readingScore: 0, writingScore: 0, listeningScore: 0, total: 0, completed: false, timestamp: formattedDate };
+      }
+      session.blockScores[MOCK_ID].listeningScore = listeningTotal;
+      session.blockScores[MOCK_ID].total =
+        (Number(session.blockScores[MOCK_ID].readingScore) || 0) +
+        (Number(session.blockScores[MOCK_ID].writingScore) || 0) +
+        listeningTotal;
+      session.blockScores[MOCK_ID].completed = true;
+      session.blockScores[MOCK_ID].timestamp = formattedDate;
+      saveSession(session);
+
+      // Mostrar pantalla de cierre al alumno (sin reporte ejecutivo ni Excel)
+      document.getElementById('candidateSummarySubtitle').textContent = `Candidate: ${studentName}`;
+      document.getElementById('finalListeningPts').textContent = `${listeningTotal} / 25`;
+      buildStudentQuickReview(questionRecords);
+      goToPage(5);
+
+      // Enviar reporte consolidado en español en segundo plano hacia Google Sheets
+      const teacherPayload = buildSpanishReportsForTeacher(session, listeningTotal, p1Score, p2Score, p3Score, p4Score);
+      const syncEl = document.getElementById('sheetSyncStatus');
+
+      try {
+        await fetch(GOOGLE_SHEETS_WEBAPP_URL, {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: JSON.stringify({
+            studentName: studentName,
+            fecha: `${formattedDate} ${String(today.getHours()).padStart(2, '0')}:${String(today.getMinutes()).padStart(2, '0')}`,
+            readingScore: teacherPayload.rScore,
+            writingScore: teacherPayload.wScore,
+            listeningScore: teacherPayload.lScore,
+            readingReport: teacherPayload.readingReport,
+            writingReport: teacherPayload.writingReport,
+            listeningReport: teacherPayload.listeningReport,
+            writingText1: teacherPayload.writingText1,
+            writingText2: teacherPayload.writingText2,
+            writingP2Type: teacherPayload.writingP2Type,
+            resumenCorto: teacherPayload.resumenCorto
+          })
+        });
+        if (syncEl) {
+          syncEl.textContent = "✅ ¡Examen enviado con éxito! Tus resultados ya fueron registrados para tu docente.";
+        }
+      } catch (err) {
+        if (syncEl) {
+          syncEl.style.background = "#fef2f2";
+          syncEl.style.borderColor = "#ef4444";
+          syncEl.style.color = "#991b1b";
+          syncEl.textContent = "⚠️ Puntaje guardado localmente. Verifica tu conexión a internet.";
+        }
+      }
+    }
+
+    function buildStudentQuickReview(records) {
+      const container = document.getElementById('full-review-container');
+      container.innerHTML = records.map(rec => `
+        <div class="q-card-isolated">
+          <div class="q-card-header">
+            <span class="q-num-badge">${rec.num}</span>
+            <span class="q-question-text">${rec.prompt}</span>
+            <span style="font-family:'JetBrains Mono',monospace; font-size:13.5px; color:${rec.isCorrect ? 'var(--success)' : 'var(--error)'}; font-weight:800;">
+              ${rec.isCorrect ? '✓ CORRECT' : '✗ INCORRECT'}
+            </span>
+          </div>
+          <div class="kid-feedback-box ${rec.isCorrect ? 'correct' : 'incorrect'}">
+            <div class="fb-header">
+              <span>Your Answer: <strong>${rec.userAnswer}</strong></span>
+              <span style="margin-left:auto;">Official Key: <strong>${rec.correctAnswer}</strong></span>
+            </div>
+            <p><strong>💡 Explanation:</strong> ${rec.explanation}</p>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+      renderAllQuestions();
+      updateStepPill(0);
+      const s = getSession();
+      if (s.studentName) {
+        const input = document.getElementById('studentFullNameInput');
+        if (input) input.value = s.studentName;
+      }
+    });
+  </script>
+</body>
+</html>

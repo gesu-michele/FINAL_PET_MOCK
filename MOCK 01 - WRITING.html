@@ -1,0 +1,1881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cambridge B1 Preliminary • Paper 2: Writing | JM ELT Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700;800;900&family=Kalam:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-canvas-blue: #1e3a8a;
+      --surface-white: #ffffff;
+      --surface-card: #f8fafc;
+      --cambridge-navy: #091e3a;
+      --cambridge-blue: #1d4ed8;
+      --cambridge-blue-vivid: #2563eb;
+      --cambridge-emerald: #059669;
+      --cambridge-purple: #7c3aed;
+      --cambridge-gold: #d97706;
+      --text-pure-black: #000000;
+      --text-dark: #0f172a;
+      --text-body: #334155;
+      --text-muted: #64748b;
+      --border-subtle: #cbd5e1;
+      --border-strong: #94a3b8;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --radius-full: 9999px;
+      --shadow-card: 0 16px 36px -6px rgba(0, 0, 0, 0.28);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+    body {
+      background-color: var(--bg-canvas-blue);
+      background-image: 
+        linear-gradient(rgba(15, 45, 95, 0.58), rgba(10, 32, 70, 0.68)),
+        url('https://drive.google.com/thumbnail?id=10e6Pmgk3M3P60FsN2oVAYhExabY2UoW8&sz=w1920');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 400;
+      color: var(--text-dark);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-size: 16px;
+    }
+    header.exam-header {
+      background: rgba(6, 21, 45, 0.94);
+      backdrop-filter: blur(14px);
+      border-bottom: 3.5px solid #2563eb;
+      padding: 12px 42px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .brand-left-cluster { display: flex; align-items: center; gap: 22px; }
+    .cambridge-badge-frame {
+      background: #ffffff;
+      padding: 8px 18px;
+      border-radius: 12px;
+      border: 2px solid #cbd5e1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    }
+    .cambridge-crest-img { height: 52px; width: auto; object-fit: contain; }
+    .jm-brand-box {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding-left: 20px;
+      border-left: 2.5px solid #3b82f6;
+    }
+    .jm-logo-img { height: 72px; width: auto; object-fit: contain; filter: drop-shadow(0 3px 8px rgba(0,0,0,0.4)); }
+    .jm-titles { display: flex; flex-direction: column; align-items: center; text-align: center; line-height: 1.15; }
+    .jm-title-top { font-family: 'Outfit', sans-serif; font-size: 28px; font-weight: 900; color: #ffffff; letter-spacing: 1.5px; text-align: center; width: 100%; }
+    .jm-title-sub { font-family: 'Outfit', sans-serif; font-size: 14px; font-weight: 800; color: #f59e0b; letter-spacing: 1.2px; text-transform: uppercase; }
+    .jm-title-tagline { font-size: 11px; font-weight: 700; color: #38bdf8; text-transform: uppercase; letter-spacing: 1px; margin-top: 2px; }
+    .header-center-cluster { display: flex; align-items: center; gap: 12px; }
+    .timer-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+      border: 2.5px solid #3b82f6;
+      color: #93c5fd;
+      padding: 8px 24px;
+      border-radius: var(--radius-full);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 24px;
+      font-weight: 900;
+      box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+    }
+    .btn-retake-top {
+      background: rgba(245, 158, 11, 0.16);
+      border: 1.5px solid #f59e0b;
+      color: #fcd34d;
+      font-family: 'Outfit', sans-serif;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 9px 16px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+    .btn-retake-top:hover { background: #d97706; color: #ffffff; }
+    .header-right-cluster { display: flex; align-items: center; gap: 16px; }
+    .btn-return-menu {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1.5px solid #60a5fa;
+      color: #ffffff;
+      font-family: 'Outfit', sans-serif;
+      font-size: 13.5px;
+      font-weight: 800;
+      padding: 9px 18px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+    .btn-return-menu:hover { background: #2563eb; border-color: #bfdbfe; transform: translateY(-1px); }
+    .trainer-profile-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: rgba(15, 34, 64, 0.7);
+      border: 2px solid #3b82f6;
+      padding: 6px 18px 6px 12px;
+      border-radius: var(--radius-full);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    }
+    .trainer-avatar-lg {
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      border: 3px solid #f59e0b;
+      object-fit: cover;
+      box-shadow: 0 0 16px rgba(245, 158, 11, 0.6);
+    }
+    .trainer-meta { text-align: right; }
+    .trainer-name-top { font-family: 'Outfit', sans-serif; font-size: 16px; font-weight: 800; color: #ffffff; line-height: 1.2; }
+    .trainer-desc-sub { font-size: 12px; font-weight: 700; color: #38bdf8; letter-spacing: 0.5px; }
+
+    main.writing-viewport {
+      flex: 1;
+      max-width: 1580px;
+      width: 96%;
+      margin: 24px auto 30px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .writing-section { display: none; flex-direction: column; gap: 24px; }
+    .writing-section.active { display: flex; }
+    .top-workspace-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1.2fr;
+      gap: 26px;
+      align-items: stretch;
+    }
+    @media (max-width: 1180px) { .top-workspace-grid { grid-template-columns: 1fr; } }
+    .prompt-card {
+      background: var(--surface-white);
+      border: 2.5px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 30px;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .exam-main-title-block {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      border-bottom: 2.5px solid #0f172a;
+      padding-bottom: 10px;
+      margin-bottom: 4px;
+    }
+    .exam-paper-heading {
+      font-family: 'Outfit', sans-serif;
+      font-size: 26px;
+      font-weight: 900;
+      color: #0b1a30;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .exam-part-heading {
+      font-family: 'Outfit', sans-serif;
+      font-size: 18px;
+      font-weight: 800;
+      color: #2563eb;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .task-instruction-p {
+      font-size: 16.5px;
+      color: #1e293b;
+      line-height: 1.6;
+      font-weight: 400;
+    }
+    .task-instruction-p strong { color: var(--text-pure-black); font-weight: 900; }
+    .exam-section-divider {
+      border: none;
+      height: 2px;
+      background: #e2e8f0;
+      margin: 2px 0 6px 0;
+    }
+
+    .email-aligned-grid {
+      display: grid;
+      grid-template-columns: 122px 1fr 116px;
+      column-gap: 14px;
+      margin: 8px 0;
+    }
+    @media (max-width: 720px) {
+      .email-aligned-grid { grid-template-columns: 1fr; }
+    }
+    .email-center-box {
+      background: #ffffff;
+      border-left: 2.5px solid #334155;
+      border-right: 2.5px solid #334155;
+      padding: 8px 18px;
+      font-size: 15.5px;
+      line-height: 1.6;
+      color: #0f172a;
+    }
+    .email-center-box.top-box {
+      border-top: 2.5px solid #334155;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      padding: 0;
+    }
+    .email-center-box.bottom-box {
+      border-bottom: 2.5px solid #334155;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+      padding-bottom: 16px;
+      box-shadow: 0 8px 16px -6px rgba(15, 23, 42, 0.15);
+    }
+    .email-paper-top {
+      background: #334155;
+      color: #ffffff;
+      padding: 8px 14px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 13.5px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-bottom: 2px solid #1e293b;
+    }
+    .email-paper-meta {
+      background: #f1f5f9;
+      border-bottom: 2px solid #cbd5e1;
+      padding: 10px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 14px;
+    }
+    .email-meta-row {
+      display: grid;
+      grid-template-columns: 78px 1fr;
+      gap: 8px;
+      align-items: center;
+    }
+    .email-meta-label {
+      background: #64748b;
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 12.5px;
+      padding: 3px 8px;
+      border-radius: 3px;
+    }
+    .email-meta-val {
+      background: #ffffff;
+      border: 1px solid #94a3b8;
+      padding: 3px 10px;
+      font-weight: 600;
+      color: #0f172a;
+      border-radius: 3px;
+    }
+    .side-cell-left {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      padding-bottom: 6px;
+    }
+    .side-cell-left.mid-align {
+      align-items: center;
+      padding-bottom: 0;
+    }
+    .side-cell-right {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .handwritten-note-left {
+      font-family: 'Kalam', cursive;
+      font-size: 17px;
+      font-weight: 700;
+      color: #0f172a;
+      background: #fef9c3;
+      border: 1.5px solid #eab308;
+      border-radius: 8px;
+      padding: 5px 10px;
+      position: relative;
+      text-align: right;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+      white-space: nowrap;
+    }
+    .handwritten-note-left::after {
+      content: "➔";
+      position: absolute;
+      right: -18px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #0f172a;
+      font-family: sans-serif;
+      font-size: 15px;
+      font-weight: 900;
+    }
+    .handwritten-note-right {
+      font-family: 'Kalam', cursive;
+      font-size: 17px;
+      font-weight: 700;
+      color: #0f172a;
+      background: #fef9c3;
+      border: 1.5px solid #eab308;
+      border-radius: 8px;
+      padding: 5px 10px;
+      position: relative;
+      text-align: left;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+      white-space: nowrap;
+    }
+    .handwritten-note-right::before {
+      content: "⬅";
+      position: absolute;
+      left: -18px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #0f172a;
+      font-family: sans-serif;
+      font-size: 15px;
+      font-weight: 900;
+    }
+    @media (max-width: 720px) {
+      .side-cell-left, .side-cell-right { justify-content: flex-start; padding: 4px 0; }
+      .handwritten-note-left::after, .handwritten-note-right::before { display: none; }
+      .email-center-box { border: none; border-left: 3px solid #334155; }
+    }
+
+    .notepad-container {
+      background: #ffffff;
+      border: 2px solid #cbd5e1;
+      border-left: 9px solid #059669;
+      border-radius: var(--radius-md);
+      padding: 24px 26px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      box-shadow: 0 8px 20px rgba(5, 150, 105, 0.08);
+    }
+    .notepad-title-header {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding-bottom: 12px;
+      border-bottom: 2px dashed #a7f3d0;
+    }
+    .notepad-quote-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 22px;
+      font-weight: 900;
+      color: #064e3b;
+      line-height: 1.35;
+    }
+    .exam-verbatim-footer {
+      font-size: 16px;
+      color: #1e293b;
+      line-height: 1.6;
+      font-weight: 400;
+      margin-top: 4px;
+    }
+    .exam-verbatim-footer strong { font-weight: 900; color: #000000; }
+
+    .p2-instruction-banner {
+      background: #f8fafc;
+      border: 2px solid #cbd5e1;
+      border-left: 8px solid #b45309;
+      border-radius: var(--radius-md);
+      padding: 12px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 4px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .p2-instruction-text {
+      font-family: 'Outfit', sans-serif;
+      font-size: 18px;
+      font-weight: 900;
+      color: #78350f;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      letter-spacing: 0.5px;
+    }
+    .p2-options-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin: 4px 0 10px 0;
+    }
+    @media (max-width: 768px) { .p2-options-cards-grid { grid-template-columns: 1fr; } }
+    @keyframes glowEmerald {
+      0% { box-shadow: 0 0 12px rgba(16, 185, 129, 0.4); border-color: #10b981; }
+      50% { box-shadow: 0 0 24px rgba(16, 185, 129, 0.85); border-color: #059669; }
+      100% { box-shadow: 0 0 12px rgba(16, 185, 129, 0.4); border-color: #10b981; }
+    }
+    @keyframes glowPurple {
+      0% { box-shadow: 0 0 12px rgba(139, 92, 246, 0.4); border-color: #8b5cf6; }
+      50% { box-shadow: 0 0 24px rgba(139, 92, 246, 0.85); border-color: #7c3aed; }
+      100% { box-shadow: 0 0 12px rgba(139, 92, 246, 0.4); border-color: #8b5cf6; }
+    }
+    .btn-option-card {
+      border-radius: var(--radius-md);
+      padding: 18px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      text-align: left;
+    }
+    .btn-option-card:hover { transform: translateY(-4px); }
+    .card-opt-emerald { background: #f0fdf4; border: 3px solid #86efac; animation: glowEmerald 2.2s infinite ease-in-out; }
+    .card-opt-emerald .opt-card-label { color: #047857; }
+    .card-opt-emerald .opt-card-title { color: #064e3b; }
+    .card-opt-purple { background: #faf5ff; border: 3px solid #d8b4fe; animation: glowPurple 2.2s infinite ease-in-out; }
+    .card-opt-purple .opt-card-label { color: #6d28d9; }
+    .card-opt-purple .opt-card-title { color: #4c1d95; }
+    .opt-card-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13.5px;
+      font-weight: 900;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .opt-card-title { font-family: 'Outfit', sans-serif; font-size: 21px; font-weight: 900; }
+    .opt-card-desc { font-size: 14px; font-weight: 600; color: #334155; line-height: 1.4; }
+
+    .editor-card {
+      background: var(--surface-white);
+      border: 2.5px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 28px 32px;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .editor-top-bar {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      border-bottom: 2.5px solid var(--border-subtle);
+      padding-bottom: 14px;
+    }
+    .editor-top-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    .editor-hierarchy-cluster { display: flex; flex-direction: column; gap: 3px; }
+    .editor-eyebrow-part {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 800;
+      color: #1d4ed8;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .editor-main-genre-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 26px;
+      font-weight: 900;
+      color: #0b1a30;
+      line-height: 1.15;
+    }
+    .editor-register-sub { font-size: 14.5px; font-weight: 700; color: #475569; font-style: italic; }
+    .editor-command-callout {
+      font-size: 15.5px;
+      font-weight: 800;
+      color: #047857;
+      margin-top: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .word-counter-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 14.5px;
+      font-weight: 800;
+      padding: 8px 18px;
+      border-radius: var(--radius-full);
+      background: #f1f5f9;
+      border: 2px solid #cbd5e1;
+      color: #64748b;
+      transition: all 0.25s;
+    }
+    .word-counter-badge.optimal { border-color: #059669; color: #065f46; background: #d1fae5; }
+    .word-counter-badge.warning { border-color: #d97706; color: #78350f; background: #fef3c7; }
+    @keyframes flashDangerPulse {
+      0% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7); background-color: #fee2e2; }
+      50% { box-shadow: 0 0 18px 5px rgba(220, 38, 38, 0.9); background-color: #dc2626; color: #ffffff; }
+      100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7); background-color: #fee2e2; }
+    }
+    .word-counter-badge.flash-danger { border-color: #991b1b; animation: flashDangerPulse 1.2s infinite ease-in-out; }
+    .word-advice-banner {
+      display: none;
+      font-size: 14px;
+      font-weight: 700;
+      border-radius: var(--radius-sm);
+      padding: 10px 16px;
+      line-height: 1.5;
+    }
+    .word-advice-banner.active-warning {
+      display: block;
+      background: #fef3c7;
+      color: #92400e;
+      border: 2px solid #fde68a;
+    }
+    .word-advice-banner.active-danger {
+      display: block;
+      background: #fee2e2;
+      color: #991b1b;
+      border: 2px solid #fca5a5;
+    }
+    .writing-textarea {
+      width: 100%;
+      flex: 1;
+      min-height: 440px;
+      background: #ffffff;
+      border: 2px solid var(--border-strong);
+      border-radius: var(--radius-md);
+      color: var(--text-pure-black);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.85;
+      padding: 22px;
+      outline: none;
+      resize: vertical;
+      transition: all 0.2s;
+    }
+    .writing-textarea:focus { border-color: var(--cambridge-blue); box-shadow: 0 0 0 4px rgba(29, 78, 216, 0.18); }
+
+    .controls-bar {
+      max-width: 1580px;
+      width: 96%;
+      margin: 0 auto 30px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #ffffff;
+      border: 2.5px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 22px 36px;
+      box-shadow: var(--shadow-card);
+      position: relative;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .btn-prev-anchor { position: absolute; left: 36px; }
+    @media (max-width: 820px) { .btn-prev-anchor { position: static; } }
+    .btn-act {
+      font-family: 'Outfit', sans-serif;
+      font-size: 17px;
+      font-weight: 800;
+      padding: 14px 32px;
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      border: 2px solid transparent;
+      transition: all 0.25s ease;
+    }
+    .btn-prev { background: #f1f5f9; border-color: #cbd5e1; color: #1e293b; }
+    .btn-prev:hover { background: #e2e8f0; }
+    @keyframes submitGlowPulse {
+      0% { box-shadow: 0 0 16px rgba(37, 99, 235, 0.45), 0 0 0 0 rgba(37, 99, 235, 0.7); transform: scale(1); }
+      50% { box-shadow: 0 0 34px rgba(37, 99, 235, 0.9), 0 0 18px rgba(29, 78, 216, 0.8); transform: scale(1.03); }
+      100% { box-shadow: 0 0 16px rgba(37, 99, 235, 0.45), 0 0 0 0 rgba(37, 99, 235, 0.7); transform: scale(1); }
+    }
+    .btn-submit-glow {
+      background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 50%, #3b82f6 100%);
+      color: #ffffff;
+      border: 2.5px solid #bfdbfe;
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 900;
+      padding: 16px 48px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      letter-spacing: 0.5px;
+      animation: submitGlowPulse 2s infinite ease-in-out;
+      transition: all 0.2s ease;
+    }
+    .btn-submit-glow:hover { animation: none; transform: scale(1.05); box-shadow: 0 0 38px rgba(37, 99, 235, 1); }
+
+    footer.exam-footer {
+      background: rgba(6, 21, 45, 0.98);
+      border-top: 2.5px solid #1e3a8a;
+      padding: 24px 48px;
+      display: grid;
+      grid-template-columns: 1fr 1.4fr 1fr;
+      align-items: center;
+      font-size: 15px;
+      color: #94a3b8;
+      margin-top: auto;
+    }
+    .footer-left { text-align: left; font-family: 'Outfit', sans-serif; font-size: 15px; font-weight: 700; color: #cbd5e1; }
+    .footer-center { text-align: center; font-weight: 600; color: #cbd5e1; line-height: 1.4; }
+    .footer-author-highlight { color: #f59e0b; font-weight: 900; letter-spacing: 0.5px; }
+    .footer-right {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 16px;
+      color: #38bdf8;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      font-size: 16px;
+      letter-spacing: 0.8px;
+    }
+
+    .modal-veil {
+      position: fixed;
+      inset: 0;
+      background: rgba(3, 7, 18, 0.88);
+      backdrop-filter: blur(10px);
+      display: none;
+      place-items: center;
+      z-index: 500;
+      padding: 20px;
+    }
+    .modal-veil.active { display: grid; }
+
+    .modal-box-wait {
+      background: #ffffff;
+      border: 3.5px solid #2563eb;
+      border-radius: var(--radius-lg);
+      max-width: 620px;
+      width: 100%;
+      padding: 44px 38px;
+      text-align: center;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+    .spinner-disc {
+      width: 64px;
+      height: 64px;
+      border: 6px solid #dbeafe;
+      border-top-color: #2563eb;
+      border-radius: 50%;
+      animation: spinRound 0.9s infinite linear;
+    }
+    @keyframes spinRound {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .wait-title { font-family: 'Outfit', sans-serif; font-size: 24px; font-weight: 900; color: #0b1a30; }
+    .wait-message { font-size: 16.5px; font-weight: 600; color: #334155; line-height: 1.6; }
+    .wait-highlight-warning {
+      background: #fffbeb;
+      border: 2px solid #fde68a;
+      border-left: 6px solid #d97706;
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-size: 14px;
+      font-weight: 800;
+      color: #92400e;
+      text-align: left;
+      width: 100%;
+    }
+
+    .modal-box-feedback {
+      background: #ffffff;
+      border: 3.5px solid #0f172a;
+      border-radius: var(--radius-lg);
+      max-width: 1120px;
+      width: 96%;
+      max-height: 94vh;
+      overflow-y: auto;
+      padding: 38px 44px;
+      box-shadow: 0 30px 70px rgba(0,0,0,0.6);
+      text-align: left;
+    }
+    .fb-header-cluster {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2.5px solid #cbd5e1;
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .fb-header-titles h2 { font-family: 'Outfit', sans-serif; font-size: 28px; font-weight: 900; color: #0b1a30; display: flex; align-items: center; gap: 12px; }
+    .fb-header-titles span { font-size: 14px; font-weight: 700; color: #2563eb; text-transform: uppercase; letter-spacing: 0.8px; }
+    .fb-grand-score-box {
+      background: linear-gradient(135deg, #091e3a 0%, #172554 100%);
+      color: #ffffff;
+      padding: 12px 24px;
+      border-radius: 12px;
+      text-align: center;
+      border: 2px solid #3b82f6;
+    }
+    .fb-grand-score-box small { display: block; font-size: 11.5px; font-weight: 800; text-transform: uppercase; color: #93c5fd; letter-spacing: 0.8px; }
+    .fb-grand-score-box strong { font-family: 'JetBrains Mono', monospace; font-size: 32px; font-weight: 900; color: #fef08a; }
+    .fb-pass-indicator { display: block; font-size: 12.5px; font-weight: 800; margin-top: 4px; padding: 3px 10px; border-radius: 6px; }
+    .fb-tasks-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 26px; }
+    @media (max-width: 900px) { .fb-tasks-grid { grid-template-columns: 1fr; } }
+    .fb-task-card {
+      background: #f8fafc;
+      border: 2px solid #cbd5e1;
+      border-radius: 14px;
+      padding: 22px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .fb-task-top-row { display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; }
+    .fb-task-top-row h3 { font-family: 'Outfit', sans-serif; font-size: 19px; font-weight: 900; color: #0b1a30; }
+    .fb-task-badge { font-family: 'JetBrains Mono', monospace; font-size: 18px; font-weight: 900; color: #1d4ed8; background: #dbeafe; padding: 4px 12px; border-radius: 8px; }
+    .fb-criteria-list { display: flex; flex-direction: column; gap: 10px; }
+    .fb-crit-row { display: flex; flex-direction: column; gap: 4px; }
+    .fb-crit-info { display: flex; align-items: center; justify-content: space-between; font-size: 14px; font-weight: 800; color: #1e293b; }
+    .fb-crit-bar-track { height: 9px; background: #e2e8f0; border-radius: 10px; overflow: hidden; display: flex; }
+    .fb-crit-bar-fill { height: 100%; background: linear-gradient(90deg, #2563eb, #10b981); border-radius: 10px; transition: width 0.6s ease; }
+    .fb-rubric-descriptor {
+      font-size: 12.5px;
+      color: #334155;
+      background: #f1f5f9;
+      border-left: 3px solid #2563eb;
+      padding: 6px 10px;
+      border-radius: 4px;
+      line-height: 1.45;
+      margin-top: 3px;
+    }
+    .fb-detailed-box {
+      background: #ffffff;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 10px;
+      padding: 16px;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #1e293b;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .fb-pill-pos { background: #ecfdf5; border-left: 4px solid #10b981; padding: 10px 14px; border-radius: 6px; color: #065f46; }
+    .fb-pill-pos strong { color: #047857; display: block; margin-bottom: 3px; }
+    .fb-pill-neg { background: #fef2f2; border-left: 4px solid #ef4444; padding: 10px 14px; border-radius: 6px; color: #991b1b; }
+    .fb-pill-neg strong { color: #b91c1c; display: block; margin-bottom: 3px; }
+    .fb-evidence-box {
+      background: #fffbeb;
+      border: 1.5px solid #fde68a;
+      border-left: 5px solid #f59e0b;
+      border-radius: 8px;
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 13.5px;
+    }
+    .fb-evidence-box strong { color: #92400e; font-size: 14px; }
+    .fb-evidence-quote { font-style: italic; color: #78350f; background: rgba(254, 243, 199, 0.6); padding: 4px 8px; border-radius: 4px; }
+    .fb-evidence-fix { color: #065f46; font-weight: 700; }
+    .fb-examiner-summary-banner {
+      background: linear-gradient(145deg, #eff6ff 0%, #f0fdf4 100%);
+      border: 2px solid #93c5fd;
+      border-left: 8px solid #2563eb;
+      border-radius: 12px;
+      padding: 18px 22px;
+      margin-bottom: 26px;
+    }
+    .fb-examiner-summary-banner h4 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 17px;
+      font-weight: 900;
+      color: #1e3a8a;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .fb-examiner-summary-banner p { font-size: 15.5px; font-weight: 600; color: #1e293b; line-height: 1.65; }
+
+    .fb-nav-controls-group {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 2px solid #cbd5e1;
+      padding-top: 22px;
+      margin-top: 8px;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .btn-fb-action {
+      font-family: 'Outfit', sans-serif;
+      font-size: 15px;
+      font-weight: 800;
+      padding: 12px 20px;
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      border: 2px solid transparent;
+    }
+    .btn-fb-return { background: #f1f5f9; color: #1e293b; border-color: #cbd5e1; }
+    .btn-fb-return:hover { background: #e2e8f0; transform: translateY(-2px); }
+    .btn-fb-retake { background: #fffbeb; color: #b45309; border-color: #f59e0b; }
+    .btn-fb-retake:hover { background: #fef3c7; transform: translateY(-2px); }
+    .btn-fb-print { background: #ffffff; color: #0f172a; border-color: #94a3b8; }
+    .btn-fb-print:hover { background: #f8fafc; border-color: #3b82f6; color: #2563eb; }
+    .btn-fb-next {
+      background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+      color: #ffffff;
+      border-color: #6ee7b7;
+      box-shadow: 0 4px 14px rgba(16, 185, 129, 0.4);
+    }
+    .btn-fb-next:hover {
+      background: linear-gradient(135deg, #047857 0%, #059669 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(16, 185, 129, 0.6);
+    }
+
+    @media print {
+      body { background: #ffffff !important; color: #000000 !important; }
+      header.exam-header, main.writing-viewport, .controls-bar, footer.exam-footer,
+      #modalEvaluatingWait, .print-exclude { display: none !important; }
+      .modal-veil#modalOfficialFeedback {
+        position: static !important; display: block !important; background: transparent !important;
+        backdrop-filter: none !important; padding: 0 !important; z-index: 1 !important;
+      }
+      .modal-box-feedback {
+        max-width: 100% !important; width: 100% !important; border: 2px solid #0f172a !important;
+        box-shadow: none !important; padding: 20px !important; max-height: none !important; overflow: visible !important;
+      }
+      .fb-tasks-grid { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 20px !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="exam-header">
+    <div class="brand-left-cluster">
+      <div class="cambridge-badge-frame">
+        <img src="https://drive.google.com/thumbnail?id=1sd7nJwtvyEzuKaK5YTxKARFjM7dS8TGg&sz=w200" alt="Cambridge English" class="cambridge-crest-img">
+      </div>
+      <div class="jm-brand-box">
+        <img src="https://drive.google.com/thumbnail?id=1EksYLoHp7voak-Ka3Y3txyiGM15DMPTP&sz=w200" alt="JM ELT Solutions" class="jm-logo-img">
+        <div class="jm-titles">
+          <span class="jm-title-top">JM</span>
+          <span class="jm-title-sub">ELT Solutions</span>
+          <span class="jm-title-tagline">Official Exam Simulator</span>
+        </div>
+      </div>
+    </div>
+    <div class="header-center-cluster">
+      <div class="timer-pill"><span>⏱️</span><span id="writingTimer">45:00</span></div>
+      <button type="button" class="btn-retake-top" onclick="retakeWritingExam()" title="Reset timer and clear text to retake">
+        <span>🔄</span> Retake Test
+      </button>
+    </div>
+    <div class="header-right-cluster">
+      <a href="./index.html" class="btn-return-menu"><span>🏠</span> Return to Main Menu</a>
+      <div class="trainer-profile-card">
+        <div class="trainer-meta">
+          <div class="trainer-name-top">Dr. Jesús Miguel Lima E.</div>
+          <div class="trainer-desc-sub">Cambridge Specialist &amp; Trainer</div>
+        </div>
+        <img src="https://drive.google.com/thumbnail?id=1yd8aHZpgwj1mJXKaP8zldJIZAwGTiIor&sz=w200" alt="Dr. Jesús Miguel Lima E." class="trainer-avatar-lg">
+      </div>
+    </div>
+  </header>
+
+  <main class="writing-viewport">
+    <!-- PART 1: EMAIL WITH ROW-BY-ROW ALIGNED MARGIN ANNOTATIONS -->
+    <section class="writing-section active" id="sectionPart1">
+      <div class="top-workspace-grid">
+        <div class="prompt-card">
+          <div class="exam-main-title-block">
+            <span class="exam-paper-heading">📝 B1 PRELIMINARY WRITING</span>
+            <span class="exam-part-heading">Part 1 • Question 1</span>
+          </div>
+          <p class="task-instruction-p">
+            You <strong>must</strong> answer this question. Write your answer in <strong>about 100 words</strong> on the answer sheet.
+          </p>
+          <hr class="exam-section-divider">
+          <p class="task-instruction-p">
+            Read this email from your English-speaking college classmate Alex and the notes you have made.
+          </p>
+
+          <div class="email-aligned-grid">
+            <div></div>
+            <div class="email-center-box top-box">
+              <div class="email-paper-top"><span>✉️</span> EMAIL</div>
+              <div class="email-paper-meta">
+                <div class="email-meta-row">
+                  <span class="email-meta-label">From:</span>
+                  <span class="email-meta-val">Alex</span>
+                </div>
+                <div class="email-meta-row">
+                  <span class="email-meta-label">Subject:</span>
+                  <span class="email-meta-val">College science presentation</span>
+                </div>
+              </div>
+            </div>
+            <div></div>
+
+            <div class="side-cell-left">
+              <div class="handwritten-note-left">No, but ...</div>
+            </div>
+            <div class="email-center-box">
+              <p style="margin-bottom: 10px;">Hi,</p>
+              <p>It's wonderful that we're teaming up on our college science presentation. Do you think we ought to choose the rainforest as our topic?</p>
+            </div>
+            <div></div>
+
+            <div></div>
+            <div class="email-center-box">
+              <p>We only have two weeks to get ready, so can we begin working tomorrow?</p>
+            </div>
+            <div class="side-cell-right">
+              <div class="handwritten-note-right">Sorry ...</div>
+            </div>
+
+            <div class="side-cell-left mid-align">
+              <div class="handwritten-note-left">Suggest ...</div>
+            </div>
+            <div class="email-center-box">
+              <p>Where can we go to prepare the presentation? My cousins are visiting my house at the moment, so we can't study there because it's too noisy.</p>
+            </div>
+            <div></div>
+
+            <div></div>
+            <div class="email-center-box">
+              <p>We can give our presentation to the class either in the morning or the afternoon. Which would you prefer?</p>
+            </div>
+            <div class="side-cell-right">
+              <div class="handwritten-note-right">Tell Alex</div>
+            </div>
+
+            <div></div>
+            <div class="email-center-box bottom-box">
+              <p style="margin-bottom: 8px;">Let me know</p>
+              <p>Alex</p>
+            </div>
+            <div></div>
+          </div>
+
+          <p class="exam-verbatim-footer">
+            Write your <strong>email</strong> to Alex using <strong>all the notes</strong>.
+          </p>
+        </div>
+
+        <div class="editor-card">
+          <div class="editor-top-bar">
+            <div class="editor-top-row">
+              <div class="editor-hierarchy-cluster">
+                <span class="editor-eyebrow-part">📌 Part 1 • Question 1</span>
+                <h2 class="editor-main-genre-title">Email to Alex</h2>
+                <span class="editor-register-sub">(Informal / Friendly Register)</span>
+                <span class="editor-command-callout">✍️ Write your email here:</span>
+              </div>
+              <span class="word-counter-badge" id="wcPart1">0 words (Target: ~100)</span>
+            </div>
+            <div class="word-advice-banner" id="bannerAdvice1"></div>
+          </div>
+          <textarea 
+            class="writing-textarea" 
+            id="textPart1" 
+            placeholder="Hi Alex,&#10;&#10;Write your reply covering all four marginal notes (No, but... / Sorry... / Suggest... / Tell Alex) in about 100 words..."
+            spellcheck="false"
+            oninput="updateWordCount(1)"
+          ></textarea>
+        </div>
+      </div>
+    </section>
+
+    <!-- PART 2: ARTICLE OR STORY -->
+    <section class="writing-section" id="sectionPart2">
+      <div class="top-workspace-grid">
+        <div class="prompt-card">
+          <div class="exam-main-title-block">
+            <span class="exam-paper-heading">📝 B1 PRELIMINARY WRITING</span>
+            <span class="exam-part-heading">Part 2 • Questions 2–3</span>
+          </div>
+
+          <p class="task-instruction-p">
+            Choose <strong>one</strong> of these questions. Write your answer in <strong>about 100 words</strong> on the answer sheet.
+          </p>
+
+          <hr class="exam-section-divider">
+
+          <div class="p2-instruction-banner">
+            <div class="p2-instruction-text">
+              <span>🎯 SELECT ONLY ONE QUESTION:</span>
+            </div>
+            <span style="font-size:13px; font-weight:800; color:#92400e; text-transform:uppercase; letter-spacing:0.6px;">
+              ⚡ Click an option below:
+            </span>
+          </div>
+
+          <div class="p2-options-cards-grid">
+            <button type="button" class="btn-option-card card-opt-emerald" id="cardOpt2" onclick="selectP2Option(2)">
+              <span class="opt-card-label">✨ Question 2</span>
+              <span class="opt-card-title">📰 Article</span>
+              <span class="opt-card-desc">Is shopping boring?</span>
+            </button>
+            <button type="button" class="btn-option-card card-opt-purple" id="cardOpt3" onclick="selectP2Option(3)">
+              <span class="opt-card-label">✨ Question 3</span>
+              <span class="opt-card-title">📖 Story</span>
+              <span class="opt-card-desc">Beach &amp; boat adventure</span>
+            </button>
+          </div>
+
+          <div id="p2PromptContainer"></div>
+        </div>
+
+        <div class="editor-card">
+          <div class="editor-top-bar">
+            <div class="editor-top-row">
+              <div class="editor-hierarchy-cluster">
+                <span class="editor-eyebrow-part">📌 Part 2 • Choice Task</span>
+                <h2 class="editor-main-genre-title" id="p2EditorHeading">Question 2 • Article</h2>
+                <span class="editor-register-sub" id="p2EditorRegister">(Engaging Magazine Style)</span>
+                <span class="editor-command-callout" id="p2EditorCommand">✍️ Write your article here:</span>
+              </div>
+              <span class="word-counter-badge" id="wcPart2">0 words (Target: ~100)</span>
+            </div>
+            <div class="word-advice-banner" id="bannerAdvice2"></div>
+          </div>
+
+          <textarea 
+            class="writing-textarea" 
+            id="textPart2" 
+            placeholder="Write your selected Part 2 task here (about 100 words)..."
+            spellcheck="false"
+            oninput="updateWordCount(2)"
+          ></textarea>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="controls-bar">
+    <div class="btn-prev-anchor">
+      <button type="button" class="btn-act btn-prev" id="btnPrevPart" style="display:none;" onclick="switchPart(1)">
+        ← Back to Part 1 (Email)
+      </button>
+    </div>
+
+    <button type="button" class="btn-submit-glow" id="btnMainSubmitGlow" onclick="handleCentralAction()">
+      ✨ Continue to Part 2 ➔
+    </button>
+  </div>
+
+  <footer class="exam-footer">
+    <div class="footer-left">
+      © 2026 Cambridge Assessment Practice Engine
+    </div>
+    <div class="footer-center">
+      All Rights Reserved • Authored &amp; Developed by <strong class="footer-author-highlight">Dr. Jesús Miguel Lima E.</strong>
+    </div>
+    <div class="footer-right">
+      <img src="https://drive.google.com/thumbnail?id=1sd7nJwtvyEzuKaK5YTxKARFjM7dS8TGg&sz=w100" alt="Cambridge English" style="height:28px; width:auto; background:#fff; padding:2px 6px; border-radius:4px;">
+      <span>JM ELT Solutions</span>
+    </div>
+  </footer>
+
+  <!-- LOADING / EVALUATING MODAL OVERLAY -->
+  <div class="modal-veil" id="modalEvaluatingWait">
+    <div class="modal-box-wait">
+      <div class="spinner-disc"></div>
+      <h3 class="wait-title">🎓 AI Examiner Evaluation in Progress...</h3>
+      <p class="wait-message">
+        Please wait. Do not close or refresh this page. The Cambridge AI Examiner is thoroughly evaluating your B1 Preliminary submissions against the canonical Cambridge B1 Assessment Scale to generate your official diagnostic report.
+      </p>
+      <div class="wait-highlight-warning">
+        ⚠️ <strong>ATTENTION:</strong> Generating deep qualitative feedback, criteria breakdown, and textual citations takes approximately 10 to 15 seconds. Please keep this browser window open.
+      </div>
+    </div>
+  </div>
+
+  <!-- OFFICIAL FEEDBACK MODAL -->
+  <div class="modal-veil" id="modalOfficialFeedback">
+    <div class="modal-box-feedback">
+      <div class="fb-header-cluster">
+        <div class="fb-header-titles">
+          <h2>📊 Official Examiner Evaluation Report</h2>
+          <span>Cambridge B1 Preliminary (PET) • Paper 2: Writing Diagnostic</span>
+        </div>
+        <div class="fb-grand-score-box">
+          <small>Total Writing Score</small>
+          <strong id="fbGrandTotalScore">-- / 40</strong>
+          <span class="fb-pass-indicator" id="fbGradeResult">Evaluating...</span>
+        </div>
+      </div>
+
+      <div class="fb-examiner-summary-banner">
+        <h4>🎓 Cambridge Examiner Diagnostic Verdict:</h4>
+        <p id="fbExaminerVerdict">
+          Evaluating overall candidate performance according to official Cambridge B1 Assessment scale descriptors...
+        </p>
+      </div>
+
+      <div class="fb-tasks-grid">
+        <div class="fb-task-card">
+          <div class="fb-task-top-row">
+            <h3>Part 1: Email</h3>
+            <span class="fb-task-badge" id="fbP1Score">-- / 20</span>
+          </div>
+
+          <div class="fb-criteria-list">
+            <div class="fb-crit-row">
+              <div class="fb-crit-info">
+                <span>🎯 Content</span>
+                <span id="fb_p1_cont">-- / 5</span>
+              </div>
+              <div class="fb-crit-bar-track">
+                <div class="fb-crit-bar-fill" id="fb_bar_p1_cont" style="width: 0%;"></div>
+              </div>
+              <div class="fb-rubric-descriptor" id="fb_desc_p1_cont">Descriptor loading...</div>
+            </div>
+
+            <div class="fb-crit-row">
+              <div class="fb-crit-info">
+                <span>📢 Communicative Achievement</span>
+                <span id="fb_p1_comm">-- / 5</span>
+              </div>
+              <div class="fb-crit-bar-track">
+                <div class="fb-crit-bar-fill" id="fb_bar_p1_comm" style="width: 0%;"></div>
+              </div>
+              <div class="fb-rubric-descriptor" id="fb_desc_p1_comm">Descriptor loading...</div>
+            </div>
+
+            <div class="fb-crit-row">
+              <div class="fb-crit-info">
+                <span>🧩 Organisation</span>
+                <span id="fb_p1_org">-- / 5</span>
+              </div>
+              <div class="fb-crit-bar-track">
+                <div class="fb-crit-bar-fill" id="fb_bar_p1_org" style="width: 0%;"></div>
+              </div>
+              <div class="fb-rubric-descriptor" id="fb_desc_p1_org">Descriptor loading...</div>
+            </div>
+
+            <div class="fb-crit-row">
+              <div class="fb-crit-info">
+                <span>💎 Language</span>
+                <span id="fb_p1_lang">-- / 5</span>
+              </div>
+              <div class="fb-crit-bar-track">
+                <div class="fb-crit-bar-fill" id="fb_bar_p1_lang" style="width: 0%;"></div>
+              </div>
+              <div class="fb-rubric-descriptor" id="fb_desc_p1_lang">Descriptor loading...</div>
+            </div>
+          </div>
+
+          <div class="fb-detailed-box">
+            <div><strong>📝 General Task Feedback:</strong> <span id="fb_p1_taskFeedback">Evaluating...</span></div>
+            <div class="fb-pill-pos">
+              <strong>✅ Strengths &amp; Good Practices:</strong>
+              <span id="fb_p1_strengths">Evaluating...</span>
+            </div>
+            <div class="fb-pill-neg">
+              <strong>⚠️ Areas for Improvement &amp; Errors:</strong>
+              <span id="fb_p1_weaknesses">Evaluating...</span>
+            </div>
+            <div id="fb_p1_evidenceBlock"></div>
+            <div><strong>🔤 Spelling &amp; Punctuation:</strong> <span id="fb_p1_spelling">Evaluating...</span></div>
+            <div><strong>⚡ Grammar Structures Identified:</strong> <span id="fb_p1_grammar">Evaluating...</span></div>
+            <div><strong>💎 Vocabulary &amp; Collocations:</strong> <span id="fb_p1_vocabulary">Evaluating...</span></div>
+          </div>
+        </div>
+
+        <div class="fb-task-card">
+          <div class="fb-task-top-row">
+            <h3 id="fbP2TaskTitle">Part 2: Selected Task</h3>
+            <span class="fb-task-badge" id="fbP2Score">-- / 20</span>
+          </div>
+
+          <div class="fb-criteria-list">
+            <div class="fb-crit-row">
+              <div class="fb-crit-info">
+                <span>🎯 Content</span>
+                <span id="fb_p2_cont">-- / 5</span>
+              </div>
+              <div class="fb-crit-bar-track">
+                <div class="fb-crit-bar-fill" id="fb_bar_p2_cont" style="width: 0%;"></div>
+              </div>
+              <div class="fb-rubric-descriptor" id="fb_desc_p2_cont">Descriptor loading...</div>
+            </div>
+
+            <div class="fb-crit-row">
+              <div class="fb-crit-info">
+                <span>📢 Communicative Achievement</span>
+                <span id="fb_p2_comm">-- / 5</span>
+              </div>
+              <div class="fb-crit-bar-track">
+                <div class="fb-crit-bar-fill" id="fb_bar_p2_comm" style="width: 0%;"></div>
+              </div>
+              <div class="fb-rubric-descriptor" id="fb_desc_p2_comm">Descriptor loading...</div>
+            </div>
+
+            <div class="fb-crit-row">
+              <div class="fb-crit-info">
+                <span>🧩 Organisation</span>
+                <span id="fb_p2_org">-- / 5</span>
+              </div>
+              <div class="fb-crit-bar-track">
+                <div class="fb-crit-bar-fill" id="fb_bar_p2_org" style="width: 0%;"></div>
+              </div>
+              <div class="fb-rubric-descriptor" id="fb_desc_p2_org">Descriptor loading...</div>
+            </div>
+
+            <div class="fb-crit-row">
+              <div class="fb-crit-info">
+                <span>💎 Language</span>
+                <span id="fb_p2_lang">-- / 5</span>
+              </div>
+              <div class="fb-crit-bar-track">
+                <div class="fb-crit-bar-fill" id="fb_bar_p2_lang" style="width: 0%;"></div>
+              </div>
+              <div class="fb-rubric-descriptor" id="fb_desc_p2_lang">Descriptor loading...</div>
+            </div>
+          </div>
+
+          <div class="fb-detailed-box">
+            <div><strong>📝 General Task Feedback:</strong> <span id="fb_p2_taskFeedback">Evaluating...</span></div>
+            <div class="fb-pill-pos">
+              <strong>✅ Strengths &amp; Good Practices:</strong>
+              <span id="fb_p2_strengths">Evaluating...</span>
+            </div>
+            <div class="fb-pill-neg">
+              <strong>⚠️ Areas for Improvement &amp; Errors:</strong>
+              <span id="fb_p2_weaknesses">Evaluating...</span>
+            </div>
+            <div id="fb_p2_evidenceBlock"></div>
+            <div><strong>🔤 Spelling &amp; Punctuation:</strong> <span id="fb_p2_spelling">Evaluating...</span></div>
+            <div><strong>⚡ Grammar Structures Identified:</strong> <span id="fb_p2_grammar">Evaluating...</span></div>
+            <div><strong>💎 Vocabulary &amp; Collocations:</strong> <span id="fb_p2_vocabulary">Evaluating...</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fb-nav-controls-group print-exclude">
+        <a href="./index.html" class="btn-fb-action btn-fb-return">
+          <span>🏠</span> Return to Curriculum Hub
+        </a>
+        <button type="button" class="btn-fb-action btn-fb-retake" onclick="retakeWritingExam()">
+          <span>🔄</span> Retake Writing Mock
+        </button>
+        <button type="button" class="btn-fb-action btn-fb-print" onclick="printReportDirectly()">
+          <span>🖨️</span> Print / Save PDF Diagnostic
+        </button>
+        <a href="./MOCK%2001%20-%20LISTENING.html" class="btn-fb-action btn-fb-next">
+          <span>🎧</span> Proceed to Listening Component ➔
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxijZHo5F3fE9VKpZHFWTbg1RDGCaURa3_HNRxeB-ZXGW0EeaqsKh-bg8inLcO8Af3YyQ/exec";
+    const STORAGE_KEY = "pet_trainer_b1_v1";
+    const MOCK_ID = 1;
+
+    let timeLeft = 45 * 60;
+    let timerInterval = null;
+
+    function updateCountdownTimer() {
+      const mins = Math.floor(timeLeft / 60);
+      const secs = timeLeft % 60;
+      const el = document.getElementById('writingTimer');
+      if (el) {
+        el.textContent = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+      }
+    }
+
+    function startTimer() {
+      if (timerInterval) clearInterval(timerInterval);
+      updateCountdownTimer();
+      timerInterval = setInterval(() => {
+        if (timeLeft <= 0) {
+          clearInterval(timerInterval);
+          const el = document.getElementById('writingTimer');
+          if (el) el.textContent = "00:00";
+          alert("Time is up! Submitting and evaluating your B1 Preliminary writing tasks.");
+          executeFullEvaluation();
+          return;
+        }
+        timeLeft--;
+        updateCountdownTimer();
+      }, 1000);
+    }
+
+    startTimer();
+
+    const p2Texts = { 2: "", 3: "" };
+    const P2_DATA = {
+      2: {
+        type: "Article",
+        title: "Question 2 • Article",
+        register: "(Engaging Magazine Style)",
+        command: "✍️ Write your article here:",
+        placeholder: "Write your article here (about 100 words)...",
+        promptHtml: `
+          <div class="notepad-container">
+            <div style="font-size:14px; font-weight:800; color:#0284c7; text-transform:uppercase; letter-spacing:0.8px;">You see this announcement in an English-language magazine.</div>
+            <div class="notepad-title-header">
+              <span style="font-size:13px; font-weight:900; color:#059669; text-transform:uppercase; letter-spacing:1px;">Articles wanted!</span>
+              <span class="notepad-quote-title">Is shopping boring?</span>
+            </div>
+            <p style="font-size:17px; font-weight:500; color:#1e293b; line-height:1.65;">
+              What do you like and dislike about shopping?<br>
+              What could shopping centres do to attract more people?<br><br>
+              Write us an article answering these questions. The best one will win a prize!
+            </p>
+          </div>
+          <p class="exam-verbatim-footer">Write your <strong>article</strong>.</p>
+        `
+      },
+      3: {
+        type: "Story",
+        title: "Question 3 • Story",
+        register: "(Narrative Past Style)",
+        command: "✍️ Write your story here:",
+        placeholder: "Jack climbed out of the boat and ran as fast as he could to the beach. ...",
+        promptHtml: `
+          <div class="notepad-container">
+            <div style="font-size:14px; font-weight:800; color:#7c3aed; text-transform:uppercase; letter-spacing:0.8px;">Your English teacher has asked you to write a story.</div>
+            <div class="notepad-title-header">
+              <span class="notepad-quote-title">Your story must begin with this sentence.</span>
+            </div>
+            <p style="font-size:18px; font-style:italic; font-weight:700; color:#0f172a; line-height:1.65; background:#f8fafc; padding:14px; border-radius:8px; border-left:4px solid #7c3aed;">
+              Jack climbed out of the boat and ran as fast as he could to the beach.
+            </p>
+          </div>
+          <p class="exam-verbatim-footer">Write your <strong>story</strong>.</p>
+        `
+      }
+    };
+
+    let activeP2Option = 2;
+
+    function selectP2Option(optId) {
+      try {
+        const currentArea = document.getElementById('textPart2');
+        if (currentArea) p2Texts[activeP2Option] = currentArea.value;
+
+        activeP2Option = optId;
+
+        const d = P2_DATA[optId];
+        if (!d) return;
+
+        const p2Cont = document.getElementById('p2PromptContainer');
+        if (p2Cont) p2Cont.innerHTML = d.promptHtml;
+
+        const headEl = document.getElementById('p2EditorHeading');
+        if (headEl) headEl.textContent = d.title;
+
+        const regEl = document.getElementById('p2EditorRegister');
+        if (regEl) regEl.textContent = d.register;
+
+        const cmdEl = document.getElementById('p2EditorCommand');
+        if (cmdEl) cmdEl.textContent = d.command;
+
+        const editor = document.getElementById('textPart2');
+        if (editor) {
+          editor.placeholder = d.placeholder;
+          if (!p2Texts[optId] && optId === 3) {
+            editor.value = "Jack climbed out of the boat and ran as fast as he could to the beach. ";
+          } else {
+            editor.value = p2Texts[optId] || "";
+          }
+        }
+
+        updateWordCount(2);
+      } catch (err) {
+        console.error("Error in selectP2Option:", err);
+      }
+    }
+
+    function switchPart(partNum) {
+      const s1 = document.getElementById('sectionPart1');
+      const s2 = document.getElementById('sectionPart2');
+      if (s1 && s2) {
+        s1.classList.toggle('active', partNum === 1);
+        s2.classList.toggle('active', partNum === 2);
+      }
+
+      const btnPrev = document.getElementById('btnPrevPart');
+      const btnGlow = document.getElementById('btnMainSubmitGlow');
+
+      if (btnPrev && btnGlow) {
+        if (partNum === 1) {
+          btnPrev.style.display = 'none';
+          btnGlow.innerHTML = '✨ Continue to Part 2 ➔';
+        } else {
+          btnPrev.style.display = 'inline-flex';
+          btnGlow.innerHTML = '🎯 Submit Final Writing (40 Marks) ➔';
+        }
+      }
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function handleCentralAction() {
+      const s1 = document.getElementById('sectionPart1');
+      const isPart1Active = (s1 && s1.classList.contains('active'));
+      if (isPart1Active) {
+        switchPart(2);
+      } else {
+        executeFullEvaluation();
+      }
+    }
+
+    function retakeWritingExam() {
+      const modalFb = document.getElementById('modalOfficialFeedback');
+      if (modalFb) modalFb.classList.remove('active');
+
+      const ta1 = document.getElementById('textPart1');
+      const ta2 = document.getElementById('textPart2');
+      if (ta1) ta1.value = "";
+      p2Texts[2] = "";
+      p2Texts[3] = "";
+      if (ta2) {
+        ta2.value = activeP2Option === 3 ? "Jack climbed out of the boat and ran as fast as he could to the beach. " : "";
+      }
+
+      updateWordCount(1);
+      updateWordCount(2);
+      timeLeft = 45 * 60;
+      startTimer();
+      switchPart(1);
+    }
+
+    function updateWordCount(part) {
+      const textarea = document.getElementById(part === 1 ? 'textPart1' : 'textPart2');
+      if (!textarea) return;
+      const text = textarea.value.trim();
+      const count = text ? text.split(/\s+/).filter(w => w.length > 0).length : 0;
+      const badge = document.getElementById(part === 1 ? 'wcPart1' : 'wcPart2');
+      const banner = document.getElementById(part === 1 ? 'bannerAdvice1' : 'bannerAdvice2');
+
+      if (!badge || !banner) return;
+
+      badge.className = "word-counter-badge";
+      badge.textContent = `${count} words (Target: ~100)`;
+      banner.className = "word-advice-banner";
+      banner.innerHTML = "";
+
+      if (count === 0) {
+        badge.style.background = "#f1f5f9";
+        badge.style.borderColor = "#cbd5e1";
+        badge.style.color = "#64748b";
+      } else if (count < 75) {
+        badge.style.background = "#fee2e2";
+        badge.style.borderColor = "#dc2626";
+        badge.style.color = "#991b1b";
+      } else if (count >= 75 && count < 85) {
+        badge.classList.add('warning');
+        badge.style.background = "";
+        badge.style.borderColor = "";
+        badge.style.color = "";
+      } else if (count >= 85 && count <= 125) {
+        badge.classList.add('optimal');
+        badge.style.background = "";
+        badge.style.borderColor = "";
+        badge.style.color = "";
+      } else if (count > 125 && count <= 140) {
+        badge.classList.add('warning');
+        badge.style.background = "";
+        badge.style.borderColor = "";
+        badge.style.color = "";
+        banner.classList.add('active-warning');
+        banner.innerHTML = "⚠️ <strong>Notice:</strong> Your text is slightly over the ~100-word target. Keep your ideas focused and concise.";
+      } else {
+        badge.classList.add('flash-danger');
+        badge.style.background = "";
+        badge.style.borderColor = "";
+        badge.style.color = "";
+        banner.classList.add('active-danger');
+        banner.innerHTML = "🚨 <strong>Length Alert:</strong> Exceeding 140 words in B1 Preliminary increases the risk of irrelevance and grammar slips.";
+      }
+    }
+
+    const CAMBRIDGE_B1_RUBRIC_DESCRIPTORS = {
+      content: {
+        5: "All content is relevant to the task. Target reader is fully informed.",
+        4: "Performance shares features of Bands 3 and 5. Target reader is well informed.",
+        3: "Minor irrelevances and/or omissions may be present. Target reader is on the whole informed.",
+        2: "Performance shares features of Bands 1 and 3. Target reader is partially informed.",
+        1: "Irrelevances and misinterpretation of task may be present. Target reader is minimally informed.",
+        0: "Content is totally irrelevant. Target reader is not informed."
+      },
+      commAch: {
+        5: "Uses the conventions of the communicative task to hold the target reader's attention and communicate straightforward ideas.",
+        4: "Performance shares features of Bands 3 and 5. Genre conventions handled effectively.",
+        3: "Uses the conventions of the communicative task generally appropriately to communicate straightforward ideas.",
+        2: "Performance shares features of Bands 1 and 3. Occasional inconsistency in tone/register.",
+        1: "Produces text that communicates simple ideas in simple ways.",
+        0: "Performance below Band 1."
+      },
+      org: {
+        5: "Text is connected and coherent, using basic linking words and a limited number of cohesive devices.",
+        4: "Performance shares features of Bands 3 and 5. Clear paragraphing and logical progression.",
+        3: "Text is connected using basic, high-frequency linking words (e.g. and, but, because, so).",
+        2: "Performance shares features of Bands 1 and 3. Simple sentences with limited cohesion.",
+        1: "Text is connected using very basic, high-frequency linking words; sentences may feel disconnected.",
+        0: "Performance below Band 1."
+      },
+      lang: {
+        5: "Uses everyday vocabulary generally appropriately, while occasionally overusing certain lexis. Uses simple grammatical forms with a good degree of control. While errors are noticeable, meaning can still be determined.",
+        4: "Performance shares features of Bands 3 and 5. Good control of B1 structures and vocabulary.",
+        3: "Uses basic vocabulary reasonably appropriately. Uses simple grammatical forms with some degree of control. Errors may impede meaning at times.",
+        2: "Performance shares features of Bands 1 and 3. Limited lexical range with frequent basic errors.",
+        1: "Produces basic vocabulary of isolated words and phrases. Produces few simple grammatical forms with only limited control.",
+        0: "Performance below Band 1."
+      }
+    };
+
+    function getSession() {
+      let raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) {
+        let initial = { firstName: "", lastName: "", studentName: "", unlockedBlocks: [1], blockScores: {} };
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(initial));
+        return initial;
+      }
+      return JSON.parse(raw);
+    }
+
+    function saveSession(session) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(session));
+    }
+
+    async function executeFullEvaluation() {
+      if (timerInterval) clearInterval(timerInterval);
+
+      const ta1 = document.getElementById('textPart1');
+      const ta2 = document.getElementById('textPart2');
+      const t1 = ta1 ? ta1.value.trim() : "";
+      const t2 = ta2 ? ta2.value.trim() : "";
+
+      const count1 = t1 ? t1.split(/\s+/).filter(w => w.length > 0).length : 0;
+      const count2 = t2 ? t2.split(/\s+/).filter(w => w.length > 0).length : 0;
+
+      const waitOverlay = document.getElementById('modalEvaluatingWait');
+      if (waitOverlay) waitOverlay.classList.add('active');
+
+      const evaluationPrompt = `
+You are a veteran Cambridge English B1 Preliminary (PET) Writing Team Leader and Senior Examiner. Evaluate the following two B1 Preliminary tasks strictly according to the official Cambridge B1 Preliminary Writing Assessment Scale (0 to 5 marks each across 4 subscales: Content, Communicative Achievement, Organisation, Language; max 20 marks per task, 40 marks total).
+
+OFFICIAL CAMBRIDGE B1 PRELIMINARY ASSESSMENT RUBRIC:
+- Content (0-5): Band 5 = All content is relevant to the task; target reader is fully informed. Band 3 = Minor irrelevances and/or omissions may be present; target reader is on the whole informed. Band 1 = Irrelevances and misinterpretation of task may be present; target reader is minimally informed. Band 0 = Totally irrelevant or empty.
+- Communicative Achievement (0-5): Band 5 = Uses the conventions of the communicative task (email / article / story) to hold the target reader's attention and communicate straightforward ideas. Band 3 = Uses conventions generally appropriately to communicate straightforward ideas. Band 1 = Communicates simple ideas in simple ways.
+- Organisation (0-5): Band 5 = Text is connected and coherent, using basic linking words and a limited number of cohesive devices. Band 3 = Text is connected using basic, high-frequency linking words (and, but, because, so). Band 1 = Text is connected using very basic, high-frequency linking words.
+- Language (0-5): Band 5 = Uses everyday vocabulary generally appropriately, while occasionally overusing certain lexis. Uses simple grammatical forms with a good degree of control. While errors are noticeable, meaning can still be determined. Band 3 = Uses basic vocabulary reasonably appropriately; uses simple grammatical forms with some degree of control; errors may impede meaning at times. Band 1 = Basic vocabulary of isolated words/phrases; limited grammatical control.
+
+CRITICAL CALIBRATION RULES:
+- Target length is ~100 words per task (90–120 words is ideal for B1 Preliminary). Grade strictly and honestly according to the B1 scale.
+- All student-facing fields in part1, part2, and examinerSummary MUST be written in clear, encouraging ENGLISH.
+- ALSO include "spanishParentReport": a thorough, formal, empathetic diagnostic report in SPANISH (around 120–160 words) intended for parents and school teachers explaining: (1) whether the student passed the B1 threshold (24/40), (2) performance across the 4 official Cambridge criteria (Contenido, Logro Comunicativo, Organización y Lenguaje) in both Part 1 (Email) and Part 2 (${P2_DATA[activeP2Option].type}), (3) key strengths, and (4) specific study recommendations.
+
+PART 1 (Compulsory Email to Alex - Subject: College science presentation):
+Must address all 4 notes:
+1. "No, but ..." (decline rainforest topic & propose an alternative)
+2. "Sorry ..." (apologize for not starting tomorrow)
+3. "Suggest ..." (suggest an alternative place to prepare since Alex's house is noisy)
+4. "Tell Alex" (say whether morning or afternoon is preferred)
+Candidate Email (${count1} words):
+"""${t1 || "(No text provided)"}"""
+
+PART 2 (${P2_DATA[activeP2Option].type} - ${activeP2Option === 2 ? "Question 2 Article: 'Is shopping boring?' (What you like/dislike about shopping + What shopping centres could do to attract more people)" : "Question 3 Story beginning with exact sentence: 'Jack climbed out of the boat and ran as fast as he could to the beach.'"}):
+Candidate Task (${count2} words):
+"""${t2 || "(No text provided)"}"""
+
+Respond ONLY with a valid JSON object matching this schema (do NOT use code fences or backticks):
+{
+  "part1": {
+    "score": 0,
+    "content": 0,
+    "commAch": 0,
+    "org": 0,
+    "lang": 0,
+    "taskFeedback": "Formal technical task overview covering the 4 marginal notes",
+    "strengths": "Specific strengths observed in candidate's email",
+    "weaknesses": "Concrete weaknesses, missing notes or errors",
+    "evidenceQuote": "Exact textual quotation from candidate's text",
+    "evidenceIssue": "Technical explanation of the defect",
+    "evidenceUpgrade": "Suggested natural B1/B2 formulation upgrade",
+    "spellingAndPunctuation": "Analysis of spelling, capitalization, and punctuation",
+    "grammarAnalysis": "B1 grammar structures identified vs areas to improve",
+    "vocabularyAnalysis": "Evaluation of functional email phrases and everyday vocabulary"
+  },
+  "part2": {
+    "score": 0,
+    "content": 0,
+    "commAch": 0,
+    "org": 0,
+    "lang": 0,
+    "taskFeedback": "Formal technical task overview",
+    "strengths": "Specific strengths observed in candidate's production",
+    "weaknesses": "Concrete weaknesses, gaps or omissions",
+    "evidenceQuote": "Exact textual quotation from candidate's text",
+    "evidenceIssue": "Technical explanation of the defect",
+    "evidenceUpgrade": "Suggested natural B1/B2 formulation upgrade",
+    "spellingAndPunctuation": "Analysis of spelling, capitalization, and punctuation",
+    "grammarAnalysis": "B1 grammar structures identified vs areas to improve",
+    "vocabularyAnalysis": "Evaluation of genre-appropriate vocabulary and cohesive devices"
+  },
+  "grandTotal": 0,
+  "examinerSummary": "Diagnostic verdict in English with clear action steps aligned with Cambridge B1 Preliminary assessment descriptors",
+  "spanishParentReport": "Informe pedagógico extenso en español para docentes y padres de familia detallando puntajes de rúbrica, fortalezas, errores detectados y sugerencias concretas."
+}
+`;
+
+      let reportData = null;
+
+      try {
+        const response = await fetch(APPS_SCRIPT_URL, {
+          method: "POST",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: JSON.stringify({
+            prompt: evaluationPrompt,
+            mockTitle: "B1 Preliminary Mock 01 - Writing",
+            p2Type: P2_DATA[activeP2Option].type,
+            t1Text: t1 || "(Empty)",
+            t2Text: t2 || "(Empty)"
+          })
+        });
+
+        const raw = await response.text();
+        let cleanedRaw = raw.trim();
+        if (cleanedRaw.startsWith("```")) {
+          cleanedRaw = cleanedRaw.replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/, "");
+        }
+        const data = JSON.parse(cleanedRaw);
+
+        if (data.error) {
+          throw new Error("Apps Script API Error: " + data.error);
+        }
+
+        reportData = data;
+      } catch (err) {
+        if (waitOverlay) waitOverlay.classList.remove('active');
+        console.error("AI Examiner error via Apps Script:", err);
+        alert("SYSTEM DIAGNOSTIC:\n\n" + err.message);
+        return;
+      }
+
+      if (waitOverlay) waitOverlay.classList.remove('active');
+      displayFeedbackModal(reportData, t1, t2);
+    }
+
+    function displayFeedbackModal(reportData, rawText1, rawText2) {
+      const p1 = reportData.part1 || {};
+      const p2 = reportData.part2 || {};
+      const p1Calc = (Number(p1.content) || 0) + (Number(p1.commAch) || 0) + (Number(p1.org) || 0) + (Number(p1.lang) || 0);
+      const p2Calc = (Number(p2.content) || 0) + (Number(p2.commAch) || 0) + (Number(p2.org) || 0) + (Number(p2.lang) || 0);
+      const p1Final = Number(p1.score) || p1Calc;
+      const p2Final = Number(p2.score) || p2Calc;
+      const grandTotal = Number(reportData.grandTotal) || (p1Final + p2Final);
+
+      const p1c = Number(p1.content) || 0;
+      const p1ca = Number(p1.commAch) || 0;
+      const p1o = Number(p1.org) || 0;
+      const p1l = Number(p1.lang) || 0;
+
+      const p2c = Number(p2.content) || 0;
+      const p2ca = Number(p2.commAch) || 0;
+      const p2o = Number(p2.org) || 0;
+      const p2l = Number(p2.lang) || 0;
+
+      // Construir reporte extenso en español para padres/docentes (usa el de la IA o arma respaldo estructurado)
+      const fallbackSpanishReport =
+        `Puntaje Total Writing: ${grandTotal}/40 (${grandTotal >= 24 ? "APROBADO — Supera el mínimo oficial B1 de 24/40" : "EN PROCESO — Por debajo del mínimo oficial B1 de 24/40"}). ` +
+        `Parte 1 (Email a Alex): ${p1Final}/20 [Contenido: ${p1c}/5, Logro Comunicativo: ${p1ca}/5, Organización: ${p1o}/5, Lenguaje: ${p1l}/5]. ` +
+        `Parte 2 (${P2_DATA[activeP2Option].type}): ${p2Final}/20 [Contenido: ${p2c}/5, Logro Comunicativo: ${p2ca}/5, Organización: ${p2o}/5, Lenguaje: ${p2l}/5]. ` +
+        `Observación técnica: ${reportData.examinerSummary || ""}`;
+
+      const spanishDiagnostic = (reportData.spanishParentReport && reportData.spanishParentReport.trim().length > 30)
+        ? `${reportData.spanishParentReport.trim()} | Desglose numérico: P1 Email = ${p1Final}/20 (C:${p1c}, CA:${p1ca}, O:${p1o}, L:${p1l}) | P2 ${P2_DATA[activeP2Option].type} = ${p2Final}/20 (C:${p2c}, CA:${p2ca}, O:${p2o}, L:${p2l}).`
+        : fallbackSpanishReport;
+
+      const today = new Date();
+      const formattedDate = `${String(today.getDate()).padStart(2, '0')}/${String(today.getMonth() + 1).padStart(2, '0')}/${today.getFullYear()}`;
+      let session = getSession();
+      if (!session.blockScores[MOCK_ID]) {
+        session.blockScores[MOCK_ID] = {
+          readingScore: 0,
+          writingScore: 0,
+          listeningScore: 0,
+          total: 0,
+          completed: false,
+          timestamp: formattedDate
+        };
+      }
+      session.blockScores[MOCK_ID].writingScore = grandTotal;
+      session.blockScores[MOCK_ID].writingBreakdown = {
+        part1: p1Final,
+        part2: p2Final,
+        p2Genre: P2_DATA[activeP2Option].type,
+        p1Subscales: { content: p1c, commAch: p1ca, org: p1o, lang: p1l },
+        p2Subscales: { content: p2c, commAch: p2ca, org: p2o, lang: p2l },
+        text1: rawText1 || "(Sin texto)",
+        text2: rawText2 || "(Sin texto)",
+        spanishReport: spanishDiagnostic
+      };
+      session.blockScores[MOCK_ID].timestamp = formattedDate;
+      saveSession(session);
+
+      const modalFb = document.getElementById('modalOfficialFeedback');
+      if (modalFb) modalFb.classList.add('active');
+
+      const scoreEl = document.getElementById('fbGrandTotalScore');
+      if (scoreEl) scoreEl.textContent = `${grandTotal} / 40`;
+
+      const gradeResult = document.getElementById('fbGradeResult');
+      if (gradeResult) {
+        if (grandTotal >= 36) {
+          gradeResult.textContent = "🏆 PASS WITH DISTINCTION (Grade A / B2 Level)";
+          gradeResult.style.background = "#064e3b";
+          gradeResult.style.color = "#a7f3d0";
+        } else if (grandTotal >= 32) {
+          gradeResult.textContent = "🥇 PASS WITH MERIT (Upper B1)";
+          gradeResult.style.background = "#065f46";
+          gradeResult.style.color = "#d1fae5";
+        } else if (grandTotal >= 24) {
+          gradeResult.textContent = "✅ PASS (B1 Standard Threshold)";
+          gradeResult.style.background = "#1e3a8a";
+          gradeResult.style.color = "#bfdbfe";
+        } else {
+          gradeResult.textContent = "⚠️ INSUFFICIENT SCORE TO PASS B1";
+          gradeResult.style.background = "#7f1d1d";
+          gradeResult.style.color = "#fecaca";
+        }
+      }
+
+      const verdictEl = document.getElementById('fbExaminerVerdict');
+      if (verdictEl) verdictEl.textContent = reportData.examinerSummary || "Evaluation completed.";
+
+      // Part 1 render
+      const p1Score = document.getElementById('fbP1Score');
+      if (p1Score) p1Score.textContent = `${p1Final} / 20`;
+
+      document.getElementById('fb_p1_cont').textContent = `${p1c} / 5`;
+      document.getElementById('fb_bar_p1_cont').style.width = `${(p1c / 5) * 100}%`;
+      document.getElementById('fb_desc_p1_cont').textContent = `Band ${p1c}: ${CAMBRIDGE_B1_RUBRIC_DESCRIPTORS.content[p1c] || CAMBRIDGE_B1_RUBRIC_DESCRIPTORS.content[0]}`;
+
+      document.getElementById('fb_p1_comm').textContent = `${p1ca} / 5`;
+      document.getElementById('fb_bar_p1_comm').style.width = `${(p1ca / 5) * 100}%`;
+      document.getElementById('fb_desc_p1_comm').textContent = `Band ${p1ca}: ${CAMBRIDGE_B1_RUBRIC_DESCRIPTORS.commAch[p1ca] || CAMBRIDGE_B1_RUBRIC_DESCRIPTORS.commAch[0]}`;
+
+      document.getElementById('fb_p1_org').textContent = `${p1o} / 5`;
+      document.getElementById('fb_bar_p1_org').style.width = `${(p1o / 5) * 100}%`;
+      document.getElementById('fb_desc_p1_org').textContent = `Band ${p1o}: ${CAMBRIDGE_B1_RUBRIC_DESCRIPTORS.org[p1o] || CAMBRIDGE_B1_RUBRIC_DESCRIPTORS.org[0]}`;
+
+      document.getElementById('fb_p1_lang').textContent = `${p1l} / 5`;
+      document.getElementById('fb_bar_p1_lang').style.width = `${(p1l / 5) * 100}%`;
+      document.getElementById('fb_desc_p1_lang').textContent = `Band ${p1l}: ${CAMBRIDGE_B1_RUBRIC_DESCRIPTORS.lang[p1l] || CAMBRIDGE_B1_RUBRIC_DESCRIPTORS.lang[0]}`;
+
+      document.getElementById('fb_p1_taskFeedback').textContent = p1.taskFeedback || "";
+      document.getElementById('fb_p1_strengths').textContent = p1.strengths || "Adequate communicative intent.";
+      document.getElementById('fb_p1_weaknesses').textContent = p1.weaknesses || "Review task coverage and accuracy.";
+
+      const p1Ev = document.getElementById('fb_p1_evidenceBlock');
+      if (p1Ev && p1.evidenceQuote) {
+        p1Ev.innerHTML = `
+          <div class="fb-evidence-box">
+            <strong>🔍 Identified Textual Evidence:</strong>
+            <div>You wrote: <span class="fb-evidence-quote">"${p1.evidenceQuote}"</span></div>
+            <div>Diagnostic: ${p1.evidenceIssue || ""}</div>
+            <div class="fb-evidence-fix">🚀 Suggested B1/B2 Upgrade: ${p1.evidenceUpgrade || ""}</div>
+          </div>
+        `;
+      }
+
+      document.getElementById('fb_p1_spelling').textContent = p1.spellingAndPunctuation || "";
+      document.getElementById('fb_p1_grammar').textContent = p1.grammarAnalysis || "";
+      document.getElementById('fb_p1_vocabulary').textContent = p1.vocabularyAnalysis || "";
+
+      // Part 2 render
+      document.getElementById('fbP2TaskTitle').textContent = `Part 2: ${P2_DATA[activeP2Option].type}`;
+      const p2Score = document.getElementById('fbP2Score');
+      if (p2Score) p2Score.textContent = `${p2Final} / 20`;
+
+      document.getElementById('fb_p2_cont').textContent = `${p2c} / 5`;
+      document.getElementById('fb_bar_p2_cont').style.width = `${(p2c / 5) * 100}%`;
+      document.getElementById('fb_desc_p2_cont').textContent = `Band ${p2c}: ${CAMBRIDGE_B1_RUBRIC_DESCRIPTORS.content[p2c] || CAMBRIDGE_B1_RUBRIC_DESCRIPTORS.content[0]}`;
+
+      document.getElementById('fb_p2_comm').textContent = `${p2ca} / 5`;
+      document.getElementById('fb_bar_p2_comm').style.width = `${(p2ca / 5) * 100}%`;
+      document.getElementById('fb_desc_p2_comm').textContent = `Band ${p2ca}: ${CAMBRIDGE_B1_RUBRIC_DESCRIPTORS.commAch[p2ca] || CAMBRIDGE_B1_RUBRIC_DESCRIPTORS.commAch[0]}`;
+
+      document.getElementById('fb_p2_org').textContent = `${p2o} / 5`;
+      document.getElementById('fb_bar_p2_org').style.width = `${(p2o / 5) * 100}%`;
+      document.getElementById('fb_desc_p2_org').textContent = `Band ${p2o}: ${CAMBRIDGE_B1_RUBRIC_DESCRIPTORS.org[p2o] || CAMBRIDGE_B1_RUBRIC_DESCRIPTORS.org[0]}`;
+
+      document.getElementById('fb_p2_lang').textContent = `${p2l} / 5`;
+      document.getElementById('fb_bar_p2_lang').style.width = `${(p2l / 5) * 100}%`;
+      document.getElementById('fb_desc_p2_lang').textContent = `Band ${p2l}: ${CAMBRIDGE_B1_RUBRIC_DESCRIPTORS.lang[p2l] || CAMBRIDGE_B1_RUBRIC_DESCRIPTORS.lang[0]}`;
+
+      document.getElementById('fb_p2_taskFeedback').textContent = p2.taskFeedback || "";
+      document.getElementById('fb_p2_strengths').textContent = p2.strengths || "Proper alignment with genre format.";
+      document.getElementById('fb_p2_weaknesses').textContent = p2.weaknesses || "Review genre conventions and accuracy.";
+
+      const p2Ev = document.getElementById('fb_p2_evidenceBlock');
+      if (p2Ev && p2.evidenceQuote) {
+        p2Ev.innerHTML = `
+          <div class="fb-evidence-box">
+            <strong>🔍 Identified Textual Evidence:</strong>
+            <div>You wrote: <span class="fb-evidence-quote">"${p2.evidenceQuote}"</span></div>
+            <div>Diagnostic: ${p2.evidenceIssue || ""}</div>
+            <div class="fb-evidence-fix">🚀 Suggested B1/B2 Upgrade: ${p2.evidenceUpgrade || ""}</div>
+          </div>
+        `;
+      }
+
+      document.getElementById('fb_p2_spelling').textContent = p2.spellingAndPunctuation || "";
+      document.getElementById('fb_p2_grammar').textContent = p2.grammarAnalysis || "";
+      document.getElementById('fb_p2_vocabulary').textContent = p2.vocabularyAnalysis || "";
+    }
+
+    function printReportDirectly() {
+      window.print();
+    }
+
+    selectP2Option(2);
+    switchPart(1);
+  </script>
+</body>
+</html>

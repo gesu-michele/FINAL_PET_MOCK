@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cambridge B1 Preliminary • Paper 1: Reading | JM ELT Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-canvas-blue: #1e3a8a;
+      --surface-white: #ffffff;
+      --surface-card: #f8fafc;
+      --cambridge-navy: #091e3a;
+      --cambridge-blue: #1d4ed8;
+      --cambridge-blue-vivid: #2563eb;
+      --cambridge-emerald: #059669;
+      --cambridge-gold: #d97706;
+      --text-pure-black: #000000;
+      --text-dark: #0f172a;
+      --text-body: #334155;
+      --text-muted: #64748b;
+      --border-subtle: #cbd5e1;
+      --border-strong: #94a3b8;
+      --success: #059669;
+      --error: #dc2626;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --radius-full: 9999px;
+      --shadow-card: 0 16px 36px -6px rgba(0, 0, 0, 0.28);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+    body {
+      background-color: var(--bg-canvas-blue);
+      background-image:
+        linear-gradient(rgba(15, 45, 95, 0.58), rgba(10, 32, 70, 0.68)),
+        url('https://drive.google.com/thumbnail?id=10e6Pmgk3M3P60FsN2oVAYhExabY2UoW8&sz=w1920');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--text-dark);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-size: 16px;
+    }
+
+    /* INSTITUTIONAL HEADER (MATCHING WRITING DESIGN) */
+    header.exam-header {
+      background: rgba(6, 21, 45, 0.94);
+      backdrop-filter: blur(14px);
+      border-bottom: 3.5px solid #2563eb;
+      padding: 12px 42px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .brand-left-cluster { display: flex; align-items: center; gap: 22px; }
+    .cambridge-badge-frame {
+      background: #ffffff;
+      padding: 8px 18px;
+      border-radius: 12px;
+      border: 2px solid #cbd5e1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    }
+    .cambridge-crest-img { height: 52px; width: auto; object-fit: contain; }
+    .jm-brand-box {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding-left: 20px;
+      border-left: 2.5px solid #3b82f6;
+    }
+    .jm-logo-img { height: 72px; width: auto; object-fit: contain; filter: drop-shadow(0 3px 8px rgba(0,0,0,0.4)); }
+    .jm-titles { display: flex; flex-direction: column; align-items: center; text-align: center; line-height: 1.15; }
+    .jm-title-top { font-family: 'Outfit', sans-serif; font-size: 28px; font-weight: 900; color: #ffffff; letter-spacing: 1.5px; }
+    .jm-title-sub { font-family: 'Outfit', sans-serif; font-size: 14px; font-weight: 800; color: #f59e0b; letter-spacing: 1.2px; text-transform: uppercase; }
+    .jm-title-tagline { font-size: 11px; font-weight: 700; color: #38bdf8; text-transform: uppercase; letter-spacing: 1px; margin-top: 2px; }
+
+    .header-center-cluster { display: flex; align-items: center; gap: 12px; }
+    .timer-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+      border: 2.5px solid #3b82f6;
+      color: #93c5fd;
+      padding: 8px 24px;
+      border-radius: var(--radius-full);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 24px;
+      font-weight: 900;
+      box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+    }
+    .header-right-cluster { display: flex; align-items: center; gap: 16px; }
+    .btn-return-menu {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1.5px solid #60a5fa;
+      color: #ffffff;
+      font-family: 'Outfit', sans-serif;
+      font-size: 13.5px;
+      font-weight: 800;
+      padding: 9px 18px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .btn-return-menu:hover { background: #2563eb; border-color: #bfdbfe; transform: translateY(-1px); }
+    .trainer-profile-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: rgba(15, 34, 64, 0.7);
+      border: 2px solid #3b82f6;
+      padding: 6px 18px 6px 12px;
+      border-radius: var(--radius-full);
+    }
+    .trainer-avatar-lg {
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      border: 3px solid #f59e0b;
+      object-fit: cover;
+    }
+    .trainer-meta { text-align: right; }
+    .trainer-name-top { font-family: 'Outfit', sans-serif; font-size: 16px; font-weight: 800; color: #ffffff; line-height: 1.2; }
+    .trainer-desc-sub { font-size: 12px; font-weight: 700; color: #38bdf8; letter-spacing: 0.5px; }
+
+    /* MAIN VIEWPORT */
+    main.reading-viewport {
+      flex: 1;
+      max-width: 1240px;
+      width: 95%;
+      margin: 26px auto 36px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 26px;
+    }
+
+    .exam-banner-card {
+      background: var(--surface-white);
+      border: 2.5px solid #2563eb;
+      border-radius: var(--radius-lg);
+      padding: 22px 30px;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+    .exam-banner-card h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 26px;
+      font-weight: 900;
+      color: #0b1a30;
+    }
+    .exam-banner-card p {
+      font-size: 14.5px;
+      font-weight: 600;
+      color: #475569;
+    }
+    .exam-meta-pill {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      font-weight: 800;
+      color: #1e3a8a;
+      background: #dbeafe;
+      border: 1.5px solid #93c5fd;
+      padding: 7px 16px;
+      border-radius: var(--radius-full);
+    }
+
+    /* SECTION CARDS */
+    .section-card {
+      background: var(--surface-white);
+      border: 2.5px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .part-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2.5px solid #0f172a;
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .part-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 22px;
+      font-weight: 900;
+      color: #0b1a30;
+    }
+
+    .part-marks-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13.5px;
+      font-weight: 800;
+      color: #92400e;
+      background: #fef3c7;
+      border: 1.5px solid #f59e0b;
+      padding: 4px 14px;
+      border-radius: var(--radius-full);
+    }
+
+    .part-instructions {
+      font-size: 16px;
+      color: #334155;
+      margin-bottom: 24px;
+      line-height: 1.55;
+    }
+
+    /* QUESTION CARDS */
+    .q-card-isolated {
+      background: #f8fafc;
+      border: 2px solid #cbd5e1;
+      border-radius: var(--radius-md);
+      padding: 22px 24px;
+      margin-bottom: 24px;
+    }
+
+    .q-card-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+
+    .q-num-badge {
+      background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+      color: #ffffff;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 900;
+      font-size: 14px;
+      padding: 5px 12px;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .q-question-text {
+      font-size: 16.5px;
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.45;
+      flex: 1;
+    }
+
+    .options-group-spaced {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .options-grid-2col {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 10px;
+    }
+
+    .option-item-label {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #ffffff;
+      border: 2px solid #cbd5e1;
+      padding: 12px 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 15.5px;
+      font-weight: 500;
+      color: #0f172a;
+      transition: all 0.18s ease;
+    }
+
+    .option-item-label:hover {
+      border-color: #2563eb;
+      background: #eff6ff;
+    }
+
+    .option-item-label input[type="radio"] {
+      width: 18px;
+      height: 18px;
+      accent-color: #1d4ed8;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    /* PART 1 STIMULI */
+    .q-item-split {
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      gap: 24px;
+      background: #f8fafc;
+      border: 2px solid #cbd5e1;
+      border-radius: var(--radius-md);
+      padding: 22px;
+      margin-bottom: 24px;
+      align-items: center;
+    }
+
+    @media (max-width: 880px) {
+      .q-item-split { grid-template-columns: 1fr; }
+    }
+
+    .notice-board-ui {
+      background: #fffbeb;
+      border: 2.5px solid #f59e0b;
+      border-radius: 10px;
+      padding: 20px 18px 16px 18px;
+      position: relative;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    }
+    .notice-pin {
+      position: absolute;
+      top: -9px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 16px;
+      height: 16px;
+      background: #dc2626;
+      border-radius: 50%;
+    }
+    .notice-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 900;
+      color: #92400e;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+    .notice-content {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #0f172a;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    .smartphone-shell {
+      background: #0f172a;
+      border: 3px solid #334155;
+      border-radius: 20px;
+      padding: 14px;
+    }
+    .phone-speaker {
+      width: 40px;
+      height: 4px;
+      background: #475569;
+      border-radius: 4px;
+      margin: 0 auto 10px auto;
+    }
+    .chat-bubble {
+      background: #1d4ed8;
+      border-radius: 14px 14px 14px 2px;
+      padding: 12px 14px;
+      color: #ffffff;
+      font-size: 13.5px;
+      line-height: 1.45;
+    }
+
+    .offer-banner-ui {
+      background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+      border: 2.5px solid #ea580c;
+      border-radius: 12px;
+      padding: 18px;
+      text-align: center;
+    }
+
+    .email-client-ui {
+      background: #ffffff;
+      border: 2px solid #475569;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .email-top-bar {
+      background: #334155;
+      padding: 7px 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .win-dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+    .email-fields {
+      padding: 10px 14px;
+      background: #f1f5f9;
+      border-bottom: 1.5px solid #cbd5e1;
+      font-size: 12.5px;
+      color: #334155;
+      line-height: 1.5;
+    }
+    .email-body {
+      padding: 14px;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #0f172a;
+    }
+
+    /* READING PASSAGES */
+    .reading-passage-box {
+      background: #f8fafc;
+      border: 2px solid #cbd5e1;
+      border-left: 7px solid #1d4ed8;
+      border-radius: var(--radius-md);
+      padding: 24px 28px;
+      margin-bottom: 24px;
+      font-size: 16.5px;
+      line-height: 1.8;
+      color: #0f172a;
+    }
+
+    .reading-passage-box h4 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 21px;
+      font-weight: 900;
+      color: #0b1a30;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 8px;
+    }
+
+    .reading-texts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    .text-column {
+      background: #f8fafc;
+      border: 2px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 16px 18px;
+    }
+
+    .text-column h4 {
+      font-family: 'Outfit', sans-serif;
+      color: #1d4ed8;
+      font-size: 16.5px;
+      font-weight: 900;
+      margin-bottom: 6px;
+      border-bottom: 1.5px solid #e2e8f0;
+      padding-bottom: 5px;
+    }
+
+    .text-column p {
+      font-size: 14.5px;
+      line-height: 1.6;
+      color: #1e293b;
+    }
+
+    .sentence-bank-box {
+      background: #eff6ff;
+      border: 2px solid #93c5fd;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 24px;
+    }
+
+    .sentence-bank-box h4 {
+      font-family: 'Outfit', sans-serif;
+      color: #1e3a8a;
+      margin-bottom: 12px;
+      font-size: 17px;
+      font-weight: 900;
+    }
+
+    .sentence-bank-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 15.5px;
+      color: #0f172a;
+    }
+
+    .sentence-bank-list li strong {
+      color: #1d4ed8;
+      font-family: 'JetBrains Mono', monospace;
+      margin-right: 6px;
+    }
+
+    /* GAPS & INPUTS */
+    .gap-box-white {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #0f172a;
+      color: #ffffff;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 900;
+      font-size: 13.5px;
+      padding: 2px 10px;
+      margin: 0 4px;
+      border-radius: 6px;
+      border: 2px solid #f59e0b;
+      vertical-align: middle;
+    }
+
+    .match-select {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 14.5px;
+      font-weight: 700;
+      background: #ffffff;
+      border: 2px solid #94a3b8;
+      color: #0f172a;
+      padding: 10px 14px;
+      border-radius: 8px;
+      outline: none;
+      width: 100%;
+      max-width: 360px;
+      cursor: pointer;
+    }
+
+    .gap-input {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 15px;
+      font-weight: 700;
+      background: #ffffff;
+      border: 2px solid #2563eb;
+      color: #0f172a;
+      padding: 5px 10px;
+      border-radius: 6px;
+      outline: none;
+      width: 140px;
+    }
+
+    .correct-choice {
+      border-color: var(--success) !important;
+      background: #ecfdf5 !important;
+    }
+
+    .incorrect-choice {
+      border-color: var(--error) !important;
+      background: #fef2f2 !important;
+    }
+
+    /* FEEDBACK BOX */
+    .kid-feedback-box {
+      display: none;
+      margin-top: 14px;
+      padding: 14px 16px;
+      border-radius: 10px;
+      font-size: 14.5px;
+      line-height: 1.55;
+    }
+    .kid-feedback-box.correct {
+      background: #ecfdf5;
+      border: 1.5px solid #10b981;
+      color: #064e3b;
+    }
+    .kid-feedback-box.incorrect {
+      background: #fef2f2;
+      border: 1.5px solid #ef4444;
+      color: #7f1d1d;
+    }
+    .fb-header {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      font-size: 15px;
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .fb-trap {
+      margin-top: 6px;
+      padding-top: 6px;
+      border-top: 1px dashed rgba(0, 0, 0, 0.2);
+      font-size: 13.5px;
+    }
+
+    /* CONTROLS BAR */
+    .controls-bar {
+      background: #ffffff;
+      border: 2.5px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 22px 32px;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn-primary {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 900;
+      font-size: 17px;
+      padding: 14px 32px;
+      border-radius: var(--radius-full);
+      border: 2px solid #bfdbfe;
+      cursor: pointer;
+      background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+      color: #ffffff;
+      box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
+    .btn-primary:hover { transform: translateY(-2px); }
+
+    .btn-next-writing {
+      background: linear-gradient(135deg, #059669 0%, #10b981 100%) !important;
+      border-color: #6ee7b7 !important;
+    }
+
+    /* MODAL */
+    .score-modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(3, 7, 18, 0.88);
+      backdrop-filter: blur(10px);
+      z-index: 2000;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .score-modal-overlay.active { display: flex; }
+    .score-modal-card {
+      background: #ffffff;
+      border: 3.5px solid #2563eb;
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      max-width: 560px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+    }
+    .score-modal-pts {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 42px;
+      font-weight: 900;
+      color: #1d4ed8;
+      margin: 10px 0;
+    }
+    .score-modal-breakdown {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      background: #f1f5f9;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 12px;
+      margin-bottom: 18px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+    }
+
+    /* FOOTER */
+    footer.exam-footer {
+      background: rgba(6, 21, 45, 0.98);
+      border-top: 2.5px solid #1e3a8a;
+      padding: 20px 42px;
+      display: grid;
+      grid-template-columns: 1fr 1.4fr 1fr;
+      align-items: center;
+      font-size: 14px;
+      color: #94a3b8;
+      margin-top: auto;
+    }
+    .footer-left { text-align: left; font-family: 'Outfit', sans-serif; font-weight: 700; color: #cbd5e1; }
+    .footer-center { text-align: center; font-weight: 600; color: #cbd5e1; }
+    .footer-author-highlight { color: #f59e0b; font-weight: 900; }
+    .footer-right {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 12px;
+      color: #38bdf8;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- INSTITUTIONAL HEADER -->
+  <header class="exam-header">
+    <div class="brand-left-cluster">
+      <div class="cambridge-badge-frame">
+        <img src="https://drive.google.com/thumbnail?id=1sd7nJwtvyEzuKaK5YTxKARFjM7dS8TGg&sz=w200" alt="Cambridge English" class="cambridge-crest-img">
+      </div>
+      <div class="jm-brand-box">
+        <img src="https://drive.google.com/thumbnail?id=1EksYLoHp7voak-Ka3Y3txyiGM15DMPTP&sz=w200" alt="JM ELT Solutions" class="jm-logo-img">
+        <div class="jm-titles">
+          <span class="jm-title-top">JM</span>
+          <span class="jm-title-sub">ELT Solutions</span>
+          <span class="jm-title-tagline">Official Exam Simulator</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-center-cluster">
+      <div class="timer-pill"><span>⏱️</span><span id="readingTimer">45:00</span></div>
+    </div>
+
+    <div class="header-right-cluster">
+      <a href="./index.html" class="btn-return-menu"><span>🏠</span> Return to Main Menu</a>
+      <div class="trainer-profile-card">
+        <div class="trainer-meta">
+          <div class="trainer-name-top">Dr. Jesús Miguel Lima E.</div>
+          <div class="trainer-desc-sub">Cambridge Specialist &amp; Trainer</div>
+        </div>
+        <img src="https://drive.google.com/thumbnail?id=1yd8aHZpgwj1mJXKaP8zldJIZAwGTiIor&sz=w200" alt="Dr. Jesús Miguel Lima E." class="trainer-avatar-lg">
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="reading-viewport">
+
+    <div class="exam-banner-card">
+      <div>
+        <h2>📖 B1 PRELIMINARY — PAPER 1: READING</h2>
+        <p id="candidateBannerInfo">Questions 1 to 32 • Total Objective: 32 Marks • Official Time: 45 Minutes</p>
+      </div>
+      <div class="exam-meta-pill">Pass Threshold: 23 / 32 (140 Scale)</div>
+    </div>
+
+    <!-- PART 1 -->
+    <section class="section-card" id="part1">
+      <div class="part-header">
+        <h3 class="part-title">Part 1 • Questions 1–5 (Short Texts &amp; Notices)</h3>
+        <span class="part-marks-badge">5 Marks</span>
+      </div>
+      <p class="part-instructions">For each question, choose the correct answer.</p>
+
+      <!-- Q1 -->
+      <div class="q-item-split" data-qid="q1" data-correct="B">
+        <div class="notice-board-ui">
+          <div class="notice-pin"></div>
+          <div class="notice-title">College Shop</div>
+          <p class="notice-content">
+            Now is the ideal moment to get study essentials like notebooks and pens – prices discounted until Friday.<br><br>
+            Open daily at lunchtime, plus 30 minutes after final lessons every day except Monday.
+          </p>
+        </div>
+        <div>
+          <div class="q-card-header">
+            <span class="q-num-badge">1</span>
+            <span class="q-question-text">What does this notice say about the college shop?</span>
+          </div>
+          <div class="options-group-spaced">
+            <label class="option-item-label" data-opt="A"><input type="radio" name="q1" value="A"> A) Students are required to buy their study supplies from the shop.</label>
+            <label class="option-item-label" data-opt="B"><input type="radio" name="q1" value="B"> B) Students can benefit from lower prices at the shop right now.</label>
+            <label class="option-item-label" data-opt="C"><input type="radio" name="q1" value="C"> C) Students can only visit the shop during lunch breaks on Mondays.</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="q-item-split" data-qid="q2" data-correct="C">
+        <div class="smartphone-shell">
+          <div class="phone-speaker"></div>
+          <div class="chat-bubble">
+            <div style="font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; color:#93c5fd; margin-bottom:4px;">Jake • Message</div>
+            Hi Max, I'm sorry I won't be able to join you on our shopping trip tomorrow as planned. My aunt is coming to visit and only just let us know. Jake
+          </div>
+        </div>
+        <div>
+          <div class="q-card-header">
+            <span class="q-num-badge">2</span>
+            <span class="q-question-text">Jake is writing to</span>
+          </div>
+          <div class="options-group-spaced">
+            <label class="option-item-label" data-opt="A"><input type="radio" name="q2" value="A"> A) propose a different day for their shopping trip.</label>
+            <label class="option-item-label" data-opt="B"><input type="radio" name="q2" value="B"> B) ask Max to come and meet his aunt tomorrow.</label>
+            <label class="option-item-label" data-opt="C"><input type="radio" name="q2" value="C"> C) call off a plan that he had previously made.</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="q-item-split" data-qid="q3" data-correct="A">
+        <div class="offer-banner-ui">
+          <div style="font-size:24px; margin-bottom:4px;">🍕</div>
+          <div style="font-family:'Outfit',sans-serif; font-size:14px; font-weight:900; color:#9a3412; text-transform:uppercase; margin-bottom:6px;">Special Offer</div>
+          <p style="font-size:14px; line-height:1.45; color:#431407; font-weight:600;">Order any pizza on our menu before 7 p.m. and receive a second one at 50% off!</p>
+        </div>
+        <div>
+          <div class="q-card-header">
+            <span class="q-num-badge">3</span>
+            <span class="q-question-text">What is true about this restaurant promotion?</span>
+          </div>
+          <div class="options-group-spaced">
+            <label class="option-item-label" data-opt="A"><input type="radio" name="q3" value="A"> A) Every pizza served at the restaurant qualifies for this deal.</label>
+            <label class="option-item-label" data-opt="B"><input type="radio" name="q3" value="B"> B) Ordering a single pizza before 7 p.m. costs half the normal price.</label>
+            <label class="option-item-label" data-opt="C"><input type="radio" name="q3" value="C"> C) Early evening diners receive a second pizza completely free.</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q4 -->
+      <div class="q-item-split" data-qid="q4" data-correct="C">
+        <div class="email-client-ui">
+          <div class="email-top-bar">
+            <span class="win-dot" style="background:#ef4444;"></span>
+            <span class="win-dot" style="background:#f59e0b;"></span>
+            <span class="win-dot" style="background:#10b981;"></span>
+            <span style="font-size:11px; color:#cbd5e1; margin-left:6px; font-family:'JetBrains Mono',monospace;">School Mail • Notice</span>
+          </div>
+          <div class="email-fields">
+            <div><strong>From:</strong> Mr Wood</div>
+            <div><strong>To:</strong> All students</div>
+            <div><strong>Subject:</strong> Recycling</div>
+          </div>
+          <div class="email-body">
+            We've made great progress recycling paper and plastic this term – yet there is still room to improve! Please drop any ideas into the box outside my office.
+          </div>
+        </div>
+        <div>
+          <div class="q-card-header">
+            <span class="q-num-badge">4</span>
+            <span class="q-question-text">What is Mr Wood doing in this email?</span>
+          </div>
+          <div class="options-group-spaced">
+            <label class="option-item-label" data-opt="A"><input type="radio" name="q4" value="A"> A) Sharing his own proposals for reducing school waste.</label>
+            <label class="option-item-label" data-opt="B"><input type="radio" name="q4" value="B"> B) Asking students to place plastic items in the box by his office.</label>
+            <label class="option-item-label" data-opt="C"><input type="radio" name="q4" value="C"> C) Requesting fresh suggestions to make school recycling even better.</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q5 -->
+      <div class="q-item-split" data-qid="q5" data-correct="B">
+        <div class="smartphone-shell">
+          <div class="phone-speaker"></div>
+          <div class="chat-bubble">
+            <div style="font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; color:#93c5fd; margin-bottom:4px;">Mel • Message</div>
+            Hi Sam, thanks for inviting me to the cinema last night. I didn't mention it then, but that movie was actually quite scary! Let's pick a comedy next time! Mel
+          </div>
+        </div>
+        <div>
+          <div class="q-card-header">
+            <span class="q-num-badge">5</span>
+            <span class="q-question-text">Mel is texting to</span>
+          </div>
+          <div class="options-group-spaced">
+            <label class="option-item-label" data-opt="A"><input type="radio" name="q5" value="A"> A) agree to go to the cinema with Sam tonight.</label>
+            <label class="option-item-label" data-opt="B"><input type="radio" name="q5" value="B"> B) confess to Sam that the movie frightened her.</label>
+            <label class="option-item-label" data-opt="C"><input type="radio" name="q5" value="C"> C) ask Sam what date they can watch a comedy together.</label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PART 2 -->
+    <section class="section-card" id="part2">
+      <div class="part-header">
+        <h3 class="part-title">Part 2 • Questions 6–10 (Matching People to Texts)</h3>
+        <span class="part-marks-badge">5 Marks</span>
+      </div>
+      <p class="part-instructions">The five readers below are looking for a book. Read the eight book reviews (<strong>A–H</strong>) and choose the most suitable book for each person.</p>
+
+      <div style="display:flex; flex-direction:column; gap:14px; margin-bottom:24px;">
+        <div class="q-card-isolated" style="margin-bottom:0;" data-qid="q6" data-correct="G">
+          <div class="q-card-header">
+            <span class="q-num-badge">6</span>
+            <span class="q-question-text">Ahmed loves biographies, particularly autobiographies told in the person's own voice. He wants to read about someone who overcame serious personal obstacles.</span>
+          </div>
+          <select name="q6" class="match-select">
+            <option value="">-- Select Book (A–H) --</option>
+            <option value="A">A - Fit &amp; Healthy Guide</option>
+            <option value="B">B - Across the Ocean</option>
+            <option value="C">C - Champions' Routines</option>
+            <option value="D">D - Distant Horizons</option>
+            <option value="E">E - Country Farmhouse</option>
+            <option value="F">F - Castaway Island</option>
+            <option value="G">G - Running in the Dark</option>
+            <option value="H">H - Flavours of the World</option>
+          </select>
+        </div>
+
+        <div class="q-card-isolated" style="margin-bottom:0;" data-qid="q7" data-correct="C">
+          <div class="q-card-header">
+            <span class="q-num-badge">7</span>
+            <span class="q-question-text">Pritti is passionate about every kind of sport. She wants to discover as much as possible about international athletes and the methods they used to reach success.</span>
+          </div>
+          <select name="q7" class="match-select">
+            <option value="">-- Select Book (A–H) --</option>
+            <option value="A">A - Fit &amp; Healthy Guide</option>
+            <option value="B">B - Across the Ocean</option>
+            <option value="C">C - Champions' Routines</option>
+            <option value="D">D - Distant Horizons</option>
+            <option value="E">E - Country Farmhouse</option>
+            <option value="F">F - Castaway Island</option>
+            <option value="G">G - Running in the Dark</option>
+            <option value="H">H - Flavours of the World</option>
+          </select>
+        </div>
+
+        <div class="q-card-isolated" style="margin-bottom:0;" data-qid="q8" data-correct="E">
+          <div class="q-card-header">
+            <span class="q-num-badge">8</span>
+            <span class="q-question-text">Conal appreciates the natural world and enjoys writing essays about it. He is searching for practical advice to sharpen his writing technique and become a professional author.</span>
+          </div>
+          <select name="q8" class="match-select">
+            <option value="">-- Select Book (A–H) --</option>
+            <option value="A">A - Fit &amp; Healthy Guide</option>
+            <option value="B">B - Across the Ocean</option>
+            <option value="C">C - Champions' Routines</option>
+            <option value="D">D - Distant Horizons</option>
+            <option value="E">E - Country Farmhouse</option>
+            <option value="F">F - Castaway Island</option>
+            <option value="G">G - Running in the Dark</option>
+            <option value="H">H - Flavours of the World</option>
+          </select>
+        </div>
+
+        <div class="q-card-isolated" style="margin-bottom:0;" data-qid="q9" data-correct="B">
+          <div class="q-card-header">
+            <span class="q-num-badge">9</span>
+            <span class="q-question-text">Elif enjoys thrilling real-life adventures. She is fascinated by courageous historical figures and how their achievements shaped the modern world we live in today.</span>
+          </div>
+          <select name="q9" class="match-select">
+            <option value="">-- Select Book (A–H) --</option>
+            <option value="A">A - Fit &amp; Healthy Guide</option>
+            <option value="B">B - Across the Ocean</option>
+            <option value="C">C - Champions' Routines</option>
+            <option value="D">D - Distant Horizons</option>
+            <option value="E">E - Country Farmhouse</option>
+            <option value="F">F - Castaway Island</option>
+            <option value="G">G - Running in the Dark</option>
+            <option value="H">H - Flavours of the World</option>
+          </select>
+        </div>
+
+        <div class="q-card-isolated" style="margin-bottom:0;" data-qid="q10" data-correct="H">
+          <div class="q-card-header">
+            <span class="q-num-badge">10</span>
+            <span class="q-question-text">Stefan loves exploring foreign countries and learning about different ways of life. He also wants to learn how to cook authentic local meals from around the globe.</span>
+          </div>
+          <select name="q10" class="match-select">
+            <option value="">-- Select Book (A–H) --</option>
+            <option value="A">A - Fit &amp; Healthy Guide</option>
+            <option value="B">B - Across the Ocean</option>
+            <option value="C">C - Champions' Routines</option>
+            <option value="D">D - Distant Horizons</option>
+            <option value="E">E - Country Farmhouse</option>
+            <option value="F">F - Castaway Island</option>
+            <option value="G">G - Running in the Dark</option>
+            <option value="H">H - Flavours of the World</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="reading-texts-grid">
+        <div class="text-column">
+          <h4>A • Fit &amp; Healthy Guide</h4>
+          <p>Packed with useful tips for anyone aiming to stay active and energetic. Well-known athletes have shared their preferred healthy snacks, alongside step-by-step daily workout schedules for beginners.</p>
+        </div>
+        <div class="text-column">
+          <h4>B • Across the Ocean</h4>
+          <p>This nonfiction account tells the true story of the pioneering aviators who first crossed the Atlantic. Featuring archive photos and a deep look at how these daring flights transformed modern travel, it brings history vividly to life.</p>
+        </div>
+        <div class="text-column">
+          <h4>C • Champions' Routines</h4>
+          <p>Dedicated to elite competitors worldwide, featuring action photography and candid interviews explaining how they reached the top of their sports—covering nutrition, daily training hours, and mental preparation before major tournaments.</p>
+        </div>
+        <div class="text-column">
+          <h4>D • Distant Horizons</h4>
+          <p>An acclaimed travel writer takes readers across five continents, exploring ancient customs, breathtaking landscapes, and unforgettable encounters with local communities along the way.</p>
+        </div>
+        <div class="text-column">
+          <h4>E • Country Farmhouse</h4>
+          <p>A celebrated author reflects on his youth on a rural Irish farm and how wandering through fields and woods sparked his ambition to write. He explains how he polished his craft, offering valuable guidance for aspiring writers.</p>
+        </div>
+        <div class="text-column">
+          <h4>F • Castaway Island</h4>
+          <p>This brand-new fictional novel follows a teenager stranded on a remote tropical island with only seabirds for company. Though she faces tough survival challenges, the plot is full of suspense and imagination.</p>
+        </div>
+        <div class="text-column">
+          <h4>G • Running in the Dark</h4>
+          <p>In this personal memoir, the author recounts his journey to becoming an international track star despite being blind. He describes the barriers he conquered with humour and honesty, making it an inspiring first-person read.</p>
+        </div>
+        <div class="text-column">
+          <h4>H • Flavours of the World</h4>
+          <p>Ideal for curious travellers interested in daily traditions across distant cultures. Alongside stunning photography of local scenery and wildlife, the book provides step-by-step recipes for traditional regional dishes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PART 3 -->
+    <section class="section-card" id="part3">
+      <div class="part-header">
+        <h3 class="part-title">Part 3 • Questions 11–15 (Long Text Comprehension)</h3>
+        <span class="part-marks-badge">5 Marks</span>
+      </div>
+      <p class="part-instructions">Read the article about a track cyclist and choose the correct answer for each question.</p>
+
+      <div class="reading-passage-box">
+        <h4>Track Cyclist Vicky Harmiston</h4>
+        <p style="font-size: 13.5px; color: #1d4ed8; margin-bottom: 10px; font-family: 'JetBrains Mono', monospace; font-weight:700;">By sports journalist Mark Lewis</p>
+        <p>Growing up, Vicky Harmiston and her brother Jamie were encouraged by their parents to choose their own free-time hobbies. Vicky tried many activities and excelled at swimming; her coach even believed she had championship potential. However, because the swimming pool was far from her house, balancing late evening sessions with school homework proved exhausting. During their teenage years, Jamie bought a track-racing bicycle and entered local events. Fascinated by the speed of the sport, Vicky decided to give it a try—a choice she still considers the smartest of her life. Because the indoor velodrome was right next to her school, attending daily practice after classes was completely effortless.</p><br>
+        <p>Vicky went on to enjoy a remarkable career, capturing multiple national titles before retiring at age 28. As she explained during our interview: 'Winning medals thrilled me for years, yet eventually the excitement faded. Once that spark disappears, continuing makes little sense. Fortunately, I discovered a rewarding new direction.'</p><br>
+        <p>Today, Vicky works for CycleZone, a non-profit organization. 'We support young people who have never felt comfortable with traditional sports,' she says. 'First, we teach them basic cycling skills so they build self-confidence and trust in what they can achieve. It also connects them socially with a welcoming community.'</p><br>
+        <p>CycleZone occasionally partners with well-known actors and musicians to promote its programmes. Vicky notes: 'Some critics argue that celebrities only get involved for personal publicity, distracting people from our core mission. Personally, I believe that if famous figures can help raise awareness, we should welcome their support.'</p>
+      </div>
+
+      <div class="q-card-isolated" data-qid="q11" data-correct="C">
+        <div class="q-card-header">
+          <span class="q-num-badge">11</span>
+          <span class="q-question-text">When Vicky first took up track cycling,</span>
+        </div>
+        <div class="options-group-spaced">
+          <label class="option-item-label" data-opt="A"><input type="radio" name="q11" value="A"> A) she trained under a famous national coach.</label>
+          <label class="option-item-label" data-opt="B"><input type="radio" name="q11" value="B"> B) her parents advised her to give up swimming.</label>
+          <label class="option-item-label" data-opt="C"><input type="radio" name="q11" value="C"> C) the training venue was very convenient to reach.</label>
+          <label class="option-item-label" data-opt="D"><input type="radio" name="q11" value="D"> D) her brother lent her his own racing bicycle.</label>
+        </div>
+      </div>
+
+      <div class="q-card-isolated" data-qid="q12" data-correct="B">
+        <div class="q-card-header">
+          <span class="q-num-badge">12</span>
+          <span class="q-question-text">Why did Vicky decide to retire from competitive racing?</span>
+        </div>
+        <div class="options-group-spaced">
+          <label class="option-item-label" data-opt="A"><input type="radio" name="q12" value="A"> A) She believed younger riders were faster than her.</label>
+          <label class="option-item-label" data-opt="B"><input type="radio" name="q12" value="B"> B) She no longer felt the same enthusiasm for competing.</label>
+          <label class="option-item-label" data-opt="C"><input type="radio" name="q12" value="C"> C) She had already won every international medal.</label>
+          <label class="option-item-label" data-opt="D"><input type="radio" name="q12" value="D"> D) She needed time to study for a new qualification.</label>
+        </div>
+      </div>
+
+      <div class="q-card-isolated" data-qid="q13" data-correct="D">
+        <div class="q-card-header">
+          <span class="q-num-badge">13</span>
+          <span class="q-question-text">What is the main aim of the charity CycleZone?</span>
+        </div>
+        <div class="options-group-spaced">
+          <label class="option-item-label" data-opt="A"><input type="radio" name="q13" value="A"> A) To train teenagers for professional track races.</label>
+          <label class="option-item-label" data-opt="B"><input type="radio" name="q13" value="B"> B) To sponsor young cyclists who already show talent.</label>
+          <label class="option-item-label" data-opt="C"><input type="radio" name="q13" value="C"> C) To introduce students to several different team sports.</label>
+          <label class="option-item-label" data-opt="D"><input type="radio" name="q13" value="D"> D) To help young people develop belief in their own abilities.</label>
+        </div>
+      </div>
+
+      <div class="q-card-isolated" data-qid="q14" data-correct="A">
+        <div class="q-card-header">
+          <span class="q-num-badge">14</span>
+          <span class="q-question-text">According to Vicky, some people worry that celebrities</span>
+        </div>
+        <div class="options-group-spaced">
+          <label class="option-item-label" data-opt="A"><input type="radio" name="q14" value="A"> A) shift public focus away from the charity's real efforts.</label>
+          <label class="option-item-label" data-opt="B"><input type="radio" name="q14" value="B"> B) do not understand the challenges young cyclists face.</label>
+          <label class="option-item-label" data-opt="C"><input type="radio" name="q14" value="C"> C) discourage ordinary volunteers from donating money.</label>
+          <label class="option-item-label" data-opt="D"><input type="radio" name="q14" value="D"> D) expect payment when promoting community projects.</label>
+        </div>
+      </div>
+
+      <div class="q-card-isolated" data-qid="q15" data-correct="C">
+        <div class="q-card-header">
+          <span class="q-num-badge">15</span>
+          <span class="q-question-text">Which statement would Vicky most likely write on her personal blog?</span>
+        </div>
+        <div class="options-grid-2col">
+          <label class="option-item-label" data-opt="A"><input type="radio" name="q15" value="A"> A) From childhood I knew I would become a famous cyclist, though I never imagined winning so many trophies.</label>
+          <label class="option-item-label" data-opt="B"><input type="radio" name="q15" value="B"> B) Join CycleZone this summer and you will get to train alongside famous actors and pop singers.</label>
+          <label class="option-item-label" data-opt="C"><input type="radio" name="q15" value="C"> C) Even though cycling wasn't the only sport I excelled at, switching to the track was the best decision I ever made.</label>
+          <label class="option-item-label" data-opt="D"><input type="radio" name="q15" value="D"> D) In my free time I still visit local schools to teach talented swimmers how to compete on race tracks.</label>
+        </div>
+      </div>
+    </section>
+
+    <!-- PART 4 -->
+    <section class="section-card" id="part4">
+      <div class="part-header">
+        <h3 class="part-title">Part 4 • Questions 16–20 (Gapped Text)</h3>
+        <span class="part-marks-badge">5 Marks</span>
+      </div>
+      <p class="part-instructions">Five sentences have been removed from the text below. For each gap (<strong>16–20</strong>), choose the correct sentence (<strong>A–H</strong>). There are three extra sentences which you do not need to use.</p>
+
+      <div class="reading-passage-box">
+        <h4>Living Under One Roof</h4>
+        <p>
+          At 83 years old, Taimi Taskinen resides at Rudolf House, a senior care residence in Helsinki, Finland, designed for older adults who live independently from their families. Because the building has multiple staircases, several upper-floor rooms are difficult for elderly residents to reach. To make good use of the space, the local council launched 'The House that Fits', renting those spare rooms to young adults.
+        </p><br>
+        <p>
+          When Taimi first learned about the initiative, she wondered how daily life would change. <span class="gap-box-white">16 ...</span> She doubted she would share many interests with young strangers. However, a few mornings later, a young man knocked politely at her doorway. <span class="gap-box-white">17 ...</span>
+        </p><br>
+        <p>
+          'Hello! I'm Jonatan Shaya, your new neighbour,' he said cheerfully. 'May I come in?' 'Of course,' Taimi answered, intrigued by his friendliness. 'Let me prepare some coffee,' he offered, stepping into her small kitchenette. 'Tell me a bit about your life,' he suggested as he set two mugs on the table.
+        </p><br>
+        <p>
+          <span class="gap-box-white">18 ...</span> She went on to share stories about her children and her lifelong passion for painting.
+        </p><br>
+        <p>
+          In return, 20-year-old Jonatan explained that he had shared an apartment with his mother and younger brother until they relocated to another town. Meanwhile, he was halfway through culinary school in Helsinki. <span class="gap-box-white">19 ...</span> That was when he spotted the council's advertisement online. More than 300 applicants submitted essays and attended interviews for a spot at Rudolf House. <span class="gap-box-white">20 ...</span> That marked the beginning of a warm intergenerational friendship.
+        </p>
+      </div>
+
+      <div class="sentence-bank-box">
+        <h4>Sentence Options (A–H)</h4>
+        <ul class="sentence-bank-list">
+          <li><strong>A</strong> To her own surprise, she began describing her childhood in a lakeside village in eastern Finland.</li>
+          <li><strong>B</strong> Consequently, he urgently needed to secure affordable accommodation of his own.</li>
+          <li><strong>C</strong> Because of this, she was uncertain whether any students had moved in yet.</li>
+          <li><strong>D</strong> She had left her door open, just as she habitually did every morning.</li>
+          <li><strong>E</strong> Ultimately, three candidates, including Jonatan, were selected for the programme.</li>
+          <li><strong>F</strong> In exchange for reduced rent, Jonatan agrees to spend thirty hours each month socializing with Taimi.</li>
+          <li><strong>G</strong> Nothing of this kind had ever been attempted at Rudolf House before.</li>
+          <li><strong>H</strong> Instead, the two chatted effortlessly as though they had been friends for years.</li>
+        </ul>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:14px;">
+        <div class="q-card-isolated" style="margin-bottom:0;" data-qid="q16" data-correct="G">
+          <div class="q-card-header"><span class="q-num-badge">16</span><span class="q-question-text">Select the missing sentence for Gap (16):</span></div>
+          <select name="q16" class="match-select"><option value="">-- Choose Sentence (A–H) --</option><option value="A">Sentence A</option><option value="B">Sentence B</option><option value="C">Sentence C</option><option value="D">Sentence D</option><option value="E">Sentence E</option><option value="F">Sentence F</option><option value="G">Sentence G</option><option value="H">Sentence H</option></select>
+        </div>
+        <div class="q-card-isolated" style="margin-bottom:0;" data-qid="q17" data-correct="D">
+          <div class="q-card-header"><span class="q-num-badge">17</span><span class="q-question-text">Select the missing sentence for Gap (17):</span></div>
+          <select name="q17" class="match-select"><option value="">-- Choose Sentence (A–H) --</option><option value="A">Sentence A</option><option value="B">Sentence B</option><option value="C">Sentence C</option><option value="D">Sentence D</option><option value="E">Sentence E</option><option value="F">Sentence F</option><option value="G">Sentence G</option><option value="H">Sentence H</option></select>
+        </div>
+        <div class="q-card-isolated" style="margin-bottom:0;" data-qid="q18" data-correct="A">
+          <div class="q-card-header"><span class="q-num-badge">18</span><span class="q-question-text">Select the missing sentence for Gap (18):</span></div>
+          <select name="q18" class="match-select"><option value="">-- Choose Sentence (A–H) --</option><option value="A">Sentence A</option><option value="B">Sentence B</option><option value="C">Sentence C</option><option value="D">Sentence D</option><option value="E">Sentence E</option><option value="F">Sentence F</option><option value="G">Sentence G</option><option value="H">Sentence H</option></select>
+        </div>
+        <div class="q-card-isolated" style="margin-bottom:0;" data-qid="q19" data-correct="B">
+          <div class="q-card-header"><span class="q-num-badge">19</span><span class="q-question-text">Select the missing sentence for Gap (19):</span></div>
+          <select name="q19" class="match-select"><option value="">-- Choose Sentence (A–H) --</option><option value="A">Sentence A</option><option value="B">Sentence B</option><option value="C">Sentence C</option><option value="D">Sentence D</option><option value="E">Sentence E</option><option value="F">Sentence F</option><option value="G">Sentence G</option><option value="H">Sentence H</option></select>
+        </div>
+        <div class="q-card-isolated" style="margin-bottom:0;" data-qid="q20" data-correct="E">
+          <div class="q-card-header"><span class="q-num-badge">20</span><span class="q-question-text">Select the missing sentence for Gap (20):</span></div>
+          <select name="q20" class="match-select"><option value="">-- Choose Sentence (A–H) --</option><option value="A">Sentence A</option><option value="B">Sentence B</option><option value="C">Sentence C</option><option value="D">Sentence D</option><option value="E">Sentence E</option><option value="F">Sentence F</option><option value="G">Sentence G</option><option value="H">Sentence H</option></select>
+        </div>
+      </div>
+    </section>
+
+    <!-- PART 5 -->
+    <section class="section-card" id="part5">
+      <div class="part-header">
+        <h3 class="part-title">Part 5 • Questions 21–26 (Multiple-Choice Cloze)</h3>
+        <span class="part-marks-badge">6 Marks</span>
+      </div>
+      <p class="part-instructions">For each question, choose the correct word to complete each gap.</p>
+
+      <div class="reading-passage-box">
+        <h4>How Potato Crisps Were Invented</h4>
+        <p>
+          Crispy potato slices were created entirely by chance in 1853 by an American chef named George Crum. He felt deeply <span class="gap-box-white">21 ...</span> of his culinary talent, and the luxury resort where he cooked served wealthy diners who were <span class="gap-box-white">22 ...</span> to enjoying only top-quality dishes.
+        </p><br>
+        <p>
+          One night, a fussy customer complained about Crum's fried potatoes. 'They're far too thick,' he remarked, 'much too soft, and completely tasteless.' He <span class="gap-box-white">23 ...</span> that the kitchen send out a fresh plate immediately.
+        </p><br>
+        <p>
+          The diner's harsh <span class="gap-box-white">24 ...</span> irritated Crum so much that he resolved to teach him a lesson. He sliced a potato into wafer-thin pieces, fried them until rock-hard, and covered them in excessive salt. 'He won't touch these,' Crum thought. Instead, the guest was delighted and asked for another serving.
+        </p><br>
+        <p>
+          Word of this crunchy snack spread rapidly, and an absolutely <span class="gap-box-white">25 ...</span> international snack industry has developed from Crum's experiment—even though his original batch was actually <span class="gap-box-white">26 ...</span> to be inedible!
+        </p>
+      </div>
+
+      <div class="q-card-isolated" data-qid="q21" data-correct="A">
+        <div class="q-card-header"><span class="q-num-badge">21</span><span class="q-question-text">Choose the word that fits Gap (21):</span></div>
+        <div class="options-grid-2col">
+          <label class="option-item-label" data-opt="A"><input type="radio" name="q21" value="A"> A) proud</label>
+          <label class="option-item-label" data-opt="B"><input type="radio" name="q21" value="B"> B) satisfied</label>
+          <label class="option-item-label" data-opt="C"><input type="radio" name="q21" value="C"> C) pleased</label>
+          <label class="option-item-label" data-opt="D"><input type="radio" name="q21" value="D"> D) impressed</label>
+        </div>
+      </div>
+
+      <div class="q-card-isolated" data-qid="q22" data-correct="C">
+        <div class="q-card-header"><span class="q-num-badge">22</span><span class="q-question-text">Choose the word that fits Gap (22):</span></div>
+        <div class="options-grid-2col">
+          <label class="option-item-label" data-opt="A"><input type="radio" name="q22" value="A"> A) prepared</label>
+          <label class="option-item-label" data-opt="B"><input type="radio" name="q22" value="B"> B) familiar</label>
+          <label class="option-item-label" data-opt="C"><input type="radio" name="q22" value="C"> C) used</label>
+          <label class="option-item-label" data-opt="D"><input type="radio" name="q22" value="D"> D) known</label>
+        </div>
+      </div>
+
+      <div class="q-card-isolated" data-qid="q23" data-correct="D">
+        <div class="q-card-header"><span class="q-num-badge">23</span><span class="q-question-text">Choose the word that fits Gap (23):</span></div>
+        <div class="options-grid-2col">
+          <label class="option-item-label" data-opt="A"><input type="radio" name="q23" value="A"> A) convinced</label>
+          <label class="option-item-label" data-opt="B"><input type="radio" name="q23" value="B"> B) wanted</label>
+          <label class="option-item-label" data-opt="C"><input type="radio" name="q23" value="C"> C) needed</label>
+          <label class="option-item-label" data-opt="D"><input type="radio" name="q23" value="D"> D) demanded</label>
+        </div>
+      </div>
+
+      <div class="q-card-isolated" data-qid="q24" data-correct="A">
+        <div class="q-card-header"><span class="q-num-badge">24</span><span class="q-question-text">Choose the word that fits Gap (24):</span></div>
+        <div class="options-grid-2col">
+          <label class="option-item-label" data-opt="A"><input type="radio" name="q24" value="A"> A) comments</label>
+          <label class="option-item-label" data-opt="B"><input type="radio" name="q24" value="B"> B) notes</label>
+          <label class="option-item-label" data-opt="C"><input type="radio" name="q24" value="C"> C) reasons</label>
+          <label class="option-item-label" data-opt="D"><input type="radio" name="q24" value="D"> D) explanations</label>
+        </div>
+      </div>
+
+      <div class="q-card-isolated" data-qid="q25" data-correct="B">
+        <div class="q-card-header"><span class="q-num-badge">25</span><span class="q-question-text">Choose the word that fits Gap (25):</span></div>
+        <div class="options-grid-2col">
+          <label class="option-item-label" data-opt="A"><input type="radio" name="q25" value="A"> A) big</label>
+          <label class="option-item-label" data-opt="B"><input type="radio" name="q25" value="B"> B) huge</label>
+          <label class="option-item-label" data-opt="C"><input type="radio" name="q25" value="C"> C) large</label>
+          <label class="option-item-label" data-opt="D"><input type="radio" name="q25" value="D"> D) wide</label>
+        </div>
+      </div>
+
+      <div class="q-card-isolated" data-qid="q26" data-correct="B">
+        <div class="q-card-header"><span class="q-num-badge">26</span><span class="q-question-text">Choose the word that fits Gap (26):</span></div>
+        <div class="options-grid-2col">
+          <label class="option-item-label" data-opt="A"><input type="radio" name="q26" value="A"> A) hoped</label>
+          <label class="option-item-label" data-opt="B"><input type="radio" name="q26" value="B"> B) intended</label>
+          <label class="option-item-label" data-opt="C"><input type="radio" name="q26" value="C"> C) attempted</label>
+          <label class="option-item-label" data-opt="D"><input type="radio" name="q26" value="D"> D) tried</label>
+        </div>
+      </div>
+    </section>
+
+    <!-- PART 6 -->
+    <section class="section-card" id="part6">
+      <div class="part-header">
+        <h3 class="part-title">Part 6 • Questions 27–32 (Open Cloze)</h3>
+        <span class="part-marks-badge">6 Marks</span>
+      </div>
+      <p class="part-instructions">For each question, write the correct answer. <strong>Write ONE word for each gap.</strong></p>
+
+      <div class="reading-passage-box">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #1d4ed8; font-weight:800; margin-bottom: 10px;">
+          Email • To: Alex | From: Sam
+        </div>
+        <p>Hi Alex,</p><br>
+        <p>
+          How are things with you? It's been an exhausting week for me – I have finally moved into my new place!
+          <span class="gap-box-white">27</span> <input type="text" id="gap27" class="gap-input" placeholder="one word..." autocomplete="off">
+          wasn't until I started putting everything into boxes a few days ago that I realised how many belongings I owned. Honestly, moving house is one of the
+          <span class="gap-box-white">28</span> <input type="text" id="gap28" class="gap-input" placeholder="one word..." autocomplete="off">
+          stressful experiences I've ever had! I felt sad saying goodbye to my old flat – after
+          <span class="gap-box-white">29</span> <input type="text" id="gap29" class="gap-input" placeholder="one word..." autocomplete="off">,
+          I had lived there my entire life and have wonderful memories of it.
+        </p><br>
+        <p>
+          Anyway, I'm really looking
+          <span class="gap-box-white">30</span> <input type="text" id="gap30" class="gap-input" placeholder="one word..." autocomplete="off">
+          to settling into this new home. It isn't quite as spacious as my previous one, but
+          <span class="gap-box-white">31</span> <input type="text" id="gap31" class="gap-input" placeholder="one word..." autocomplete="off">
+          least it has a lovely garden. I'm organising a small get-together on Saturday evening. Are you free then? Why don't you drop by
+          <span class="gap-box-white">32</span> <input type="text" id="gap32" class="gap-input" placeholder="one word..." autocomplete="off">
+          you're available? Let me know if you can come!
+        </p><br>
+        <p>Best wishes,<br>Sam</p>
+      </div>
+
+      <div id="cloze-feedback-summary"></div>
+    </section>
+
+    <!-- EXAM ACTIONS -->
+    <div class="controls-bar">
+      <a href="./index.html" class="btn-return-menu" style="background:#f1f5f9; color:#0f172a; border-color:#cbd5e1;">← Exit to Curriculum Hub</a>
+      <div style="display:flex; gap:14px; align-items:center; flex-wrap:wrap;">
+        <button class="btn-primary" id="btnSubmitExam" onclick="submitReadingExam()">🎯 Submit &amp; Grade Reading (32 Marks)</button>
+        <a href="./MOCK%2001%20-%20WRITING.html" id="btnNextWriting" class="btn-primary btn-next-writing" style="display:none;">
+          Proceed to Paper 2: Writing ➔
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- MODAL RESUMEN FINAL -->
+  <div class="score-modal-overlay" id="scoreModal">
+    <div class="score-modal-card">
+      <div style="font-size:48px; margin-bottom:6px;" id="modalBadge">🎉</div>
+      <h3 style="font-family:'Outfit',sans-serif; font-size:24px; font-weight:900; color:#0b1a30;" id="modalTitle">Reading Component Graded!</h3>
+      <p style="color:#475569; font-size:14.5px; margin-top:4px;">Your official B1 Preliminary Reading score:</p>
+
+      <div class="score-modal-pts" id="modalPts">-- / 32</div>
+
+      <div class="score-modal-breakdown">
+        <div><span>P1–P4: </span><strong id="modalP14" style="color:#1d4ed8;">--/20</strong></div>
+        <div><span>P5 (Cloze): </span><strong id="modalP5" style="color:#b45309;">--/6</strong></div>
+        <div><span>P6 (Open): </span><strong id="modalP6" style="color:#059669;">--/6</strong></div>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:10px;">
+        <button class="btn-primary" style="justify-content:center;" onclick="closeModalAndReview()">
+          🔍 Review Answers &amp; Explanations
+        </button>
+        <a href="./MOCK%2001%20-%20WRITING.html" class="btn-primary btn-next-writing" style="justify-content:center;">
+          Proceed to Paper 2: Writing ➔
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- INSTITUTIONAL FOOTER -->
+  <footer class="exam-footer">
+    <div class="footer-left">© 2026 Cambridge Assessment Practice Engine</div>
+    <div class="footer-center">
+      All Rights Reserved • Authored &amp; Developed by <strong class="footer-author-highlight">Dr. Jesús Miguel Lima E.</strong>
+    </div>
+    <div class="footer-right">
+      <img src="https://drive.google.com/thumbnail?id=1sd7nJwtvyEzuKaK5YTxKARFjM7dS8TGg&sz=w100" alt="Cambridge English" style="height:26px; width:auto; background:#fff; padding:2px 6px; border-radius:4px;">
+      <span>JM ELT Solutions</span>
+    </div>
+  </footer>
+
+  <script>
+    const STORAGE_KEY = "pet_trainer_b1_v1";
+    const MOCK_ID = 1;
+
+    // 45 Minutes Official B1 Preliminary Reading Timer
+    let rTimeLeft = 45 * 60;
+    const rTimerInterval = setInterval(() => {
+      if (rTimeLeft <= 0) {
+        clearInterval(rTimerInterval);
+        submitReadingExam();
+        return;
+      }
+      rTimeLeft--;
+      const mins = String(Math.floor(rTimeLeft / 60)).padStart(2, '0');
+      const secs = String(rTimeLeft % 60).padStart(2, '0');
+      const el = document.getElementById('readingTimer');
+      if (el) el.textContent = `${mins}:${secs}`;
+    }, 1000);
+
+    const ANSWER_KEY = {
+      q1: "B", q2: "C", q3: "A", q4: "C", q5: "B",
+      q6: "G", q7: "C", q8: "E", q9: "B", q10: "H",
+      q11: "C", q12: "B", q13: "D", q14: "A", q15: "C",
+      q16: "G", q17: "D", q18: "A", q19: "B", q20: "E",
+      q21: "A", q22: "C", q23: "D", q24: "A", q25: "B", q26: "B",
+      gap27: ["it"],
+      gap28: ["most"],
+      gap29: ["all"],
+      gap30: ["forward"],
+      gap31: ["at"],
+      gap32: ["if"]
+    };
+
+    const FEEDBACK_DATA = {
+      q1: { where: "'prices discounted until Friday'", whyRight: "Los alumnos pueden aprovechar precios más bajos ahora mismo.", whyWrong: "No es obligatorio comprar allí y los lunes solo abre al mediodía." },
+      q2: { where: "'I won't be able to join you on our shopping trip tomorrow as planned.'", whyRight: "Está cancelando un plan previo ('call off a plan').", whyWrong: "No propone otra fecha ni invita a Max." },
+      q3: { where: "'Order any pizza on our menu before 7 p.m. and receive a second one at 50% off!'", whyRight: "Todas las pizzas del menú aplican para la oferta.", whyWrong: "El descuento es solo en la segunda pizza." },
+      q4: { where: "'Please drop any ideas into the box outside my office.'", whyRight: "Pide nuevas sugerencias para mejorar el reciclaje escolar.", whyWrong: "No pide meter plástico ni comparte ideas propias." },
+      q5: { where: "'that movie was actually quite scary!'", whyRight: "Confiesa que la película le dio miedo.", whyWrong: "Ya fueron al cine anoche y no fija fecha." },
+      q6: { where: "Reseña G: 'In this personal memoir... despite being blind.'", whyRight: "Autobiografía sobre superación de obstáculos personales.", whyWrong: "C habla de varios atletas y F es ficción." },
+      q7: { where: "Reseña C: 'Dedicated to elite competitors worldwide...'", whyRight: "Trata sobre atletas internacionales y sus métodos de éxito.", whyWrong: "A es una guía básica para principiantes." },
+      q8: { where: "Reseña E: '...wandering through fields and woods sparked his ambition to write.'", whyRight: "Une naturaleza con consejos para mejorar como escritor.", whyWrong: "D no ofrece consejos de escritura." },
+      q9: { where: "Reseña B: '...true story of the pioneering aviators who first crossed the Atlantic...'", whyRight: "Relata una hazaña histórica real y su impacto moderno.", whyWrong: "F es ficción." },
+      q10: { where: "Reseña H: '...daily traditions across distant cultures... recipes for traditional regional dishes.'", whyRight: "Combina viajes culturales con recetas locales.", whyWrong: "A no trata sobre viajes ni culturas." },
+      q11: { where: "'Because the indoor velodrome was right next to her school...'", whyRight: "El velódromo estaba justo al lado de su colegio.", whyWrong: "Su hermano compró su propia bici." },
+      q12: { where: "'Winning medals thrilled me for years, yet eventually the excitement faded.'", whyRight: "Perdió el entusiasmo por competir.", whyWrong: "Se retiró a los 28 años por falta de motivación." },
+      q13: { where: "'...so they build self-confidence and trust in what they can achieve.'", whyRight: "Ayuda a los jóvenes a desarrollar confianza en sus capacidades.", whyWrong: "No entrena para carreras profesionales." },
+      q14: { where: "'...distracting people from our core mission.'", whyRight: "Algunos temen que las celebridades desvíen la atención del trabajo real.", whyWrong: "Vicky sí apoya su participación." },
+      q15: { where: "'Vicky tried many activities and excelled at swimming... smartest of her life.'", whyRight: "Destacó en natación pero cambiar al ciclismo fue su mejor decisión.", whyWrong: "Las demás opciones contienen datos falsos." },
+      q16: { where: "'Nothing of this kind had ever been attempted at Rudolf House before.'", whyRight: "Explica por qué Taimi se preguntaba cómo cambiaría su vida.", whyWrong: "C no encaja con el momento del anuncio." },
+      q17: { where: "'She had left her door open, just as she habitually did every morning.'", whyRight: "Conecta el golpe en la puerta con la entrada de Jonatan.", whyWrong: "F rompe la secuencia narrativa." },
+      q18: { where: "'To her own surprise, she began describing her childhood...'", whyRight: "Inicia la respuesta de Taimi antes de 'She went on to share...'.", whyWrong: "H no enlaza con 'She went on...'." },
+      q19: { where: "'Consequently, he urgently needed to secure affordable accommodation of his own.'", whyRight: "Explica por qué buscó vivienda tras mudarse su madre y hermano.", whyWrong: "Ninguna otra conecta con el anuncio." },
+      q20: { where: "'Ultimately, three candidates, including Jonatan, were selected for the programme.'", whyRight: "Cierra el proceso de selección de los 300 postulantes.", whyWrong: "F no conecta con 'That marked the beginning...'." },
+      q21: { where: "'proud of his culinary talent'", whyRight: "'Proud' lleva la preposición 'of'.", whyWrong: "Las demás llevan 'with' o 'by'." },
+      q22: { where: "'used to enjoying'", whyRight: "'Be used to + -ing' = estar acostumbrado a.", whyWrong: "'Prepared' lleva infinitivo." },
+      q23: { where: "'demanded that the kitchen send out'", whyRight: "'Demand that + sujeto + infinitivo' expresa exigencia.", whyWrong: "'Wanted' y 'needed' no admiten cláusula con 'that'." },
+      q24: { where: "'harsh comments'", whyRight: "Las críticas verbales son 'comments'.", whyWrong: "No eran apuntes ni explicaciones." },
+      q25: { where: "'absolutely huge'", whyRight: "'Absolutely' modifica adjetivos extremos como 'huge'.", whyWrong: "Las demás son graduables." },
+      q26: { where: "'intended to be inedible'", whyRight: "'Be intended to' = pensado con un propósito.", whyWrong: "Las demás no van en pasiva así." },
+      gap27: { where: "'It wasn't until... that...'", whyRight: "Pronombre impersonal 'It' para oración enfática.", whyWrong: "Estructura fija." },
+      gap28: { where: "'one of the most stressful experiences'", whyRight: "Superlativo 'most' para adjetivos largos.", whyWrong: "Falta el marcador de superlativo." },
+      gap29: { where: "'after all'", whyRight: "Conector fijo 'after all' (después de todo).", whyWrong: "Expresión cerrada." },
+      gap30: { where: "'looking forward to'", whyRight: "Phrasal verb 'look forward to' (tener ganas de).", whyWrong: "Colocación fija." },
+      gap31: { where: "'at least'", whyRight: "Expresión fija 'at least' (al menos).", whyWrong: "Exige 'at'." },
+      gap32: { where: "'drop by if you're available'", whyRight: "Conjunción condicional 'if'.", whyWrong: "Introduce condición." }
+    };
+
+    function getSession() {
+      let raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) {
+        let initial = { firstName: "", lastName: "", studentName: "", unlockedBlocks: [1], blockScores: {} };
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(initial));
+        return initial;
+      }
+      return JSON.parse(raw);
+    }
+
+    function saveSession(session) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(session));
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+      const s = getSession();
+      if (s.studentName) {
+        const banner = document.getElementById("candidateBannerInfo");
+        if (banner) {
+          banner.innerHTML = `Candidate: <strong style="color:#1d4ed8;">${s.studentName}</strong> • Questions 1 to 32 • 32 Marks`;
+        }
+      }
+    });
+
+    function submitReadingExam() {
+      clearInterval(rTimerInterval);
+      let session = getSession();
+
+      let p1 = 0, p2 = 0, p3 = 0, p4 = 0, p5 = 0, p6 = 0;
+
+      // Radio questions: P1 (1-5), P3 (11-15), P5 (21-26)
+      [1,2,3,4,5, 11,12,13,14,15, 21,22,23,24,25,26].forEach(i => {
+        const qid = `q${i}`;
+        const card = document.querySelector(`[data-qid="${qid}"]`);
+        const checked = card.querySelector(`input[name="${qid}"]:checked`);
+        const correctVal = ANSWER_KEY[qid];
+        const isCorrect = checked && checked.value === correctVal;
+
+        card.querySelectorAll(".option-item-label").forEach(l => l.classList.remove("correct-choice", "incorrect-choice"));
+
+        if (isCorrect) {
+          if (i <= 5) p1++;
+          else if (i <= 15) p3++;
+          else p5++;
+          checked.parentElement.classList.add("correct-choice");
+        } else {
+          if (checked) checked.parentElement.classList.add("incorrect-choice");
+          const correctOpt = card.querySelector(`[data-opt="${correctVal}"]`);
+          if (correctOpt) correctOpt.classList.add("correct-choice");
+        }
+        renderFeedbackBox(card, qid, isCorrect, correctVal);
+      });
+
+      // Select questions: P2 (6-10), P4 (16-20)
+      [6,7,8,9,10, 16,17,18,19,20].forEach(i => {
+        const qid = `q${i}`;
+        const card = document.querySelector(`[data-qid="${qid}"]`);
+        const selectEl = card.querySelector(`select[name="${qid}"]`);
+        const correctVal = ANSWER_KEY[qid];
+        const isCorrect = selectEl && selectEl.value === correctVal;
+
+        selectEl.classList.remove("correct-choice", "incorrect-choice");
+        if (isCorrect) {
+          if (i <= 10) p2++;
+          else p4++;
+          selectEl.classList.add("correct-choice");
+        } else {
+          selectEl.classList.add("incorrect-choice");
+        }
+        renderFeedbackBox(card, qid, isCorrect, correctVal);
+      });
+
+      // Open Cloze: P6 (27-32)
+      for (let g = 27; g <= 32; g++) {
+        const inputId = `gap${g}`;
+        const inputEl = document.getElementById(inputId);
+        const userVal = inputEl.value.trim().toLowerCase();
+        const validAnswers = ANSWER_KEY[inputId];
+        const isCorrect = validAnswers.includes(userVal);
+
+        if (isCorrect) {
+          p6++;
+          inputEl.classList.add("correct-choice");
+        } else {
+          inputEl.classList.add("incorrect-choice");
+        }
+        renderClozeFeedback(inputId, isCorrect, validAnswers[0]);
+      }
+
+      const scoreP14 = p1 + p2 + p3 + p4;
+      const totalScore = scoreP14 + p5 + p6;
+
+      const today = new Date();
+      const formattedDate = `${String(today.getDate()).padStart(2, '0')}/${String(today.getMonth() + 1).padStart(2, '0')}/${today.getFullYear()}`;
+
+      if (!session.blockScores[MOCK_ID]) {
+        session.blockScores[MOCK_ID] = {
+          readingScore: 0,
+          writingScore: 0,
+          listeningScore: 0,
+          total: 0,
+          completed: false,
+          timestamp: formattedDate
+        };
+      }
+      session.blockScores[MOCK_ID].readingScore = totalScore;
+      session.blockScores[MOCK_ID].readingBreakdown = {
+        p1: p1,
+        p2: p2,
+        p3: p3,
+        p4: p4,
+        p5: p5,
+        p6: p6
+      };
+      session.blockScores[MOCK_ID].timestamp = formattedDate;
+      saveSession(session);
+
+      document.querySelectorAll("input[type='radio']").forEach(r => r.disabled = true);
+      document.querySelectorAll("select").forEach(s => s.disabled = true);
+      document.querySelectorAll(".gap-input").forEach(i => i.disabled = true);
+
+      const btnSubmit = document.getElementById("btnSubmitExam");
+      btnSubmit.disabled = true;
+      btnSubmit.textContent = "✓ Reading Graded";
+      btnSubmit.style.opacity = "0.65";
+
+      document.getElementById("btnNextWriting").style.display = "inline-flex";
+
+      document.getElementById("modalPts").textContent = `${totalScore} / 32`;
+      document.getElementById("modalP14").textContent = `${scoreP14} / 20`;
+      document.getElementById("modalP5").textContent = `${p5} / 6`;
+      document.getElementById("modalP6").textContent = `${p6} / 6`;
+
+      const badgeEl = document.getElementById("modalBadge");
+      const titleEl = document.getElementById("modalTitle");
+      if (totalScore >= 27) {
+        badgeEl.textContent = "🏆";
+        titleEl.textContent = "Outstanding B1 Achievement!";
+      } else if (totalScore >= 23) {
+        badgeEl.textContent = "⭐";
+        titleEl.textContent = "Great Job! Solid B1 Pass!";
+      } else {
+        badgeEl.textContent = "💪";
+        titleEl.textContent = "Reading Submitted! Continue to Writing";
+      }
+
+      document.getElementById("scoreModal").classList.add("active");
+    }
+
+    function renderFeedbackBox(card, qid, isCorrect, correctVal) {
+      let box = card.querySelector(".kid-feedback-box");
+      if (!box) {
+        box = document.createElement("div");
+        card.appendChild(box);
+      }
+      const data = FEEDBACK_DATA[qid];
+      box.className = `kid-feedback-box ${isCorrect ? 'correct' : 'incorrect'}`;
+      box.style.display = "block";
+      box.innerHTML = `
+        <div class="fb-header">
+          <span>${isCorrect ? '✅ Correct!' : '❌ Review Clue:'}</span>
+          <span style="margin-left:auto;">Official Key: <strong>(${correctVal})</strong></span>
+        </div>
+        <p><strong>📖 En la lectura:</strong> ${data.where}</p>
+        <p style="margin-top:4px;"><strong>💡 Explicación:</strong> ${data.whyRight}</p>
+        <div class="fb-trap"><strong>⚠️ Distractor:</strong> ${data.whyWrong}</div>
+      `;
+    }
+
+    function renderClozeFeedback(inputId, isCorrect, correctWord) {
+      const container = document.getElementById("cloze-feedback-summary");
+      let box = document.getElementById(`fb-${inputId}`);
+      if (!box) {
+        box = document.createElement("div");
+        box.id = `fb-${inputId}`;
+        container.appendChild(box);
+      }
+      const data = FEEDBACK_DATA[inputId];
+      const gapNum = inputId.replace("gap", "");
+      box.className = `kid-feedback-box ${isCorrect ? 'correct' : 'incorrect'}`;
+      box.style.display = "block";
+      box.innerHTML = `
+        <div class="fb-header">
+          <span>${isCorrect ? `✅ Gap (${gapNum}) Correct!` : `❌ Gap (${gapNum}) Review`}</span>
+          <span style="margin-left:auto;">Official Word: <strong>${correctWord}</strong></span>
+        </div>
+        <p><strong>📖 Contexto:</strong> ${data.where}</p>
+        <p style="margin-top:4px;"><strong>💡 Explicación:</strong> ${data.whyRight}</p>
+      `;
+    }
+
+    function closeModalAndReview() {
+      document.getElementById("scoreModal").classList.remove("active");
+      window.scrollTo({ top: 320, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cambridge B1 Preliminary (PET) Exam Trainer • Dr. Jesús Miguel Lima E.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'AnanthaSignature';
+      src: url('Anantha%20Signature%20For%20Personal%20Use.ttf') format('truetype'),
+           url('Anantha Signature For Personal Use.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    :root {
+      --bg-canvas-blue: #091e3a;
+      --surface-white: #ffffff;
+      --surface-card: #f8fafc;
+      --cambridge-navy: #06152d;
+      --cambridge-blue: #1d4ed8;
+      --cambridge-blue-vivid: #2563eb;
+      --cambridge-emerald: #059669;
+      --cambridge-gold: #f59e0b;
+      --text-main: #f8fafc;
+      --text-dark: #0f172a;
+      --text-muted: #94a3b8;
+      --border-subtle: #cbd5e1;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --radius-full: 9999px;
+      --shadow-card: 0 18px 40px -8px rgba(0, 0, 0, 0.45);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg-canvas-blue);
+      background-image:
+        linear-gradient(rgba(9, 25, 58, 0.72), rgba(5, 16, 40, 0.85)),
+        url('https://drive.google.com/thumbnail?id=10e6Pmgk3M3P60FsN2oVAYhExabY2UoW8&sz=w1920');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: var(--text-main);
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+    }
+
+    /* INSTITUTIONAL HEADER (MATCHING WRITING DESIGN) */
+    header.exam-header {
+      background: rgba(6, 21, 45, 0.95);
+      backdrop-filter: blur(14px);
+      border-bottom: 3.5px solid #2563eb;
+      padding: 12px 42px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .brand-left-cluster { display: flex; align-items: center; gap: 22px; }
+    .cambridge-badge-frame {
+      background: #ffffff;
+      padding: 8px 18px;
+      border-radius: 12px;
+      border: 2px solid #cbd5e1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    }
+    .cambridge-crest-img { height: 48px; width: auto; object-fit: contain; }
+
+    .jm-brand-box {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding-left: 20px;
+      border-left: 2.5px solid #3b82f6;
+    }
+    .jm-logo-img { height: 64px; width: auto; object-fit: contain; filter: drop-shadow(0 3px 8px rgba(0,0,0,0.4)); }
+    .jm-titles { display: flex; flex-direction: column; align-items: center; text-align: center; line-height: 1.15; }
+    .jm-title-top { font-family: 'Outfit', sans-serif; font-size: 26px; font-weight: 900; color: #ffffff; letter-spacing: 1.5px; }
+    .jm-title-sub { font-family: 'Outfit', sans-serif; font-size: 13px; font-weight: 800; color: #f59e0b; letter-spacing: 1.2px; text-transform: uppercase; }
+    .jm-title-tagline { font-size: 10.5px; font-weight: 700; color: #38bdf8; text-transform: uppercase; letter-spacing: 1px; margin-top: 2px; }
+
+    .header-right-cluster { display: flex; align-items: center; gap: 16px; }
+    .nav-pill-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12.5px;
+      font-weight: 800;
+      color: #93c5fd;
+      background: rgba(37, 99, 235, 0.22);
+      border: 1.5px solid #3b82f6;
+      padding: 7px 16px;
+      border-radius: var(--radius-full);
+    }
+    .trainer-profile-card {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: rgba(15, 34, 64, 0.78);
+      border: 2px solid #3b82f6;
+      padding: 5px 16px 5px 12px;
+      border-radius: var(--radius-full);
+    }
+    .trainer-avatar-lg {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      border: 2.5px solid #f59e0b;
+      object-fit: cover;
+    }
+    .trainer-meta { text-align: right; }
+    .trainer-name-top { font-family: 'Outfit', sans-serif; font-size: 15px; font-weight: 800; color: #ffffff; }
+    .trainer-desc-sub { font-size: 11.5px; font-weight: 700; color: #38bdf8; }
+
+    /* MAIN VIEWPORT */
+    .screen-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    /* COVER SCREEN */
+    .cover-fullscreen {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 44px 72px 36px 72px;
+      max-width: 1480px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .main-section-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(22px, 2.6vw, 34px);
+      font-weight: 800;
+      color: #38bdf8;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+
+    .main-task-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(40px, 5.2vw, 72px);
+      font-weight: 900;
+      line-height: 1.05;
+      color: #ffffff;
+      letter-spacing: -0.02em;
+    }
+
+    .welcome-text-block {
+      max-width: 820px;
+      border-left: 4px solid #f59e0b;
+      padding-left: 22px;
+      margin-top: 26px;
+    }
+
+    .welcome-en {
+      font-size: 17.5px;
+      color: #e2e8f0;
+      line-height: 1.65;
+    }
+
+    /* CANDIDATE REGISTRATION BOX */
+    .candidate-entry-card {
+      background: #ffffff;
+      color: var(--text-dark);
+      border: 3px solid #3b82f6;
+      border-radius: var(--radius-lg);
+      padding: 24px 28px;
+      max-width: 640px;
+      margin-top: 28px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .candidate-entry-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 18px;
+      font-weight: 900;
+      color: #0b1a30;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .candidate-entry-sub {
+      font-size: 13.5px;
+      color: #475569;
+      margin-bottom: 14px;
+      font-weight: 600;
+    }
+
+    .candidate-input-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    @media (max-width: 640px) {
+      .candidate-input-row { grid-template-columns: 1fr; }
+    }
+
+    .candidate-field label {
+      display: block;
+      font-family: 'Outfit', sans-serif;
+      font-size: 12.5px;
+      font-weight: 800;
+      color: #1e3a8a;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    .candidate-field input {
+      width: 100%;
+      padding: 11px 14px;
+      border: 2px solid #cbd5e1;
+      border-radius: 10px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 15.5px;
+      font-weight: 700;
+      color: #0f172a;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .candidate-field input:focus {
+      border-color: #2563eb;
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.18);
+    }
+
+    .candidate-error-msg {
+      display: none;
+      margin-top: 10px;
+      font-size: 13.5px;
+      font-weight: 800;
+      color: #b91c1c;
+      background: #fee2e2;
+      padding: 8px 12px;
+      border-radius: 8px;
+    }
+
+    .cover-bottom-row {
+      border-top: 1px solid rgba(255, 255, 255, 0.18);
+      padding-top: 22px;
+      margin-top: 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    .signature-name {
+      font-family: 'AnanthaSignature', cursive, sans-serif;
+      font-size: clamp(32px, 3vw, 48px);
+      color: #ffffff;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .signature-roles {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: #cbd5e1;
+    }
+
+    .signature-roles span.role-highlight {
+      color: #f59e0b;
+      font-weight: 800;
+    }
+
+    .btn-launch-large {
+      font-family: 'Outfit', sans-serif;
+      font-size: 18px;
+      font-weight: 900;
+      padding: 16px 36px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      border: 2.5px solid #bfdbfe;
+      background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+      color: #ffffff;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 12px 28px rgba(37, 99, 235, 0.5);
+      transition: all 0.2s ease;
+    }
+
+    .btn-launch-large:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 34px rgba(37, 99, 235, 0.7);
+    }
+
+    /* CURRICULUM HUB (SCREEN 2) */
+    .center-stage {
+      max-width: 1080px;
+      width: 94%;
+      margin: 34px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .center-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12.5px;
+      font-weight: 800;
+      color: #fef08a;
+      background: rgba(245, 158, 11, 0.2);
+      border: 1.5px solid #f59e0b;
+      padding: 6px 18px;
+      border-radius: var(--radius-full);
+      margin-bottom: 14px;
+    }
+
+    .center-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(28px, 3vw, 40px);
+      font-weight: 900;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .progress-summary-card {
+      background: #ffffff;
+      color: var(--text-dark);
+      border: 2.5px solid #cbd5e1;
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      width: 100%;
+      box-shadow: var(--shadow-card);
+      text-align: left;
+      margin-top: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .candidate-banner-strip {
+      background: #eff6ff;
+      border: 2px solid #93c5fd;
+      border-radius: 12px;
+      padding: 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .mock-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 22px 24px;
+      background: #f8fafc;
+      border: 2px solid #cbd5e1;
+      border-left: 7px solid #2563eb;
+      border-radius: 14px;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .mock-row.completed {
+      border-left-color: #059669;
+      background: #f0fdf4;
+    }
+
+    .mock-info h4 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 900;
+      color: #0b1a30;
+      margin-bottom: 4px;
+    }
+
+    .mock-info span {
+      font-size: 14px;
+      color: #475569;
+      font-weight: 600;
+      display: block;
+    }
+
+    .mock-score-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .score-chip {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 6px;
+      background: #dbeafe;
+      color: #1e3a8a;
+    }
+
+    .score-chip.done {
+      background: #d1fae5;
+      color: #065f46;
+    }
+
+    .btn-mock-launch {
+      font-family: 'Outfit', sans-serif;
+      font-size: 15px;
+      font-weight: 800;
+      padding: 12px 24px;
+      border-radius: var(--radius-full);
+      background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+      color: #ffffff;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
+      transition: all 0.2s ease;
+    }
+
+    .btn-mock-launch:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 22px rgba(37, 99, 235, 0.5);
+    }
+
+    .btn-mock-launch.review {
+      background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+    }
+
+    .bottom-bar {
+      max-width: 1080px;
+      width: 94%;
+      margin: 0 auto 30px auto;
+      padding: 16px 26px;
+      background: rgba(6, 21, 45, 0.92);
+      border: 1.5px solid #1e3a8a;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn-outline {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 800;
+      padding: 10px 20px;
+      border-radius: var(--radius-full);
+      background: rgba(255, 255, 255, 0.1);
+      border: 1.5px solid #60a5fa;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    .btn-outline:hover { background: #2563eb; }
+
+    /* INSTITUTIONAL FOOTER */
+    footer.exam-footer {
+      background: rgba(6, 21, 45, 0.98);
+      border-top: 2.5px solid #1e3a8a;
+      padding: 20px 42px;
+      display: grid;
+      grid-template-columns: 1fr 1.4fr 1fr;
+      align-items: center;
+      font-size: 14px;
+      color: #94a3b8;
+      margin-top: auto;
+    }
+    .footer-left { text-align: left; font-family: 'Outfit', sans-serif; font-weight: 700; color: #cbd5e1; }
+    .footer-center { text-align: center; font-weight: 600; color: #cbd5e1; }
+    .footer-author-highlight { color: #f59e0b; font-weight: 900; }
+    .footer-right {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 12px;
+      color: #38bdf8;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+    }
+
+    @media (max-width: 860px) {
+      .cover-fullscreen { padding: 28px 20px; }
+      header.exam-header { padding: 12px 18px; }
+      footer.exam-footer { grid-template-columns: 1fr; text-align: center; gap: 8px; }
+      .footer-left, .footer-right { justify-content: center; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- INSTITUTIONAL HEADER -->
+  <header class="exam-header" id="topNav">
+    <div class="brand-left-cluster">
+      <div class="cambridge-badge-frame">
+        <img src="https://drive.google.com/thumbnail?id=1sd7nJwtvyEzuKaK5YTxKARFjM7dS8TGg&sz=w200" alt="Cambridge English" class="cambridge-crest-img">
+      </div>
+      <div class="jm-brand-box">
+        <img src="https://drive.google.com/thumbnail?id=1EksYLoHp7voak-Ka3Y3txyiGM15DMPTP&sz=w200" alt="JM ELT Solutions" class="jm-logo-img">
+        <div class="jm-titles">
+          <span class="jm-title-top">JM</span>
+          <span class="jm-title-sub">ELT Solutions</span>
+          <span class="jm-title-tagline">Official Exam Simulator</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-right-cluster">
+      <span class="nav-pill-tag" id="navPageTrack">B1 Preliminary (PET)</span>
+      <div class="trainer-profile-card">
+        <div class="trainer-meta">
+          <div class="trainer-name-top">Dr. Jesús Miguel Lima E.</div>
+          <div class="trainer-desc-sub">Cambridge Specialist &amp; Trainer</div>
+        </div>
+        <img src="https://drive.google.com/thumbnail?id=1yd8aHZpgwj1mJXKaP8zldJIZAwGTiIor&sz=w200" alt="Dr. Jesús Miguel Lima E." class="trainer-avatar-lg">
+      </div>
+    </div>
+  </header>
+
+  <!-- MOUNT CONTAINER -->
+  <div class="screen-container" id="mountNode"></div>
+
+  <!-- INSTITUTIONAL FOOTER -->
+  <footer class="exam-footer">
+    <div class="footer-left">© 2026 Cambridge Assessment Practice Engine</div>
+    <div class="footer-center">
+      All Rights Reserved • Authored &amp; Developed by <strong class="footer-author-highlight">Dr. Jesús Miguel Lima E.</strong>
+    </div>
+    <div class="footer-right">
+      <img src="https://drive.google.com/thumbnail?id=1sd7nJwtvyEzuKaK5YTxKARFjM7dS8TGg&sz=w100" alt="Cambridge English" style="height:26px; width:auto; background:#fff; padding:2px 6px; border-radius:4px;">
+      <span>JM ELT Solutions</span>
+    </div>
+  </footer>
+
+  <script>
+    const STORAGE_KEY = "pet_trainer_b1_v1";
+    let activeScreen = 1;
+
+    let session = {
+      firstName: "",
+      lastName: "",
+      studentName: "",
+      unlockedBlocks: [1],
+      blockScores: {}
+    };
+
+    function initData() {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (raw) {
+        try {
+          const parsed = JSON.parse(raw);
+          session = { ...session, ...parsed };
+        } catch (e) {}
+      } else {
+        syncStorage();
+      }
+    }
+
+    function syncStorage() {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(session));
+    }
+
+    function setScreen(step) {
+      activeScreen = step;
+      render();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function handleEnterHub() {
+      const fInput = document.getElementById('candFirstName');
+      const lInput = document.getElementById('candLastName');
+      const errBox = document.getElementById('candErrorMsg');
+
+      const fVal = fInput ? fInput.value.trim() : "";
+      const lVal = lInput ? lInput.value.trim() : "";
+
+      if (!fVal || !lVal) {
+        if (errBox) {
+          errBox.style.display = "block";
+          errBox.textContent = "⚠️ Por favor ingresa tu Nombre y Apellido antes de iniciar el examen.";
+        }
+        return;
+      }
+
+      session.firstName = fVal;
+      session.lastName = lVal;
+      session.studentName = `${lVal}, ${fVal}`;
+      syncStorage();
+      setScreen(2);
+    }
+
+    function render() {
+      const mount = document.getElementById('mountNode');
+      const track = document.getElementById('navPageTrack');
+      mount.innerHTML = '';
+
+      if (activeScreen === 1) {
+        track.innerText = 'Candidate Registration';
+        renderCover(mount);
+      } else if (activeScreen === 2) {
+        track.innerText = 'Mock Exam Hub';
+        renderCurriculum(mount);
+      }
+      syncStorage();
+    }
+
+    function renderCover(mount) {
+      mount.innerHTML = `
+        <div class="cover-fullscreen">
+          <div>
+            <div class="main-section-title">CAMBRIDGE EXAMINATION • B1 PRELIMINARY (PET)</div>
+            <div class="main-task-title">COMPLETE MOCK EXAM</div>
+
+            <div class="welcome-text-block">
+              <p class="welcome-en">
+                Welcome to the official interactive mock simulation platform for <strong>Cambridge B1 Preliminary (PET)</strong>. Complete full practice papers in <strong>Reading</strong>, <strong>Writing</strong>, and <strong>Listening</strong> with automated Cambridge rubric evaluation.
+              </p>
+            </div>
+
+            <div class="candidate-entry-card">
+              <div class="candidate-entry-title">👤 Candidate Identification (Required)</div>
+              <div class="candidate-entry-sub">Enter your First Name and Last Name to register your official exam session.</div>
+              <div class="candidate-input-row">
+                <div class="candidate-field">
+                  <label for="candFirstName">First Name (Nombre)</label>
+                  <input type="text" id="candFirstName" placeholder="e.g., Lucía" value="${session.firstName || ''}" autocomplete="off">
+                </div>
+                <div class="candidate-field">
+                  <label for="candLastName">Last Name (Apellido)</label>
+                  <input type="text" id="candLastName" placeholder="e.g., Pérez Gómez" value="${session.lastName || ''}" autocomplete="off">
+                </div>
+              </div>
+              <div class="candidate-error-msg" id="candErrorMsg"></div>
+            </div>
+          </div>
+
+          <div class="cover-bottom-row">
+            <div>
+              <span class="signature-name">by Dr. Jesús Miguel Lima E.</span>
+              <div class="signature-roles">
+                <span class="role-highlight">CEO of JM ELT Solutions</span>
+                <span>CELTA &amp; DELTA Trainer • Cambridge Exam Specialist • University Professor</span>
+              </div>
+            </div>
+
+            <div>
+              <button class="btn-launch-large" onclick="handleEnterHub()">
+                <span>🚀</span> Enter Exam Hub ➔
+              </button>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderCurriculum(mount) {
+      const m = {
+        id: 1,
+        title: "B1 Preliminary (PET) — Mock Exam 01",
+        desc: "Paper 1: Reading (32 marks) • Paper 2: Writing (40 marks) • Paper 3: Listening (25 marks)",
+        readUrl: "./MOCK%2001%20-%20READING.html",
+        writeUrl: "./MOCK%2001%20-%20WRITING.html",
+        listUrl: "./MOCK%2001%20-%20LISTENING.html"
+      };
+
+      const bScore = (session.blockScores && session.blockScores[m.id]) ? session.blockScores[m.id] : {};
+      const isCompleted = Boolean(bScore.completed);
+      const readScore = bScore.readingScore !== undefined ? bScore.readingScore : null;
+      const writeScore = bScore.writingScore !== undefined ? bScore.writingScore : null;
+      const listScore = bScore.listeningScore !== undefined ? bScore.listeningScore : null;
+
+      let statusChips = `
+        <div class="mock-score-chips">
+          <span class="score-chip ${readScore !== null ? 'done' : ''}">📖 Reading: ${readScore !== null ? readScore + '/32' : 'Pending'}</span>
+          <span class="score-chip ${writeScore !== null ? 'done' : ''}">✍️ Writing: ${writeScore !== null ? writeScore + '/40' : 'Pending'}</span>
+          <span class="score-chip ${listScore !== null ? 'done' : ''}">🎧 Listening: ${listScore !== null ? listScore + '/25' : 'Pending'}</span>
+        </div>
+      `;
+
+      let actionButton = `
+        <a href="${m.readUrl}" class="btn-mock-launch">
+          <span>▶</span> Start Exam (Paper 1: Reading) ➔
+        </a>
+      `;
+
+      if (isCompleted) {
+        actionButton = `
+          <a href="${m.readUrl}" class="btn-mock-launch review">
+            <span>↺</span> Retake / Review Mock 01
+          </a>
+        `;
+      }
+
+      mount.innerHTML = `
+        <div class="center-stage">
+          <div class="center-tag">🧭 OFFICIAL CAMBRIDGE B1 STRUCTURE</div>
+          <h2 class="center-title">CURRICULUM INDEX: FULL MOCK EXAM</h2>
+          <p style="font-size:15.5px; color:#e2e8f0; max-width:740px; line-height:1.5;">
+            Follow the official sequence: <strong>1. Reading</strong> → <strong>2. Writing</strong> → <strong>3. Listening</strong>. Your scores are automatically saved across all three papers.
+          </p>
+
+          <div class="progress-summary-card">
+            <div class="candidate-banner-strip">
+              <div style="font-family:'Outfit',sans-serif; font-weight:800; color:#0b1a30; font-size:16px;">
+                👤 Candidate: <span style="color:#1d4ed8;">${session.studentName || 'Not Registered'}</span>
+              </div>
+              <button class="btn-outline" style="background:#1e3a8a; border-color:#1e3a8a; font-size:12.5px; padding:6px 14px;" onclick="setScreen(1)">
+                ✏️ Edit Name
+              </button>
+            </div>
+
+            <div class="mock-row ${isCompleted ? 'completed' : ''}">
+              <div class="mock-info">
+                <h4>${m.title}</h4>
+                <span>${m.desc}</span>
+                ${statusChips}
+              </div>
+              <div>${actionButton}</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-bar">
+          <button class="btn-outline" onclick="setScreen(1)">⬅ Back to Cover</button>
+          <div style="font-family:'JetBrains Mono',monospace; font-size:12px; color:#cbd5e1;">
+            Total Exam Marks: 97 (Reading: 32 • Writing: 40 • Listening: 25)
+          </div>
+        </div>
+      `;
+    }
+
+    initData();
+    render();
+  </script>
+</body>
+</html>
